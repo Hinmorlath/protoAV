@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Capitulo</title>
+</head>
+<body>
+    
+    <!-- Header a la hora de editar los capitulos y temporadas de un anime, que en sí, es el mismo que el de agregar un Anime -->
+    <header>
+        <!-- Enlace para regresar al menú del editor -->
+        <a href="./animes.html">
+            <img src="" alt="Logotipo">
+        </a>
+
+        <!-- Nombre del editor que está subiendo este anime -->
+        <div>
+            Subido por:
+            <span id="nomEditor">NombreEditor</span>
+        </div>
+
+        <!-- Herramientas y notificaciones -->
+        <div class="noti">
+            <!-- Notificaciones -->
+            <div><span></span></div>
+            <!-- Herramientas con el ícono del editor -->
+            <div><img src="" alt="Icono Editor"></div>
+        </div>
+    </header>
+
+    <!-- Contenedor del contenido, valga la redundancia, del anime -->
+    <main>
+        <!-- formulario para editar el contenido del anime -->
+        <form action="" method="post">
+            <!-- segundo header con el título del anime y además un input para poder mostrar si un anime está en emisión o no -->
+            <div>
+                <span>Nombre del anime</span>
+                <!-- PENDIENTE -->
+            </div>
+
+            <!-- Panel de navegación para editar los capítulos, además de ser capaz de agregar temporadas y capítulos desde aquí -->
+            <aside>
+                <!-- contenedores de las temporada -->
+                <div class="tempComp">
+                    <!-- Contenedor de lo que debería de tener un bloque de temporada -->
+                    <div class="tempCap">
+                        <span></span>
+                        <input type="text" name="temp" id="" value="Temporada 1" disabled>
+                        <span></span>
+                    </div>
+                    <!-- Div para contener los capítulos de la temporada en cuestión -->
+                    <div class="capComp">
+                        <!-- Contenedores de los capítulos -->
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 1</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 2</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 3</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 4</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 5</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 6</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 7</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 8</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 9</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 10</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 11</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 12</span>
+                            <span></span>
+                        </div>
+                        <div class="cap">
+                            <span></span>
+                            <span>Capitulo 13</span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- Botón para agregar más capítulo a la temporada en cuestión -->
+                    <button>
+                        <span></span>
+                        Agregar Capítulo
+                    </button>
+                </div>
+                <div class="tempComp">
+                    <!-- Contenedor de lo que debería de tener un bloque de temporada -->
+                    <div class="tempCap">
+                        <span></span>
+                        <input type="text" name="temp" id="" value="Temporada 2" disabled>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- Botón para agregar un nueva temporada, hay que tratar de hacer que por defecto agregue un capítulo -->
+                <button>
+                    <span></span>
+                    Agregar Temporada
+                </button>
+            </aside>
+
+            <!-- Sección que cambiará de acuerdo al capítulo seleccionado -->
+            <section>
+                <!-- Título del capítulo -->
+                <article class="titCap">
+                    <input type="text" name="nomCap" id="" disabled value="Capitulo 7">
+                    <span></span>
+                </article>
+                <!-- Sección de los servidores -->
+                <article class="servComp">
+                    <span>Servidores</span>
+                    <!-- inputs para poder editar el nombre del servidor y su código embed -->
+                    <!-- También, la idea de escribir el nombre del servidor, es para que haga un llamado automático a la bd y complete los campos de manera automática a excepción al código embed que es lo único diferente en cada servidor -->
+                    <input type="text" name="nomServidor" id="nomServidor" placeholder="Nombre del Servidor">
+                    <input type="text" name="codEmbed" id="codEmbed" placeholder="Código Embed">
+                    <!-- Contenedor de los colores para el botón del servidor -->
+                    <div class="coloServ">
+                        <span>Color:</span>
+                        <!-- contenedor del color del texto -->
+                        <div class="coloTextServ">
+                            <span>Texto</span>
+                            <!-- PENDIENTE -->
+                            <input type="color" name="colorSolText" id="colorSolText">
+                        </div>
+                        <!-- contenedor del color de fondo del botón del servidor -->
+                        <div class="coloFondServ">
+                            <span>Texto</span>
+                            <!-- PENDIENTE -->
+                            <input type="color" name="colorSolText" id="colorSolText">
+                        </div>
+                    </div>
+                    <!-- Contenedor de los servidores dentro de un capítulo -->
+                    <div class="servComp">
+                        <!-- contenedor de los servidores en forma de lista -->
+                        <div class="servs">
+                            <!-- contenedores de cada servidor -->
+                            <div class="serv">
+                                <span>Uqload</span>
+                                <!-- Botón para eliminar el servidor de este capítulo -->
+                                <button>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="serv">
+                                <span>Mp4Upload</span>
+                                <!-- Botón para eliminar el servidor de este capítulo -->
+                                <button>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="serv">
+                                <span>YourUpload</span>
+                                <!-- Botón para eliminar el servidor de este capítulo -->
+                                <button>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="serv">
+                                <span>Ok.ru</span>
+                                <!-- Botón para eliminar el servidor de este capítulo -->
+                                <button>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- botón para agregar otro servidor más al capítulo en cuestión -->
+                        <button>
+                            <span></span>
+                        </button>
+                    </div>
+                </article>
+                <!-- Seccion donde se podrá agregar un botón extra, además de poder poner las etiquetas de este capítulo -->
+                <article class="infoExtra">
+                    <!-- Contenedor para los botones extra -->
+                    <div class="btnsExtra">
+                        Botones Extra
+                        <!-- Panel donde se visualizarán todos los botones extra que tenga este capítulo -->
+                        <div class="btnsExtraComp">
+                            <!-- contenedores de cada botón extra -->
+                            <div class="btnExtra">
+                                Saltar relleno
+                                <span></span>
+                                <!-- Botón para eliminar el botón extra -->
+                                <button>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Botón para agregar un botón Extra -->
+                        <button>
+                            <span></span>
+                            Agregar Botón
+                        </button>
+                        <!-- Información del botón extra a agregar -->
+                        <input type="text" name="nomBtnExtra" id="nomBtnExtra" placeholder="Título del botón">
+                        <!-- Url al cual va direccionado dicho botón -->
+                        <input type="text" name="linkBtnExtra" id="linkBtnExtra">
+                    </div>
+                    <!-- Contenedor de las estiquetas del capítulos -->
+                    <div class="etiqCapComp">
+                        Etiqueta:
+                        <textarea name="etiqCap" id="etiqCap" placeholder="Etiquetas para poder se encontrado por el motor del navegador"></textarea>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Botón para poder guardar todos los cambios hechos para los capítulos -->
+            <button type="submit">
+                <span></span>
+                Guardar
+            </button>
+        </form>
+    </main>
+
+</body>
+</html>
