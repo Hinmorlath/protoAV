@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Sagas</title>
+</head>
+<body> 
+    <!-- Header a la hora de hacer una saga, que es practicamente el mismo header que aparece a la hora de agregar una anime -->
+    <header>
+        <!-- Enlace para regresar al menú del editor, aunque de la saga debería de regresar al menú de las sagas -->
+        <a href="./sagas.html">
+            <span></span>
+            <img src="" alt="Logotipo" height="128px" width="128px">
+        </a>
+
+        <!-- Nombre del editor que está creando esta saga -->
+        <div>
+            Subido por:
+            <span id="nomEditor">NombreEditor</span>
+        </div>
+
+        <!-- Herramientas y notificaciones -->
+        <div class="noti">
+            <!-- Notificaciones -->
+            <div><span></span></div>
+            <!-- Herramientas con el ícono del editor -->
+            <div><img src="" alt="Icono Editor" height="128px" width="128px"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Formulario para crear una saga -->
+        <form action="" method="post">
+            <!-- sección donde se insertan datos de la saga -->
+            <div class="infoSaga">
+                <!-- input para el nombre de la saga -->
+                <input type="text" name="nomSaga" id="nomSaga" placeholder="Nombre de la saga" autofocus="autofocus">
+                <!-- input para seleccionar la duración de la saga *Mejorable para el futuro* -->
+                <!-- PENDIENTE -->
+                <!-- descripción de la saga, parecido a una sinopsis pero mucho más ambiguo por la naturaleza de las sagas -->
+                <textarea name="descSaga" id="descSaga" placeholder="Descripción de la saga"></textarea>
+                <!-- etiquetas para que el navegador pueda encontrar la saga -->
+                <textarea name="etiSaga" id="etiSaga" placeholder="Etiquetas"></textarea>
+                <!-- input para subir una imagen con tamaño específicos -->
+                <input type="file" name="imgSaga" id="imgSaga">
+            </div>
+
+            <!-- Línea de tiempo con su nombre, y los animes y/o sagas que lo conforman -->
+            <div class="LT">
+                <!-- Input para el nombre de la línea del tiempo -->
+                <input type="text" name="nomLT" id="nomLT" placeholder="Nombre de la línea de tiempo">
+
+                <!-- contenedor de todos los animes y sagas de la plataforma junto con su buscador -->
+                <div class="all">
+                    <!-- input que servirá como buscador de todo el contenido para este contenedor -->
+                    <!-- Este input debe de buscar en automático lo que se esté escribiendo desde que empieza uno a escribir en él -->
+                    <input type="search" name="busAll" id="busAll" placeholder="busca los Animes y/o Sagas que quieras">
+                    <!-- Botón para hacer que lo que se está buscando en el input:search si e encuentre -->
+                    <button>
+                        <span></span>
+                    </button>
+                    <!-- Indicación de lo que debe de hacer uno para agregar animes o sagas en la Línea de Tiempo (LT) -->
+                    <span>Clickea algún anime para agregarlo a la Línea de Tiempo</span>
+
+                    <!-- contenedor de sólamente las sagas y animes existentes -->
+                    <div>
+                        <!-- Lista de animes y sagas pero sin sus enlaces -->
+                        <div class="portadaS">
+                            <img src="" alt="Saga 1" height="128px" width="128px">
+                            <span>Saga 1</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 2" height="128px" width="128px">
+                            <span>Saga 2</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 3" height="128px" width="128px">
+                            <span>Saga 3</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 4" height="128px" width="128px">
+                            <span>Saga 4</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 5" height="128px" width="128px">
+                            <span>Saga 5</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 6" height="128px" width="128px">
+                            <span>Saga 6</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 7" height="128px" width="128px">
+                            <span>Saga 7</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 8" height="128px" width="128px">
+                            <span>Saga 8</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 9" height="128px" width="128px">
+                            <span>Saga 8</span>
+                        </div>
+                        <div class="portadaS">
+                            <img src="" alt="Saga 10" height="128px" width="128px">
+                            <span>Saga 8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenedor de la Línea de Tiempo -->
+                <div class="soloLT">
+                    <!-- Lista de animes y/o sagas que conforman la LT -->
+                    <div class="portadaS">
+                        <img src="" alt="Saga 1" height="128px" width="128px">
+                        <span>Saga 1</span>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="portadaS">
+                        <img src="" alt="Saga 2" height="128px" width="128px">
+                        <span>Saga 2</span>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="portadaS">
+                        <img src="" alt="Saga 3" height="128px" width="128px">
+                        <span>Saga 3</span>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="portadaS">
+                        <img src="" alt="Saga 4" height="128px" width="128px">
+                        <span>Saga 4</span>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="eliminarLT">
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Botón para agregar una Línea de Tiempo -->
+            <div class="btn-agreLT">
+                <span></span>
+                Agregar Línea de Tiempo
+            </div>
+
+            <!-- Botón para guardar el formulario de la saga -->
+            <button type="submit">
+                <span></span>
+                Guardar
+            </button>
+        </form>
+    </main>
+</body>
+</html>
