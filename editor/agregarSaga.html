@@ -35,13 +35,13 @@
             <!-- sección donde se insertan datos de la saga -->
             <div class="infoSaga">
                 <!-- input para el nombre de la saga -->
-                <input type="text" name="nomSaga" id="nomSaga" placeholder="Nombre de la saga" autofocus="autofocus">
+                <input type="text" name="nomSaga" id="nomSaga" placeholder="Nombre de la saga" autofocus="autofocus" autocomplete="on">
                 <!-- input para seleccionar la duración de la saga *Mejorable para el futuro* -->
                 <!-- PENDIENTE -->
                 <!-- descripción de la saga, parecido a una sinopsis pero mucho más ambiguo por la naturaleza de las sagas -->
                 <textarea name="descSaga" id="descSaga" placeholder="Descripción de la saga"></textarea>
                 <!-- etiquetas para que el navegador pueda encontrar la saga -->
-                <textarea name="etiSaga" id="etiSaga" placeholder="Etiquetas"></textarea>
+                <textarea name="etiSaga" id="etiSaga" placeholder="Etiquetas" autocomplete="on"></textarea>
                 <!-- input para subir una imagen con tamaño específicos -->
                 <input type="file" name="imgSaga" id="imgSaga">
             </div>
@@ -49,13 +49,13 @@
             <!-- Línea de tiempo con su nombre, y los animes y/o sagas que lo conforman -->
             <div class="LT">
                 <!-- Input para el nombre de la línea del tiempo -->
-                <input type="text" name="nomLT" id="nomLT" placeholder="Nombre de la línea de tiempo">
+                <input type="text" name="nomLT" id="nomLT" placeholder="Nombre de la línea de tiempo" autocomplete="on">
 
                 <!-- contenedor de todos los animes y sagas de la plataforma junto con su buscador -->
                 <div class="all">
                     <!-- input que servirá como buscador de todo el contenido para este contenedor -->
                     <!-- Este input debe de buscar en automático lo que se esté escribiendo desde que empieza uno a escribir en él -->
-                    <input type="search" name="busAll" id="busAll" placeholder="busca los Animes y/o Sagas que quieras">
+                    <input type="search" name="busAll" id="busAll" placeholder="busca los Animes y/o Sagas que quieras" autocomplete="on">
                     <!-- Botón para hacer que lo que se está buscando en el input:search si e encuentre -->
                     <button>
                         <span></span>

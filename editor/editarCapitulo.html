@@ -34,7 +34,7 @@
     <!-- Contenedor del contenido, valga la redundancia, del anime -->
     <main>
         <!-- formulario para editar el contenido del anime -->
-        <form action="" method="post">
+        <form action="#" method="post">
             <!-- segundo header con el título del anime y además un input para poder mostrar si un anime está en emisión o no -->
             <div>
                 <span>Nombre del anime</span>
@@ -153,7 +153,8 @@
                     <span>Servidores</span>
                     <!-- inputs para poder editar el nombre del servidor y su código embed -->
                     <!-- También, la idea de escribir el nombre del servidor, es para que haga un llamado automático a la bd y complete los campos de manera automática a excepción al código embed que es lo único diferente en cada servidor -->
-                    <input type="text" name="nomServidor" id="nomServidor" placeholder="Nombre del Servidor">
+                    <input type="text" name="nomServidor" id="nomServidor" placeholder="Nombre del Servidor" autocomplete="on">
+                    <!-- Código embed -->
                     <input type="text" name="codEmbed" id="codEmbed" placeholder="Código Embed">
                     <!-- Contenedor de los colores para el botón del servidor -->
                     <div class="coloServ">

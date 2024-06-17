@@ -36,11 +36,11 @@
             <input type="file" name="horImg" id="horImg">
 
             <!-- Para el nombre Original del anime -->
-            <input type="text" name="nomOriAni" id="nomOriAni" placeholder="Nombre original del Anime" autofocus>
+            <input type="text" name="nomOriAni" id="nomOriAni" placeholder="Nombre original del Anime" autofocus autocomplete="on">
             <!-- Nombre corto del anime a subir (Opcional) -->
-            <input type="text" name="nomCorAni" id="nomCorAni" placeholder="Nombre corte del anime">
+            <input type="text" name="nomCorAni" id="nomCorAni" placeholder="Nombre corte del anime" autocomplete="on">
             <!-- Nombre del Director o Directores que haya tenido el anime, el número de Directores puede variar dependiendo del estudio o el número de temporadas -->
-            <input type="text" name="nomDirAni" id="nomDirAni" placeholder="Nombre(s) del(los) director(es)">
+            <input type="text" name="nomDirAni" id="nomDirAni" placeholder="Nombre(s) del(los) director(es)" autocomplete="on">
             <!-- Sinopsis del anime -->
             <Textarea placeholder="Sinopsis"></Textarea>
 
@@ -59,7 +59,7 @@
                 <!-- Sección donde están el nombre de la temporada, y los capítulos que conforman dicha temporada, además de su imagen y los botónes para eliminar la temporada y el botón de generar más capítulos -->
                 <div class="tempCap">
                     <!-- Nombre de la temporada -->
-                    <input type="text" name="nomTemp" id="nomTem" placeholder="Nombre de la Temporada">
+                    <input type="text" name="nomTemp" id="nomTem" placeholder="Nombre de la Temporada" autocomplete="on">
                     <!-- Contenedor de La lista de capitulos, así como del botón para agregar capítulos -->
                     <div>
                         <!-- Sección de los capítulos que conforman la temporada -->
@@ -233,7 +233,7 @@
             </div>
 
             <!-- Sección para poner las etiquetas o palabras clave para el motor de búsqueda del navegador -->
-            <textarea name="etiAnime" id="etiAnime" placeholder="Etiquetas:"></textarea>
+            <textarea name="etiAnime" id="etiAnime" placeholder="Etiquetas:" autocomplete="on"></textarea>
 
             <span>No olvides revisar bien los datos antes de guardar</span>
 
