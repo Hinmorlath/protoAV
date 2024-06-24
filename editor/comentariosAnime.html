@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+</head>
+<body>
+    <!-- Header a la hora de hacer una saga, que es practicamente el mismo header que aparece a la hora de agregar una anime -->
+    <header>
+        <!-- Enlace para regresar al menú del editor, aunque de la saga debería de regresar al menú de las sagas -->
+        <a href="./comentarios.html">
+            <span></span>
+            <img src="" alt="Logotipo" height="128px" width="128px">
+        </a>
+        
+        <!-- Herramientas y notificaciones -->
+        <div class="noti">
+            <!-- Notificaciones -->
+            <div><span></span></div>
+            <!-- Herramientas con el ícono del editor -->
+            <div><img src="" alt="Icono Editor" height="128px" width="128px"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección donde se mostrarán los comentarios de los animes dependiendo de qué sección de temporada y capítulo, así como el anime en sí -->
+        <section>
+            <!-- Encabezado del chat-comentarios, pero que cambiará dependiendo de la selección -->
+            <div class="aniComen">
+                <!-- info de los comentarios -->
+                <div class="infoComen">
+                    <!-- Imagen del anime -->
+                    <img src="" alt="Anime 1">
+                    <!-- Nombre del anime -->
+                    <span>Anime 1</span>
+                    <!-- Temporada actual en la que se muestran los comentarios, en el caso de que los comentarios sean del anime en sí, pues esta sección no se mostrará -->
+                    <span>Temporada 1,</span>
+                    <!-- Lo mismo de las temporadas, pero en vez de las temporadas es con los capítulos -->
+                    <span>Capitulo 1</span>
+                </div>
+                <!-- botón improvisado para marcar como leídos a los comentarios -->
+                <div class="leidos">
+                    <span></span>
+                    Marcar como leídos todos los comentarios del Anime
+                </div>
+                <!-- botón para ver todos los reportes relacionados al anime -->
+                 <a href="#">
+                    <span></span>
+                 </a>
+            </div>
+
+            <!-- Aside de navegación sobre los comentarios de un anime -->
+            <div class="asideComen">
+                <!-- Contenedor de cada temporada -->
+                <div class="tempComen">
+                    <!-- Título de la temporada -->
+                    <div class="titTemp">
+                        Temporada 1
+                        <!-- Este span es para que se indique el número de comentarios que no se han leído -->
+                        <span>1</span>
+                        <!-- Este span es para desglozar los capítulos de la temporada en cuestión -->
+                        <span></span>
+                    </div>
+                    <!-- Contenedor de los capítulos por los que se navega paralos comentarios -->
+                    <div class="capComen">
+                        <!-- Contenedor de cada capítulo -->
+                        <div class="titCap">
+                            <!-- Simplemente un ícono de comentario -->
+                            <span></span>
+                            <!-- Título del capítulo -->
+                            Capitulo 1
+                            <!-- Número de comentarios no leídos por capítulo -->
+                            <span>1</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 2
+                            <span>2</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 3
+                            <span>3</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 4
+                            <span>4</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 5
+                            <span>5</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 6
+                            <span>6</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 7
+                            <span>7</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 8
+                            <span>8</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 9
+                            <span>9</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 10<span>10</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 11<span>11</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 12<span>12</span>
+                        </div>
+                        <div class="titCap">
+                            <span></span>
+                            Capitulo 13<span>13</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tempComen">
+                    <div class="titTemp">
+                        Temporada 2<span>2</span><span></span>
+                    </div>
+                </div>
+                <div class="tempComen">
+                    <div class="titTemp">
+                        Temporada 3<span>3</span><span></span>
+                    </div>
+                </div>
+                <div class="tempComen">
+                    <div class="titTemp">
+                        Temporada 4<span>4</span><span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel para mostrar los comentarios y el input para responer los comentarios con nuevos -->
+            <div class="panelComen">
+                <!-- Esta sección es para mostrar los comentarios como si fueran un chat -->
+                <div class="secComen">
+                    <!-- Ejemplo de un comentario normal -->
+                    <div class="comentario">
+                        <!-- Header de un comentario -->
+                        <div class="headComen">
+                            <!-- Imagen del usuario que hizo el comentario -->
+                            <img src="" alt="ImgUser">
+                            <!-- Información más detallada del comentario -->
+                            <div class="metaComen">
+                                <!-- Nombre del usuario -->
+                                <span>NombreUsuario</span>
+                                <!-- Fecha del comentario -->
+                                <span>FechaComen</span>
+                                <!-- Hora en el que se hizo el comentario -->
+                                <span>HoraComen</span>
+                                <!-- Botón de opciones del comentario -->
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor del contenido del comentario -->
+                        <div class="contComen">
+                            <!-- Párrafo que contiene el comentario en sí -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic delectus quos et dolorem perferendis reiciendis in, ipsam animi velit aut est ab tempora aliquam at? Dolore doloribus iste deserunt!
+                            </p>
+                            <!-- Icono para dar likes a un comentario -->
+                            <div class="likeComen">
+                                <!-- Icono de like que debe cambiar dependiendo del estado booleano -->
+                                <span></span>
+                                <!-- Número de likes -->
+                                 <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ejemplo de un comentario normal al responderse -->
+                    <div class="comentario">
+                        <!-- Header de un comentario -->
+                        <div class="headComen">
+                            <!-- Imagen del usuario que hizo el comentario -->
+                            <img src="" alt="ImgUser">
+                            <!-- Información más detallada del comentario -->
+                            <div class="metaComen">
+                                <!-- Nombre del usuario -->
+                                <span>NombreUsuario</span>
+                                <!-- Fecha del comentario -->
+                                <span>FechaComen</span>
+                                <!-- Hora en el que se hizo el comentario -->
+                                <span>HoraComen</span>
+                                <!-- Botón de opciones del comentario -->
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor del contenido del comentario -->
+                        <div class="contComen">
+                            <!-- Párrafo que contiene el comentario en sí -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic delectus quos et dolorem perferendis reiciendis in, ipsam animi velit aut est ab tempora aliquam at? Dolore doloribus iste deserunt!
+                            </p>
+                            <!-- Icono para dar likes a un comentario -->
+                            <div class="likeComen">
+                                <!-- Icono de like que debe cambiar dependiendo del estado booleano -->
+                                <span></span>
+                                <!-- Número de likes -->
+                                 <span>5</span>
+                            </div>
+
+                            <!-- Contenedor de la respuesta -->
+                            <div class="respComen">
+                                <!-- Header de un comentario -->
+                                <div class="headComen">
+                                    <!-- Imagen del usuario que hizo el comentario -->
+                                    <img src="" alt="ImgUser">
+                                    <!-- Información más detallada del comentario -->
+                                    <div class="metaComen">
+                                        <!-- Nombre del usuario -->
+                                        <span>NombreUsuario</span>
+                                        <!-- Fecha del comentario -->
+                                        <span>FechaComen</span>
+                                        <!-- Hora en el que se hizo el comentario -->
+                                        <span>HoraComen</span>
+                                        <!-- Botón de opciones del comentario -->
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Contenedor del comentario respuesta -->
+                                <form action="" method="post" class="contComen">
+                                    <!-- Input para escribir la respuesta -->
+                                    <input type="text" name="respComen" id="respComen" placeholder="Escribe tu respuesta">
+                                    <!-- Botón para enviar la respuesta -->
+                                    <button type="submit">
+                                        <!-- Ícono de envío -->
+                                        <span></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ejemplo de un comentario hecho por un editor -->
+                     <div class="comentario comenEditor">
+                        <!-- Header de un comentario -->
+                        <div class="headComen">
+                            <!-- Imagen del usuario que hizo el comentario -->
+                            <img src="" alt="ImgUser">
+                            <!-- Información más detallada del comentario -->
+                            <div class="metaComen">
+                                <!-- Nombre del usuario -->
+                                <span>NombreUsuario</span>
+                                <!-- Fecha del comentario -->
+                                <span>FechaComen</span>
+                                <!-- Hora en el que se hizo el comentario -->
+                                <span>HoraComen</span>
+                                <!-- Botón de opciones del comentario -->
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contenedor del contenido del comentario -->
+                        <div class="contComen">
+                            <!-- Párrafo que contiene el comentario en sí -->
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic delectus quos et dolorem perferendis reiciendis in, ipsam animi velit aut est ab tempora aliquam at? Dolore doloribus iste deserunt!
+                            </p>
+                            <!-- Icono para dar likes a un comentario -->
+                            <div class="likeComen">
+                                <!-- Icono de like que debe cambiar dependiendo del estado booleano -->
+                                <span></span>
+                                <!-- Número de likes -->
+                                 <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario para enviar los comentarios hechos por el Editor -->
+                <form action="" method="post" class="formComen">
+                    <!-- Icono para las opciones de emojis -->
+                    <span></span>
+                    <!-- Input donde se escribirá el comentario del Editor -->
+                    <input type="text" name="editComen" id="editComen" placeholder="Escribe tu comentario">
+                    <!-- Input para subir una imagen en un comentario -->
+                    <input type="file" name="imgComen" id="imgComen">
+                    <!-- botón para enviar el comentario -->
+                    <button type="submit">
+                        <!-- Ícono de envío -->
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
