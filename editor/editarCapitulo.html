@@ -38,7 +38,8 @@
             <!-- segundo header con el título del anime y además un input para poder mostrar si un anime está en emisión o no -->
             <div>
                 <span>Nombre del anime</span>
-                <!-- PENDIENTE -->
+                <!-- Input para saber si el anime está o no en Emisión -->
+                <label for="emision">En Emisión</label><input type="checkbox" name="emisión" id="emision" value=True>
             </div>
 
             <!-- Panel de navegación para editar los capítulos, además de ser capaz de agregar temporadas y capítulos desde aquí -->
@@ -48,7 +49,7 @@
                     <!-- Contenedor de lo que debería de tener un bloque de temporada -->
                     <div class="tempCap">
                         <span></span>
-                        <input type="text" name="temp" id="" value="Temporada 1" disabled>
+                        <input type="text" name="temp" id="" value="Temporada 1" readonly>
                         <span></span>
                     </div>
                     <!-- Div para contener los capítulos de la temporada en cuestión -->
@@ -130,7 +131,7 @@
                     <!-- Contenedor de lo que debería de tener un bloque de temporada -->
                     <div class="tempCap">
                         <span></span>
-                        <input type="text" name="temp" id="" value="Temporada 2" disabled>
+                        <input type="text" name="temp" id="" value="Temporada 2" readonly>
                         <span></span>
                     </div>
                 </div>
@@ -145,7 +146,7 @@
             <section>
                 <!-- Título del capítulo -->
                 <div class="titCap">
-                    <input type="text" name="nomCap" id="" disabled value="Capitulo 7">
+                    <input type="text" name="nomCap" id="" readonly value="Capitulo 7">
                     <span></span>
                 </div>
                 <!-- Sección de los servidores -->
@@ -162,13 +163,23 @@
                         <!-- contenedor del color del texto -->
                         <div class="coloTextServ">
                             <span>Texto</span>
-                            <!-- PENDIENTE -->
+                            <!-- seleccionar tipo de color para el texto -->
+                            <select name="tipoColorTexto" id="tipoColorTexto">
+                                <option value="solido" selected>Sólido</option>
+                                <option value="degradado">Degradado</option>
+                            </select>
+                            <!-- input para el color del texto -->
                             <input type="color" name="colorSolText" id="colorSolText">
                         </div>
                         <!-- contenedor del color de fondo del botón del servidor -->
                         <div class="coloFondServ">
-                            <span>Texto</span>
-                            <!-- PENDIENTE -->
+                            <span>Fondo</span>
+                            <!-- seleccionar tipo de color para el fondo -->
+                            <select name="tipoColorFondo" id="tipoColorFondo">
+                                <option value="solido" selected>Sólido</option>
+                                <option value="degradado">Degradado</option>
+                            </select>
+                            <!-- input para el color del fondo -->
                             <input type="color" name="colorSolText" id="colorSolText">
                         </div>
                     </div>

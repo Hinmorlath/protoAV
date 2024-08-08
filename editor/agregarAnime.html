@@ -47,12 +47,153 @@
             <br>
 
             <!-- año de emisión del anime -->
-            <input type="number" name="añoAni" id="yearAni" placeholder="Año">
-            <!-- PENDIENTE -->
-            <!-- PENDIENTE -->
-            <!-- PENDIENTE -->
-            <!-- PENDIENTE -->
-            <!-- PENDIENTE -->
+            <input type="month" name="añoAni" id="yearAni" placeholder="Año">
+            <!-- Lista desplegable de selección multiple para los géneros -->
+            <div>
+                <button>Géneros <span></span></button>
+                <div>
+                    <!-- Contenedores de los input -->
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="generos" id="accion" value="Acción">
+                        <label for="accion">Acción</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="generos" id="aventura" value="Aventura">
+                        <label for="aventura">Aventura</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="generos" id="cienciaF" value="Ciencia Ficción">
+                        <label for="cienciaF">Ciencia Ficción</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="generos" id="comedia" value="Comedia">
+                        <label for="comedia">Comedia</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="generos" id="comediaR" value="Comedia Romántica">
+                        <label for="comediaR">Comedia Romántica</label>
+                    </div>
+                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                    <button><span></span>Editar</button>
+                    <button><span></span>Agregar</button>
+                    <button><span></span>Guardar</button>
+                </div>
+            </div>
+            <!-- Lista desplegable de selección para la duración de minutos -->
+            <div>
+                <button>Duración(Minutos) <span></span></button>
+                <div>
+                    <!-- Contenedores de los input -->
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionM" id="5" value="5">
+                        <label for="5">5 minutos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionM" id="10" value="10">
+                        <label for="10">10 minutos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionM" id="20" value="20">
+                        <label for="20">20 minutos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionM" id="30" value="30">
+                        <label for="30">30 minutos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionM" id="50" value="50">
+                        <label for="50">50 minutos</label>
+                    </div>
+                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                    <button><span></span>Editar</button>
+                    <button><span></span>Agregar</button>
+                    <button><span></span>Guardar</button>
+                </div>
+            </div>
+            <!-- Lista desplegable de selección para la duración de capitulos -->
+            <div>
+                <button>Duración(Capitulos) <span></span></button>
+                <div>
+                    <!-- Contenedores de los input -->
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionC" id="1-5" value="1 a 5">
+                        <label for="1-5">1 a 5 capitulos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionC" id="6-12" value="6 a 12">
+                        <label for="6-12">6 a 12 capitulos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionC" id="13-24" value="13 a 24">
+                        <label for="13-24">13 a 24 capitulos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionC" id="25-50" value="25 a 50">
+                        <label for="25-50">25 a 50 capitulos</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="radio" name="DuracionC" id="50-100" value="50 a 100">
+                        <label for="50-100">50 a 100 capitulos</label>
+                    </div>
+                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                    <button><span></span>Editar</button>
+                    <button><span></span>Agregar</button>
+                    <button><span></span>Guardar</button>
+                </div>
+            </div>
+            <!-- Lista desplegable de selección multiple para la demografía -->
+            <div>
+                <button>Demografía <span></span></button>
+                <div>
+                    <!-- Contenedores de los input -->
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="demografía" id="bishojo" value="Bishojo">
+                        <label for="accion">Bishojo</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="demografía" id="bishonen" value="Bishonen">
+                        <label for="bishonen">Bishonen</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="demografía" id="ecchi" value="Ecchi">
+                        <label for="ecchi">Ecchi</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="demografía" id="harem" value="Harem">
+                        <label for="harem">Harem</label>
+                    </div>
+                    <div>
+                        <span></span>
+                        <input type="checkbox" name="demografía" id="seinen" value="Seinen">
+                        <label for="seinen">Seinen</label>
+                    </div>
+                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                    <button><span></span>Editar</button>
+                    <button><span></span>Agregar</button>
+                    <button><span></span>Guardar</button>
+                </div>
+            </div>
+            <!-- Input para saber si el anime está o no en Emisión -->
+            <label for="emision">En Emisión</label><input type="checkbox" name="emisión" id="emision" value=True>
 
             <!-- Sección de una temporada entera -->
             <div class="infoTempAnime">
@@ -69,7 +210,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 1" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 1" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -79,7 +220,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 2" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 2" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -89,7 +230,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 3" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 3" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -99,7 +240,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 4" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 4" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -109,7 +250,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 5" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 5" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -119,7 +260,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 6" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 6" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -129,7 +270,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 7" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 7" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -139,7 +280,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 8" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 8" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -149,7 +290,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 9" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 9" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -159,7 +300,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 10" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 10" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -169,7 +310,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 11" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 11" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -179,7 +320,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 12" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 12" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -189,7 +330,7 @@
                                 <!-- Icono para poder agarrar y soltar el capitulo -->
                                 <span></span>
                                 <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 13" disabled>
+                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 13" readonly>
                                 <!-- Icono para editar el nombre del capítulo -->
                                 <span></span>
                                 <!-- Icono para borrar el capítulo -->
@@ -210,7 +351,7 @@
                     <!-- Contenedor del input:number y de su botón -->
                     <div>
                         <!-- Input con su botón para agregar capítulos -->
-                        <input type="number" name="numCap" id="numCap">
+                        <input type="number" name="numCap" id="numCap" min="0">
                         <button>
                             <span></span>
                         </button>
