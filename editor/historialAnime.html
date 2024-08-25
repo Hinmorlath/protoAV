@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios</title>
+    <title>Historial</title>
 </head>
 <body>
     <!-- Header que tiene un editor, que es parecido al de un Espectador -->
@@ -15,8 +15,8 @@
                 <img src="" alt="Logo" height="128px" width="128px">
             </a>
             <!-- Buscador -->
-            <form method="post" autocomplete="on">
-                <input type="search" name="buscador" id="buscador">
+            <form method="post">
+                <input type="search" name="buscador" id="buscador" autocomplete="on">
                 <button type="submit"></button>
             </form>
             <!-- Icono del usuario y las herramientas que ofrece este Rol -->
@@ -85,10 +85,10 @@
             <a href="./animesPendientes.html">
                 <span></span><span>Animes Pendientes</span>
             </a>
-            <a href="#">
+            <a href="./comentarios.html">
                 <span></span><span>Comentarios</span>
             </a>
-            <a href="./historialAnime.html">
+            <a href="#">
                 <span></span><span>Historial</span>
             </a>
         </aside>
@@ -96,7 +96,7 @@
         <!-- Información de la opción del panel -->
         <section>
             <!-- Título de la sección dependiente del panel -->
-            <span id="titSeccion">Comentarios</span>
+            <span id="titSeccion">Historial</span>
 
             <!-- Información cambiante del panel de control -->
             <div id="infoPanel">
@@ -144,178 +144,98 @@
                     </select>
                 </div>
                 
-                <!-- Seccion donde se visualizan los animes que se han subido pero mostrando sus comentarios también -->
-                <div id="animesSubidos">                    
-                    <!-- Lista de animes con sus enlaces y sus comentarios vistos y no vistos -->
+                <!-- Seccion donde se visualizan los animes que se han subido por Editor de manera individual -->
+                <div id="animesSubidos">
+                    <!-- Lista de animes con sus enlaces -->
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 1" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 1</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 2" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 2</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 3" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 3</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 4" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 4</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 5" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 5</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 6" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 6</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 7" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 7</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 8" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 8</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 9" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 9</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" class="anime">
+                        <a href="#" id="anime">
                             <img src="" alt="Anime 10" height="128px" width="128px">
-                            <div>
-                                <!-- Esta parte mostrará los comentarios totales y los que no se han visto -->
-                                <div class="noVistos">
-                                    <span></span>
-                                    <span class="numNoVistos">0</span>
-                                </div>
-                                <div class="comentarios">
-                                    <span></span>
-                                    <span class="numComen">0</span>
-                                </div>
-                            </div>
                             <span>Anime 10</span>
                         </a>
+                        <button class="eliminarA">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
