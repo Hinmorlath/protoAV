@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    <!-- Header a la hora de hacer una saga, que es practicamente el mismo header que aparece a la hora de agregar una anime -->
+    <header>
+        <!-- Enlace para regresar al menú del editor, aunque de la saga debería de regresar al menú de las sagas -->
+        <a href="./animes.html">
+            <span></span>
+            <img src="" alt="Logotipo" height="128px" width="128px">
+        </a>
+
+        <span>Mi Perfil</span>
+        
+        <!-- Herramientas y notificaciones -->
+        <div class="noti">
+            <!-- Notificaciones -->
+            <div><span></span></div>
+            <!-- Herramientas con el ícono del editor -->
+            <div><img src="" alt="Icono Editor" height="128px" width="128px"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Formulario donde el Editor podrá actualizar su información -->
+        <form action="#" method="post">
+            <!-- Imagen del Editor -->
+            <input type="file" name="imgUser" id="imgUser">
+            <!-- Nombre del editor -->
+            <label for="nomEditor">Nombre de usuario</label>
+            <input type="text" name="nomEditor" id="nomEditor">
+            <!-- Apellidos del editor -->
+            <label for="apeEditor">Apellidos</label>
+            <input type="text" name="apeEditor" id="apeEditor">
+
+            <!-- Rol del usuario -->
+            <span>Tu rol es: <span>RolUsuario</span></span>
+            <!-- Correo del editor -->
+            <label for="corEditor">Correo</label>
+            <input type="email" name="corEditor" id="corEditor">
+            <!-- Telefono o celular del editor -->
+            <label for="telEditor">Número telefónico</label>
+            <input type="tel" name="telEditor" id="telEditor">
+            <!-- Contraseña del editor -->
+            <label for="passEditor">Contraseña</label>
+            <input type="password" name="passEditor" id="passEditor">
+            <!-- Confirmación de contraseña del editor -->
+            <label for="confPass">Confirmar contraseña</label>
+            <input type="password" name="confPass" id="confPass">
+
+            <!-- Botón de envío -->
+            <button type="submit">
+                <span></span><span>Editar</span>
+            </button>
+        </form>
+    </main>
+</body>
+</html>
