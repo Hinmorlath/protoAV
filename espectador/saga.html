@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimaVivo | Nombre del Anime</title>
+    <title>AnimaVivo | Nombre de la Saga</title>
 </head>
 <body>
-    <!-- Header de un usuario tipo espectador -->
+    <!-- Header de un usuario tipo Espectador -->
     <header>
         <!-- Header 1 -->
         <div id="header1">
@@ -75,9 +75,18 @@
     <!-- Navegador -->
     <aside>
         <nav>
-            <li><span></span><span>Menú</span></li>
-            <li><span></span><span>Inicio</span></li>
-            <li><span></span><span>En emisión</span></li>
+            <li>
+                <span></span>
+                <span>Menú</span>
+            </li>
+            <li>
+                <span></span>
+                <span>Inicio</span>
+            </li>
+            <li>
+                <span></span>
+                <span>En emisión</span>
+            </li>
             <!-- Lista de Género -->
             <li>
                 <span></span>
@@ -141,6 +150,7 @@
                 <span></span>
                 <span>Favoritos</span>
             </li>
+            <!-- Mi lista de Animes    -->
             <li>
                 <span></span>
                 <span>Mi lista Anime</span>
@@ -148,141 +158,102 @@
         </nav>
     </aside>
 
-    <!-- Sección del anime en sí -->
+    <!-- Sección de la saga en sí -->
     <main>
         <!-- Hay que poner un fondo degradado -->
-        <!-- La siguiente imagen representa un segundo fondo en el caso de que no se puede insertar en el background -->
+        <!-- La siguiente imagen representa un segundo fondo en el caso de que no se pueda insertar en el background -->
         <img src="#" alt="fondo1" class="fondo1">
-        <!-- Todo el anime en general -->
+        <!-- Toda la saga en general -->
         <div class="anime">
-            <!-- Información del anime junto con algunas funciones extra -->
+            <!-- Información de la saga  junto con algunas funciones extra -->
             <div class="infoAni">
-                <!-- Imagen del anime con algunas funciones extra para el Espectador -->
-                <div class="infoAni2">
-                    <!-- Portada del anime *Debe cambiar con la imagen de cada temporada* -->
+                <!-- Imagen de la saga con algunas funciones extra para el Espectador -->
+                <div class="infoSaga">
+                    <!-- Portada de la saga -->
                     <img src="#" alt="Portada">
-                    <!-- Botón para agregar el anime a favoritos del Espectador -->
+                    <!-- Botón para agregar la saga a favoritos del Espectador -->
                     <button class="fav">
                         <span></span>
-                    </button>
-                    <!-- Botón para darle me gusta a un anime -->
-                    <button>
-                        <!-- Icono de like -->
-                        <span></span>
-                        <!-- Número de likes en total del anime -->
-                        <span>1</span>
                     </button>
                     <!-- Botón para agregar a una lista personal de anime del Espectador -->
                     <button>
                         <span></span>
                     </button>
-                    <!-- Contenedor del aviso del estado del anime -->
-                    <div class="estado">
+                    <!-- Botón para darle me gusta a una saga -->
+                    <button>
+                        <!-- Icono de like -->
                         <span></span>
-                        <span>Finalizado</span>
-                    </div>
+                        <!-- Número de likes en total de la  -->
+                        <span>1</span>
+                    </button>
                 </div>
-                <!-- Título de anime -->
-                <h2>Título Anime</h2>
-                <!-- Año del anime -->
-                <span>Año</span>
-                <!-- Géneros del anime *Considerar que sean links* -->
+                <!-- Título de la saga -->
+                <h2>Título Saga</h2>
+                <!-- Géneros de la saga *Considerar que sean links* *Son todos los géneros que componen a los animes de una saga* -->
                 <span>Acción, Ciencia Ficción, Comedia, Drama, Escolar, Shounen</span>
-                <!-- Director del Anime -->
-                <span>Director(es): <span>Director</span></span>
                 Sinópsis:
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nulla neque inventore, laboriosam, quibusdam, a consectetur alias quod dolorum fugit excepturi. Accusantium repellat tenetur ea rem. Harum molestiae maxime voluptas.
                 Fugit, est tempore! Necessitatibus cupiditate eaque delectus illo! Soluta reprehenderit cum, aliquid maxime repudiandae quisquam maiores debitis ad quae enim sunt, similique ullam et ipsum molestiae inventore doloribus possimus perspiciatis!</span>
             </div>
 
-            <!-- Temporadas del anime -->
-            <div class="temporada">
-                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
-                <div class="btn-temporada">
-                    Temporada 1
-                    <span></span>
-                </div>
-                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
-                <div class="tempCap">
-                    <!-- Imagen de fondo de la temporada *En el caso de que no se vea con css* -->
-                    <img src="#" alt="Portada de Temporada">
-                    <!-- Capítulos de la Temporada -->
-                    <a href="#">Capítulo 1</a>
-                    <a href="#">Capítulo 2</a>
-                    <a href="#">Capítulo 3</a>
-                    <a href="#">Capítulo 4</a>
-                    <a href="#">Capítulo 5</a>
-                    <a href="#">Capítulo 6</a>
-                    <a href="#">Capítulo 7</a>
-                    <a href="#">Capítulo 8</a>
-                    <a href="#">Capítulo 9</a>
-                    <a href="#">Capítulo 10</a>
-                    <a href="#">Capítulo 11</a>
-                    <a href="#">Capítulo 12</a>
-                </div>
-            </div>
-            <div class="temporada">
-                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
-                <div class="btn-temporada">
-                    Temporada 2
-                    <span></span>
-                </div>
-                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
-                <div class="tempCap">
-                    <!-- Imagen de fondo de la temporada *En el caso de que no se vea con css* -->
-                    <img src="#" alt="Portada de Temporada">
-                    <!-- Capítulos de la Temporada -->
-                    <a href="#">Capítulo 1</a>
-                    <a href="#">Capítulo 2</a>
-                    <a href="#">Capítulo 3</a>
-                    <a href="#">Capítulo 4</a>
-                    <a href="#">Capítulo 5</a>
-                    <a href="#">Capítulo 6</a>
-                    <a href="#">Capítulo 7</a>
-                    <a href="#">Capítulo 8</a>
-                    <a href="#">Capítulo 9</a>
-                    <a href="#">Capítulo 10</a>
-                    <a href="#">Capítulo 11</a>
-                    <a href="#">Capítulo 12</a>
-                </div>
-            </div>
-            <div class="temporada">
-                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
-                <div class="btn-temporada">
-                    Temporada 3
-                    <span></span>
-                </div>
-                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
-            </div>
-            <div class="temporada">
-                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
-                <div class="btn-temporada">
-                    Temporada 4
-                    <span></span>
-                </div>
-                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
-            </div>
-            <div class="temporada">
-                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
-                <div class="btn-temporada">
-                    Temporada 5
-                    <span></span>
-                </div>
-                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
-            </div>
-
-            <!-- Saga de la que pertenece el anime -->
+            <!-- 1ra Línea de Tiempo de la saga -->
             <div class="sagaAnime">
-                <!-- Orden seleccionado de ver la saga -->
-                <select name="LT" id="lt">
-                    <option value="orden de emisión">Orden de Emisión</option>
-                    <option value="orden cronológico">Orden Cronológico</option>
-                    <option value="orden recomendado">Orden Recomendado</option>
-                </select>
+                <!-- Nombre de la saga -->
+                <span>Orden de Emisión</span>
                 <!-- Línea de Tiempo -->
                 <div class="lt">
                     <!-- Sagas en la línea de Tiempo *Se deben de ver 3 y cacho* -->
+                    <a href="./anime.html" class="saga">
+                        <img src="#" alt="Anime 1">
+                        <span>Anime 1</span>
+                    </a>
                     <a href="#" class="saga">
+                        <img src="#" alt="Anime 2">
+                        <span>Anime 2</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 3">
+                        <span>Anime 3</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 4">
+                        <span>Anime 4</span>
+                    </a>
+                </div>
+            </div>
+            <!-- 1ra Línea de Tiempo de la saga -->
+            <div class="sagaAnime">
+                <!-- Nombre de la saga -->
+                <span>Orden Cronológico</span>
+                <!-- Línea de Tiempo -->
+                <div class="lt">
+                    <!-- Sagas en la línea de Tiempo *Se deben de ver 3 y cacho* -->
+                    <a href="./anime.html" class="saga">
+                        <img src="#" alt="Anime 1">
+                        <span>Anime 1</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 2">
+                        <span>Anime 2</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 3">
+                        <span>Anime 3</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 4">
+                        <span>Anime 4</span>
+                    </a>
+                </div>
+            </div>
+            <!-- 3ra Línea de Tiempo de la saga -->
+            <div class="sagaAnime">
+                <!-- Nombre de la saga -->
+                <span>Orden Recomendado</span>
+                <!-- Línea de Tiempo -->
+                <div class="lt">
+                    <!-- Sagas en la línea de Tiempo *Se deben de ver 3 y cacho* -->
+                    <a href="./anime.html" class="saga">
                         <img src="#" alt="Anime 1">
                         <span>Anime 1</span>
                     </a>
@@ -301,10 +272,10 @@
                 </div>
             </div>
         </div>
-        <!-- Animes similares de acuerdo a los géneros -->
+        <!-- Animes similares de acuerdo a los géneros de la saga -->
         <div class="similares">
             <!-- Lista de los animes -->
-            <a href="#" class="anime">
+            <a href="./anime.html" class="anime">
                 <img src="" alt="Anime 2" height="128px" width="128px">
                 <span>Anime 2</span>
             </a>
