@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaVivo | Nombre del Anime</title>
+</head>
+<body>
+    <!-- Header de un usuario tipo espectador -->
+    <header>
+        <!-- Header 1 -->
+        <div id="header1">
+            <!-- Logotipo -->
+            <a href="#" id="logo">
+                <img src="" alt="Logo"  height="128px" width="128px">
+            </a>
+            <!-- Buscador -->
+            <form method="post">
+                <input type="search" name="buscador" id="buscador" autocomplete="on">
+                <button type="submit"></button>
+            </form>
+            <!-- Herramientas de usuario -->
+            <div class="herrSup">
+                <!-- Botón de notificaciones -->
+                <span></span>
+                <!-- Opciones de usuario -->
+                <div class="opcUsua">
+                    <!-- Nombre del espectador -->
+                    <span>NombreUsuario</span>
+                    <!-- Imagen del espectador -->
+                    <div class="imgUsuario">
+                        <!-- Aquí hay que ver la manera de que se puedan intercalar entre img y span, para cuando haya o no imagen para el espectador -->
+                        <img src="#" alt="Imagen del espectador">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header 2 -->
+        <div id="header2">
+            <!-- Alfabeto -->
+            <ul>
+                <li><a href="#">#</a></li>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navegador -->
+    <aside>
+        <nav>
+            <li><span></span><span>Menú</span></li>
+            <li><span></span><span>Inicio</span></li>
+            <li><span></span><span>En emisión</span></li>
+            <!-- Lista de Género -->
+            <li>
+                <span></span>
+                <span>Género</span>
+                <ul>
+                    <li>Aventura</li>
+                    <li>Terror</li>
+                    <li>Acción</li>
+                    <li>Suspenso</li>
+                    <li>Comedia</li>
+                </ul>
+            </li>
+            <!-- Duración en minutos -->
+            <li>
+                <span></span>
+                <span>Minutos</span>
+                <ul>
+                    <li>1 - 5 Minutos</li>
+                    <li>6 - 14 Minutos</li>
+                    <li>15 - 30 Minutos</li>
+                    <li>Películas</li>
+                </ul>
+            </li>
+            <!-- Duración en Capitulos -->
+            <li>
+                <span></span>
+                <span>Capitulos</span>
+                <ul>
+                    <li>1 - 15 Episodios</li>
+                    <li>16 - 24 Episodios</li>
+                    <li>25 - 50 Episodios</li>
+                    <li>51 - 120 Episodios</li>
+                    <li>121 Episodios...</li>
+                </ul>
+            </li>
+            <!-- Demografía -->
+            <li>
+                <span></span>
+                <span>Demografía</span>
+                <ul>
+                    <li>Ecchi</li>
+                    <li>Harem</li>
+                    <li>Seinen</li>
+                    <li>Shojo</li>
+                    <li>Shounen</li>
+                </ul>
+            </li>
+            <!-- Sagas -->
+            <li>
+                <span></span>
+                <span>Sagas</span>
+            </li>
+            <!-- Pendientes -->
+            <li>
+                <span></span>
+                <span>Pendientes</span>
+            </li>
+            <hr>
+            <!-- Favoritos -->
+            <li>
+                <span></span>
+                <span>Favoritos</span>
+            </li>
+            <li>
+                <span></span>
+                <span>Mi lista Anime</span>
+            </li>
+        </nav>
+    </aside>
+
+    <!-- Sección del anime en sí -->
+    <main>
+        <!-- Hay que poner un fondo degradado -->
+        <!-- La siguiente imagen representa un segundo fondo en el caso de que no se puede insertar en el background -->
+        <img src="#" alt="fondo1" class="fondo1">
+        <!-- Todo el anime en general -->
+        <div class="anime">
+            <!-- Información del anime junto con algunas funciones extra -->
+            <div class="infoAni">
+                <!-- Imagen del anime con algunas funciones extra para el Espectador -->
+                <div class="infoAni2">
+                    <!-- Portada del anime *Debe cambiar con la imagen de cada temporada* -->
+                    <img src="#" alt="Portada">
+                    <!-- Botón para agregar el anime a favoritos del Espectador -->
+                    <button class="fav">
+                        <span></span>
+                    </button>
+                    <!-- Botón para darle me gusta a un anime -->
+                    <button>
+                        <!-- Icono de like -->
+                        <span></span>
+                        <!-- Número de likes en total del anime -->
+                        <span>1</span>
+                    </button>
+                    <!-- Botón para agregar a una lista personal de anime del Espectador -->
+                    <button>
+                        <span></span>
+                    </button>
+                    <!-- Contenedor del aviso del estado del anime -->
+                    <div class="estado">
+                        <span></span>
+                        <span>Finalizado</span>
+                    </div>
+                </div>
+                <!-- Título de anime -->
+                <h2>Título Anime</h2>
+                <!-- Año del anime -->
+                <span>Año</span>
+                <!-- Géneros del anime *Considerar que sean links* -->
+                <span>Acción, Ciencia Ficción, Comedia, Drama, Escolar, Shounen</span>
+                <!-- Director del Anime -->
+                <span>Director(es): <span>Director</span></span>
+                Sinópsis:
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nulla neque inventore, laboriosam, quibusdam, a consectetur alias quod dolorum fugit excepturi. Accusantium repellat tenetur ea rem. Harum molestiae maxime voluptas.
+                Fugit, est tempore! Necessitatibus cupiditate eaque delectus illo! Soluta reprehenderit cum, aliquid maxime repudiandae quisquam maiores debitis ad quae enim sunt, similique ullam et ipsum molestiae inventore doloribus possimus perspiciatis!</span>
+            </div>
+
+            <!-- Temporadas del anime -->
+            <div class="temporada">
+                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
+                <div class="btn-temporada">
+                    Temporada 1
+                    <span></span>
+                </div>
+                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
+                <div class="tempCap">
+                    <!-- Imagen de fondo de la temporada *En el caso de que no se vea con css* -->
+                    <img src="#" alt="Portada de Temporada">
+                    <!-- Capítulos de la Temporada -->
+                    <a href="#">Capítulo 1</a>
+                    <a href="#">Capítulo 2</a>
+                    <a href="#">Capítulo 3</a>
+                    <a href="#">Capítulo 4</a>
+                    <a href="#">Capítulo 5</a>
+                    <a href="#">Capítulo 6</a>
+                    <a href="#">Capítulo 7</a>
+                    <a href="#">Capítulo 8</a>
+                    <a href="#">Capítulo 9</a>
+                    <a href="#">Capítulo 10</a>
+                    <a href="#">Capítulo 11</a>
+                    <a href="#">Capítulo 12</a>
+                </div>
+            </div>
+            <div class="temporada">
+                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
+                <div class="btn-temporada">
+                    Temporada 2
+                    <span></span>
+                </div>
+                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
+                <div class="tempCap">
+                    <!-- Imagen de fondo de la temporada *En el caso de que no se vea con css* -->
+                    <img src="#" alt="Portada de Temporada">
+                    <!-- Capítulos de la Temporada -->
+                    <a href="#">Capítulo 1</a>
+                    <a href="#">Capítulo 2</a>
+                    <a href="#">Capítulo 3</a>
+                    <a href="#">Capítulo 4</a>
+                    <a href="#">Capítulo 5</a>
+                    <a href="#">Capítulo 6</a>
+                    <a href="#">Capítulo 7</a>
+                    <a href="#">Capítulo 8</a>
+                    <a href="#">Capítulo 9</a>
+                    <a href="#">Capítulo 10</a>
+                    <a href="#">Capítulo 11</a>
+                    <a href="#">Capítulo 12</a>
+                </div>
+            </div>
+            <div class="temporada">
+                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
+                <div class="btn-temporada">
+                    Temporada 3
+                    <span></span>
+                </div>
+                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
+            </div>
+            <div class="temporada">
+                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
+                <div class="btn-temporada">
+                    Temporada 4
+                    <span></span>
+                </div>
+                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
+            </div>
+            <div class="temporada">
+                <!-- botón desplegable de la temporada para mostrar los capítulos de la misma -->
+                <div class="btn-temporada">
+                    Temporada 5
+                    <span></span>
+                </div>
+                <!-- Capítulos correspondientes de la temporada *Al mostrar los capítulos no deben de mostrarse más de 12, los demás capítulos deben de mostrarse con scroll* -->
+            </div>
+
+            <!-- Saga de la que pertenece el anime -->
+            <div class="sagaAnime">
+                <!-- Orden seleccionado de ver la saga -->
+                <select name="LT" id="lt">
+                    <option value="orden de emisión">Orden de Emisión</option>
+                    <option value="orden cronológico">Orden Cronológico</option>
+                    <option value="orden recomendado">Orden Recomendado</option>
+                </select>
+                <!-- Línea de Tiempo -->
+                <div class="lt">
+                    <!-- Sagas en la línea de Tiempo *Se deben de ver 3 y cacho* -->
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 1">
+                        <span>Anime 1</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 2">
+                        <span>Anime 2</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 3">
+                        <span>Anime 3</span>
+                    </a>
+                    <a href="#" class="saga">
+                        <img src="#" alt="Anime 4">
+                        <span>Anime 4</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Animes similares de acuerdo a los géneros -->
+        <div class="similares">
+            <!-- Lista de los animes -->
+            <a href="#" class="anime">
+                <img src="" alt="Anime 2" height="128px" width="128px">
+                <span>Anime 2</span>
+            </a>
+            <a href="#" class="anime">
+                <img src="" alt="Anime 3" height="128px" width="128px">
+                <span>Anime 3</span>
+            </a>
+            <a href="#" class="anime">
+                <img src="" alt="Anime 4" height="128px" width="128px">
+                <span>Anime 4</span>
+            </a>
+            <a href="#" class="anime">
+                <img src="" alt="Anime 5" height="128px" width="128px">
+                <span>Anime 5</span>
+            </a>
+            <a href="#" class="anime">
+                <img src="" alt="Anime 6" height="128px" width="128px">
+                <span>Anime 6</span>
+            </a>
+            <a href="#" class="anime">
+                <img src="" alt="Anime 7" height="128px" width="128px">
+                <span>Anime 7</span>
+            </a>
+            <a href="#" class="anime">
+                <img src="" alt="Anime 8" height="128px" width="128px">
+                <span>Anime 8</span>
+            </a>
+        </div>
+        <!-- Sección de los comentarios -->
+        <section class="comen">
+            Comentarios
+            <hr>
+            <!-- Formulario para hacer un comentario PENDIENTE -->
+            <div class="formComent">
+                <!-- Imagen del espectador -->
+                <div class="imgUsuario">
+                    <!-- Aquí hay que ver la manera de que se puedan intercalar entre img y span, para cuando haya o no imagen para el espectador -->
+                    <img src="#" alt="Imagen del espectador">
+                    <span></span>
+                </div>
+                <!-- Input para comentar -->
+                <input type="text" name="comenAnime" id="comenAnime" placeholder="Escribe tu opinión">
+            </div>
+
+            <div class="comenUser">
+                <!-- Imagen del espectador -->
+                <div class="imgUsuario">
+                    <!-- Aquí hay que ver la manera de que se puedan intercalar entre img y span, para cuando haya o no imagen para el espectador -->
+                    <img src="#" alt="Imagen del espectador">
+                    <span></span>
+                </div>
+                <!-- Información del comentario -->
+                <div class="infoComen">
+                    <!-- Nombre del Usuario que comentó -->
+                    <span>Nombre de Usuario</span>
+                    <!-- Fecha en la que se comentó -->
+                    <span>01/Enero/2024</span>
+                    <!-- Hora en la que se comentó -->
+                    <span>7:34 p.m.</span>
+                </div>
+                <!-- Botón de opciones del comentario -->
+                <div class="btn-Op">
+                    <span></span>
+                </div>
+
+                <!-- Contenido del comentario -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum aliquid reiciendis laudantium, modi quas vel expedita, deserunt illo dolorem suscipit cupiditate officia accusantium eveniet harum neque accusamus doloremque sit!
+                Ut dolor perferendis nemo tenetur modi! Facilis necessitatibus dolore earum quasi saepe soluta vero quis provident corrupti rem enim error modi, magnam velit aliquid? Dolorum asperiores tempora dicta labore minima.</p>
+
+                <!-- Botón para likes de un comentario -->
+                <div class="likeComen">
+                    <span></span>
+                    <span>30</span>
+                </div>
+                <!-- Botón para responder un comentario -->
+                <div class="responder">
+                    <span></span>
+                    Responder
+                </div>
+
+                <!-- Sección donde se mostrarán las respuestas de los comentarios -->
+                <div class="respComen">
+                    <div class="comenUser">
+                        <!-- Imagen del espectador -->
+                        <div class="imgUsuario">
+                            <!-- Aquí hay que ver la manera de que se puedan intercalar entre img y span, para cuando haya o no imagen para el espectador -->
+                            <img src="#" alt="Imagen del espectador">
+                            <span></span>
+                        </div>
+                        <!-- Información del comentario -->
+                        <div class="infoComen">
+                            <!-- Nombre del Usuario que comentó -->
+                            <span>Nombre de Usuario</span>
+                            <!-- Fecha en la que se comentó -->
+                            <span>01/Enero/2024</span>
+                            <!-- Hora en la que se comentó -->
+                            <span>7:34 p.m.</span>
+                        </div>
+                        <!-- Botón de opciones del comentario -->
+                        <div class="btn-Op">
+                            <span></span>
+                        </div>
+        
+                        <!-- Contenido del comentario -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum aliquid reiciendis laudantium, modi quas vel expedita, deserunt illo dolorem suscipit cupiditate officia accusantium eveniet harum neque accusamus doloremque sit!
+                        Ut dolor perferendis nemo tenetur modi! Facilis necessitatibus dolore earum quasi saepe soluta vero quis provident corrupti rem enim error modi, magnam velit aliquid? Dolorum asperiores tempora dicta labore minima.</p>
+        
+                        <!-- Botón para likes de un comentario -->
+                        <div class="likeComen">
+                            <span></span>
+                            <span>30</span>
+                        </div>
+                        <!-- Botón para responder un comentario -->
+                        <div class="responder">
+                            <span></span>
+                            Responder
+                        </div>
+        
+                        <div class="respComen"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
