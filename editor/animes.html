@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/menu.css">
     <title>Animes</title>
 </head>
 <body>
     <!-- Header que tiene un editor, que es parecido al de un Espectador -->
     <header>
         <!-- Header 1 -->
-        <div id="header1">
+        <div class="header1">
             <!-- Logotipo -->
             <a href="#" id="logo">
-                <img src="" alt="Logo" height="128px" width="128px">
+                <img src="./../img/AnimaVivo.png" alt="Logo" height="128px" width="256px">
             </a>
             <!-- Buscador -->
-            <form method="post">
+            <form id="formBusc" method="post">
                 <input type="search" name="buscador" id="buscador" autocomplete="on">
-                <button type="submit"></button>
+                <button type="submit">
+                    <span></span>
+                </button>
             </form>
             <!-- Icono del usuario y las herramientas que ofrece este Rol -->
             <div id="iconUsuario">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+                <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
             </div>
         </div>
 
         <!-- Header 2 -->
-        <div id="header2">
+        <div class="header2">
             <!-- Alfabeto -->
             <ul>
                 <li><a href="#">#</a></li>
@@ -65,8 +70,8 @@
         <!-- Panel de control del Editor -->
         <aside id="panelControl">
             <!-- Icono o Imagen del Usuario -->
-            <div id="iconUsuAside">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+            <div class="iconUsuAside">
+                <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
             </div>
             <!-- Bienvenida y nombre del usuario -->
             <span id="bien">Bienvenido</span>
@@ -153,8 +158,8 @@
                     
                     <!-- Lista de animes con sus enlaces -->
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 1" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 1" height="128px" width="128px">
                             <span>Anime 1</span>
                         </a>
                         <button class="eliminarA">
@@ -162,8 +167,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 2" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 2" height="128px" width="128px">
                             <span>Anime 2</span>
                         </a>
                         <button class="eliminarA">
@@ -171,8 +176,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 3" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
                             <span>Anime 3</span>
                         </a>
                         <button class="eliminarA">
@@ -180,8 +185,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 4" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 4" height="128px" width="128px">
                             <span>Anime 4</span>
                         </a>
                         <button class="eliminarA">
@@ -189,8 +194,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 5" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 5" height="128px" width="128px">
                             <span>Anime 5</span>
                         </a>
                         <button class="eliminarA">
@@ -198,8 +203,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 6" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 6" height="128px" width="128px">
                             <span>Anime 6</span>
                         </a>
                         <button class="eliminarA">
@@ -207,8 +212,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 7" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 7" height="128px" width="128px">
                             <span>Anime 7</span>
                         </a>
                         <button class="eliminarA">
@@ -216,8 +221,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 8" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 8" height="128px" width="128px">
                             <span>Anime 8</span>
                         </a>
                         <button class="eliminarA">
@@ -225,8 +230,8 @@
                         </button>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 9" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 9" height="128px" width="128px">
                             <span>Anime 9</span>
                         </a>
                         <button class="eliminarA">
