@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/agregar.css">
     <title>Agregar Anime</title>
 </head>
 <body>
     <!-- Header a la hora de subir un anime -->
-    <header>
+    <header class="header1">
         <!-- Enlace para regresar al menú del editor -->
         <a href="./animes.html">
-            <img src="" alt="Logotipo" height="128px" width="128px">
+            <img src="./../img/AnimaVivo_logo.png" alt="Logotipo" height="128px" width="128px">
         </a>
 
         <!-- Nombre del editor que está subiendo este anime -->
@@ -49,7 +52,7 @@
             <!-- año de emisión del anime -->
             <input type="month" name="añoAni" id="yearAni" placeholder="Año">
             <!-- Lista desplegable de selección multiple para los géneros -->
-            <div>
+            <div class="listOpc">
                 <button>Géneros <span></span></button>
                 <div>
                     <!-- Contenedores de los input -->
@@ -79,13 +82,13 @@
                         <label for="comediaR">Comedia Romántica</label>
                     </div>
                     <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button><span></span>Editar</button>
-                    <button><span></span>Agregar</button>
-                    <button><span></span>Guardar</button>
+                    <button class="editar"><span></span>Editar</button>
+                    <button class="agregar"><span></span>Agregar</button>
+                    <button class="guardar"><span></span>Guardar</button>
                 </div>
             </div>
             <!-- Lista desplegable de selección para la duración de minutos -->
-            <div>
+            <div class="listOpc">
                 <button>Duración(Minutos) <span></span></button>
                 <div>
                     <!-- Contenedores de los input -->
@@ -115,13 +118,13 @@
                         <label for="50">50 minutos</label>
                     </div>
                     <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button><span></span>Editar</button>
-                    <button><span></span>Agregar</button>
-                    <button><span></span>Guardar</button>
+                    <button class="editar"><span></span>Editar</button>
+                    <button class="agregar"><span></span>Agregar</button>
+                    <button class="guardar"><span></span>Guardar</button>
                 </div>
             </div>
             <!-- Lista desplegable de selección para la duración de capitulos -->
-            <div>
+            <div class="listOpc">
                 <button>Duración(Capitulos) <span></span></button>
                 <div>
                     <!-- Contenedores de los input -->
@@ -151,13 +154,13 @@
                         <label for="50-100">50 a 100 capitulos</label>
                     </div>
                     <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button><span></span>Editar</button>
-                    <button><span></span>Agregar</button>
-                    <button><span></span>Guardar</button>
+                    <button class="editar"><span></span>Editar</button>
+                    <button class="agregar"><span></span>Agregar</button>
+                    <button class="guardar"><span></span>Guardar</button>
                 </div>
             </div>
             <!-- Lista desplegable de selección multiple para la demografía -->
-            <div>
+            <div class="listOpc">
                 <button>Demografía <span></span></button>
                 <div>
                     <!-- Contenedores de los input -->
@@ -187,9 +190,9 @@
                         <label for="seinen">Seinen</label>
                     </div>
                     <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button><span></span>Editar</button>
-                    <button><span></span>Agregar</button>
-                    <button><span></span>Guardar</button>
+                    <button class="editar"><span></span>Editar</button>
+                    <button class="agregar"><span></span>Agregar</button>
+                    <button class="guardar"><span></span>Guardar</button>
                 </div>
             </div>
             <!-- Input para saber si el anime está o no en Emisión -->
@@ -340,7 +343,7 @@
                         <!-- Botón para agregar un capítulo nuevo, este tendrá nombre "Capitulo" por defecto, así como también tener un número consecutivo del capitulo anterior agregado -->
                         <button class="btnAgreCap">
                             <span></span>
-                            <!-- Agregar Capitulo -->
+                            Agregar Capitulo
                         </button>
                     </div>
                 </div>
@@ -352,7 +355,7 @@
                     <div>
                         <!-- Input con su botón para agregar capítulos -->
                         <input type="number" name="numCap" id="numCap" min="0">
-                        <button>
+                        <button class="masCaps">
                             <span></span>
                         </button>
                     </div>
@@ -367,7 +370,7 @@
                 </button>
                 
                 <!-- Botón para agregar otra temporada en secuencia de posición de la actual temporada -->
-                <button>
+                <button class="agreTemp">
                     <span></span>
                     Agregar Temporada
                 </button>

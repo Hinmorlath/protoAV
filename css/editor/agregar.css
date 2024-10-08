@@ -1,0 +1,26 @@
+input, textarea {
+    background: rgba(0, 0, 0, .6);
+    border: none;
+}
+.agregar, .editar, #numCap {
+    background: #fff;
+    border: none;
+}
+
+.btnAgreCap, .agreTemp {
+    background: #000;
+}
+.agreTemp {
+    border: 10px solid #fff;
+}
+#etiAnime {
+    border: 5px solid rgba(255, 255, 255, .8);
+}
+
+.listOpc > div {
+    background: #000;
+}
+
+#horImg, #imgTemp {
+    border: 3px dashed rgba(0, 0, 0, .8);
+}
