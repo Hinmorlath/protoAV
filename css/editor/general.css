@@ -25,7 +25,7 @@
 }
 /* Color del contorno de los portales */
 .logoRol {
-    border: 8px solid rgba(255, 255, 255, .5);
+    border: .6rem solid rgba(255, 255, 255, .5);
 }
 /* Color café */
 .masCaps {
