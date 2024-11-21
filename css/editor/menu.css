@@ -3,6 +3,10 @@
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, .8);
 }
+#formBusc > button {
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+}
 
 #panelControl, .iconUsuAside {
     border: 10px solid #000;

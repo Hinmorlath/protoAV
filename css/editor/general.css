@@ -1,4 +1,16 @@
-/* colores primarios = azul:       rojo:#3A0000 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color del background de los portales */
+.main-portal{
+    background: #00113C;
+    height: 100vh;
+}
+
+/* colores primarios = azul:#00113C       rojo:#3A0000 */
 .header1 {
     background: #3A0000;
 }
@@ -25,7 +37,17 @@
 }
 /* Color del contorno de los portales */
 .logoRol {
-    border: .6rem solid rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, .5);
+}
+.rol {
+    color: rgba(255, 255, 255, .5);
+}
+/* colores del espectador */
+.espectador {
+    background: #063804;
+}
+.editor {
+    background: #3A0000;
 }
 /* Color café */
 .masCaps {

@@ -6,39 +6,42 @@
     <link rel="shortcut icon" href="./../img/AnimaVivo_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./../css/editor/general.css">
     <link rel="stylesheet" href="./../css/editor/portal.css">
+    <script src="./../fontawesome/all.js"></script>
     <title>Portal</title>
 </head>
 <body>
-    <!-- Enlace del 1er Rol -->
-    <a href="#" id="rol">
-        <!-- Logo del Rol Espectador -->
-        <div class="logoRol">
-            <span></span>
-        </div>
-
-        <!-- Título del Rol -->
-        <span id="titRol">Espectador</span>
-
-        <!-- Descripción del Rol -->
-        <p id="descRol">
-            Modo Espectador para ver AnimaVivo como lo haría un usuario común.
-        </p>
-    </a>
-
-    <!-- Enlace del 2do Rol -->
-    <a href="./animes.html" id="rol">
-        <!-- Logo del Rol Editor -->
-        <div class="logoRol">
-            <span></span>
-        </div>
-
-        <!-- Título del Rol -->
-        <span id="titRol">Editor</span>
-
-        <!-- Descripción del Rol -->
-        <p id="descRol">
-            Modo Editor para administrar el contenido que se suba a AnimaVivo
-        </p>
-    </a>
+    <main class="main-portal">
+        <!-- Enlace del 1er Rol -->
+        <a href="#" class="rol espectador">
+            <!-- Logo del Rol Espectador -->
+            <div class="logoRol">
+                <i class="fa-regular fa-user"></i>
+            </div>
+    
+            <!-- Título del Rol -->
+            <span class="titRol">Espectador</span>
+    
+            <!-- Descripción del Rol -->
+            <p class="descRol">
+                Modo Espectador para ver AnimaVivo como lo haría un usuario común.
+            </p>
+        </a>
+    
+        <!-- Enlace del 2do Rol -->
+        <a href="./animes.html" class="rol editor">
+            <!-- Logo del Rol Editor -->
+            <div class="logoRol">
+                <i class="fa-solid fa-user-secret"></i>
+            </div>
+    
+            <!-- Título del Rol -->
+            <span class="titRol">Editor</span>
+    
+            <!-- Descripción del Rol -->
+            <p class="descRol">
+                Modo Editor para administrar el contenido que se suba a AnimaVivo
+            </p>
+        </a>
+    </main>
 </body>
 </html>

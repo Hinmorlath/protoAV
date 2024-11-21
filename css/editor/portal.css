@@ -1,7 +1,22 @@
+.rol {
+    border-radius: 2rem;
+    width: 20%;
+    height: 60%;
+    display: inline-block;
+    padding: 2rem;
+    text-decoration: none;
+}
+
 .logoRol {
+    border-width: .5rem;
+    border-style: solid;
     border-radius: 100%;
 }
 
-#titRol {
+.titRol {
     margin-bottom: 2rem;
+    display: block;
+}
+.titRol, .descRol {
+    text-align: center;
 }
