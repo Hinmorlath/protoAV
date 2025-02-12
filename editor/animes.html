@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./../img/AnimaVivo_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./../css/editor/general.css">
     <link rel="stylesheet" href="./../css/editor/menu.css">
+    <script src="./../fontawesome/all.js"></script>
     <title>Animes</title>
 </head>
 <body>
@@ -14,19 +15,24 @@
         <!-- Header 1 -->
         <div class="header1">
             <!-- Logotipo -->
-            <a href="#" id="logo">
+            <a href="#" id="logo" class="logo">
                 <img src="./../img/AnimaVivo.png" alt="Logo" height="128px" width="256px">
             </a>
             <!-- Buscador -->
             <form id="formBusc" method="post">
-                <input type="search" name="buscador" id="buscador" autocomplete="on">
+                <input type="search" name="buscador" id="buscador" autocomplete="on" placeholder="Buscar...">
                 <button type="submit">
-                    <span></span>
+                    <span class="fa-solid fa-magnifying-glass"></span>
                 </button>
             </form>
             <!-- Icono del usuario y las herramientas que ofrece este Rol -->
-            <div id="iconUsuario">
-                <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+            <div class="herUsu">
+                <div class="icoNot">
+                    <span class="fa-regular fa-bell"></span>
+                </div>
+                <div id="iconUsuario">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
         </div>
 
@@ -68,86 +74,91 @@
     <!-- Main del Editor -->
     <main>
         <!-- Panel de control del Editor -->
-        <aside id="panelControl">
-            <!-- Icono o Imagen del Usuario -->
-            <div class="iconUsuAside">
-                <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+        <aside class="panelControl">
+            <div class="espacio">
+                <!-- Icono o Imagen del Usuario -->
+                <div class="iconUsuAside">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
             <!-- Bienvenida y nombre del usuario -->
-            <span id="bien">Bienvenido</span>
+            <span>Bienvenido</span>
             <span id="nomUsuAside">1er Nombre del Usuario</span>
 
             <!-- Opciones del Editor -->
             <a href="#">
-                <span></span><span>Animes</span>
+                <span class="fa-solid fa-clapperboard"></span><span>Animes</span>
             </a>
             <a href="./capitulos.html">
-                <span></span><span>Capítulos</span>
+                <span class="fa-solid fa-table-list"></span><span>Capítulos</span>
             </a>
             <a href="./sagas.html">
-                <span></span><span>Sagas</span>
+                <span class="fa-solid fa-photo-film"></span><span>Sagas</span>
             </a>
             <a href="./animesPendientes.html">
-                <span></span><span>Animes Pendientes</span>
+                <span class="fa-solid fa-arrows-rotate"></span><span>Animes Pendientes</span>
             </a>
             <a href="./comentarios.html">
-                <span></span><span>Comentarios</span>
+                <span class="fa-regular fa-comments"></span><span>Comentarios</span>
             </a>
             <a href="./historialAnime.html">
-                <span></span><span>Historial</span>
+                <span class="fa-solid fa-clock-rotate-left"></span><span>Historial</span>
             </a>
         </aside>
 
         <!-- Información de la opción del panel -->
         <section>
             <!-- Título de la sección dependiente del panel -->
-            <span id="titSeccion">Animes</span>
+            <h2 id="titSeccion">Animes</h2>
 
             <!-- Información cambiante del panel de control -->
             <div id="infoPanel">
-                <!-- Control de la clasificación de los animes mostrados -->
-                <button>Emsión</button>
-                <!-- Botón para ver los géneros ¡TEMPORAL! -->
-                <div>
-                    <button id="geneInfoPanel">Género <span></span></button>
-                    <select name="Genero" id="genero" size="4">
-                        <option value="Acción">Acción</option>
-                        <option value="Aventura">Aventura</option>
-                        <option value="Ciencia Ficción">Ciencia Ficción</option>
-                        <option value="Comedia">Comedia</option>
-                        <option value="Comedia Romántica">Comedia Romántica</option>
-                    </select>
-                </div>
-                <!-- Botón o lista desplegable de la duración por minutos -->
-                <div>
-                    <button id="duraMInfoPanel">Duración(Minutos) <span></span></button>
-                    <select name="DuracionM" id="duraM" size="4">
-                        <option value="5">5 Minutos</option>
-                        <option value="10">10 Minutos</option>
-                        <option value="20">20 Minutos</option>
-                        <option value="30">30 Minutos</option>
-                    </select>
-                </div>
-                <!-- Botón o lista desplegable de la duración por capítulos -->
-                <div>
-                    <button id="duraCInfoPanel">Duración(Capitulos) <span></span></button>
-                    <select name="DuracionC" id="duraC" size="4">
-                        <option value="1 a 5">1 a 5 Capitulos</option>
-                        <option value="6 a 12">6 a 12 Capitulos</option>
-                        <option value="13 a 24">13 a 24 Capitulos</option>
-                        <option value="25 a 50">25 a 50 Capitulos</option>
-                    </select>
-                </div>
-                <!-- Boton desplegable de la demografia -->
-                <div>
-                    <button id="demogInfoPanel">Demografía <span></span></button>
-                    <select name="Demografia" id="demografia" size="4">
-                        <option value="Bishojo">Bishojo</option>
-                        <option value="Bishonen">Bishonen</option>
-                        <option value="Ecchi">Ecchi</option>
-                        <option value="Harem">Harem</option>
-                    </select>
-                </div>
+                <!-- Filtración de orden -->
+                 <div class="filtros">
+                     <!-- Control de la clasificación de los animes mostrados -->
+                     <button>Emsión</button>
+                     <!-- Botón para ver los géneros ¡TEMPORAL! -->
+                     <div>
+                         <button id="geneInfoPanel">Género <span class="fa-solid fa-caret-down"></span></button>
+                         <select name="Genero" id="genero" size="4">
+                             <option value="Acción">Acción</option>
+                             <option value="Aventura">Aventura</option>
+                             <option value="Ciencia Ficción">Ciencia Ficción</option>
+                             <option value="Comedia">Comedia</option>
+                             <option value="Comedia Romántica">Comedia Romántica</option>
+                         </select>
+                     </div>
+                     <!-- Botón o lista desplegable de la duración por minutos -->
+                     <div>
+                         <button id="duraMInfoPanel">Duración(Minutos) <span class="fa-solid fa-caret-down"></span></button>
+                         <select name="DuracionM" id="duraM" size="4">
+                             <option value="5">5 Minutos</option>
+                             <option value="10">10 Minutos</option>
+                             <option value="20">20 Minutos</option>
+                             <option value="30">30 Minutos</option>
+                         </select>
+                     </div>
+                     <!-- Botón o lista desplegable de la duración por capítulos -->
+                     <div>
+                         <button id="duraCInfoPanel">Duración(Capitulos) <span class="fa-solid fa-caret-down"></span></button>
+                         <select name="DuracionC" id="duraC" size="4">
+                             <option value="1 a 5">1 a 5 Capitulos</option>
+                             <option value="6 a 12">6 a 12 Capitulos</option>
+                             <option value="13 a 24">13 a 24 Capitulos</option>
+                             <option value="25 a 50">25 a 50 Capitulos</option>
+                         </select>
+                     </div>
+                     <!-- Boton desplegable de la demografia -->
+                     <div>
+                         <button id="demogInfoPanel">Demografía <span class="fa-solid fa-caret-down"></span></button>
+                         <select name="Demografia" id="demografia" size="4">
+                             <option value="Bishojo">Bishojo</option>
+                             <option value="Bishonen">Bishonen</option>
+                             <option value="Ecchi">Ecchi</option>
+                             <option value="Harem">Harem</option>
+                         </select>
+                     </div>
+                 </div>
                 
                 <!-- Seccion donde se visualizan los animes que se han subido -->
                 <div id="animesSubidos">

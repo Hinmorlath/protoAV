@@ -1,13 +1,139 @@
-#buscador {
-    background: none;
-    border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, .8);
+/* GENERAL */
+.logo, #formBusc, .herUsu, .herUsu > div, .header2 li, .panelControl, aside, section, #infoPanel div {
+    display: inline-block;
 }
-#formBusc > button {
-    border: none;
-    border-radius: 0 1rem 1rem 0;
+aside a, aside > span {
+    display: block;
+}
+.header2 a, aside a {
+    text-decoration: none;
+    font-weight: bold;
+}
+/* HEADER */
+    /* LOGO */
+    .logo {
+        width: 20%;
+    }
+        /* IMG DEL LOGO */
+        .logo > img {
+            width: 100%;
+            height: 100%;
+        }
+    /* BUSCADOR */
+    #formBusc {
+        width: 60%;
+    }
+        /* Input para el buscador */
+        #buscador {
+            background: none;
+            border: none;
+            width: 60%;
+            padding: 1rem 0.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-bottom: 2px solid rgba(255, 255, 255, .8);
+        }
+        /* Botón para el buscador */
+        #formBusc > button {
+            border: none;
+            border-radius: 0 1rem 1rem 0;
+            height: 2rem;
+            width: 10%;
+            cursor: pointer;
+        }
+    .herUsu {
+        width: 15%;
+    }
+    /* Iconos de herramientas para el usuario */
+    .herUsu > div {
+        width: 30%;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 2rem;
+        padding: 0.6rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+    /* Imagen que abarca al icono del usuario */
+    #iconUsuario > img {
+        width: 100%;
+        height: 100%;
+    }
+
+/* #Header2  */
+.header2 a {
+    color: rgba(255, 255, 255, .8);
 }
 
-#panelControl, .iconUsuAside {
-    border: 10px solid #000;
+/* Main */
+main {
+    background: #00113C;
 }
+    /* ASIDE */
+    aside {
+        width: 20%;
+        border-radius: 2.2rem;
+        background: #3A0000;
+    }
+    aside, aside a {
+        color: rgba(255, 255, 255, .8);
+    }
+        .espacio {
+            height: 8rem;
+        }
+        /* Icono de la imagen */
+        .iconUsuAside {
+            width: 75%;
+            border-radius: 100%;
+        }
+        .iconUsuAside img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Texto span del aside */
+        aside span {
+            text-align: center;
+        }
+        #nomUsuAside {
+            font-size: 1.1rem;
+        }
+
+        /* Links del aside */
+        aside a {
+            padding: 0.4rem 1rem;
+        }
+        aside a:hover {
+            border-left: 0.4rem solid #001A5F;
+            background: #444;
+        }
+    
+    /* Section */
+    section {
+        width: 79%;
+    }
+    h2 {
+        color: rgba(255, 255, 255, .8);
+        font-size: 1.6rem;
+    }
+    /* Filtros */
+        .filtros select, .filtros button {
+            color: rgba(255, 255, 255, .8);
+        }
+        .filtros select {
+            border-radius: 0rem 0rem 1rem 1rem;
+            padding: 0.2rem 0.5rem;
+            display: none;
+        }
+        .filtros button {
+            background: #3A0000;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 1rem;
+        }
+        
+
+    
+    /* Bordes */
+    .panelControl, .iconUsuAside {
+        border: 0.5rem solid #000;
+    }

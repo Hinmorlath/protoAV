@@ -1,22 +1,26 @@
 .rol {
     border-radius: 2rem;
-    width: 20%;
-    height: 60%;
+    width: 18%;
+    min-width: 230px;
     display: inline-block;
     padding: 2rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .logoRol {
     border-width: .5rem;
     border-style: solid;
     border-radius: 100%;
+    font-size: 4rem;
+    padding: 1.6rem;
 }
 
 .titRol {
     margin-bottom: 2rem;
-    display: block;
+    font-size: 1.8rem;
 }
 .titRol, .descRol {
     text-align: center;
+    display: block;
 }
