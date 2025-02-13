@@ -1,0 +1,39 @@
+/* GENERALES */
+/* Desplegables */
+.filtros > div > button::after{
+    font: var(--fa-font-solid);
+    content: "\f0d7";
+    margin-left: 0.6rem;
+}
+
+/* MENÚ EDITOR */
+.film::before {
+    font: var(--fa-font-solid);
+    content: "\e131";
+    margin-right: 0.6rem;
+}
+.list::before {
+    font: var(--fa-font-solid);
+    content: "\f00b";
+    margin-right: 0.6rem;
+}
+.photo-film::before {
+    font: var(--fa-font-solid);
+    content: "\f87c";
+    margin-right: 0.6rem;
+}
+.arrows-rotate::before {
+    font: var(--fa-font-solid);
+    content: "\f021";
+    margin-right: 0.6rem;
+}
+.comments::before {
+    font: var(--fa-font-regular);
+    content: "\f086";
+    margin-right: 0.6rem;
+}
+.clock-rotate::before {
+    font: var(--fa-font-solid);
+    content: "\f1da";
+    margin-right: 0.6rem;
+}

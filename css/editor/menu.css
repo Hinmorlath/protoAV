@@ -1,13 +1,12 @@
 /* GENERAL */
-.logo, #formBusc, .herUsu, .herUsu > div, .header2 li, .panelControl, aside, section, #infoPanel div {
+.logo, #formBusc, .herUsu, .herUsu > div, .header2 li, .panelControl, aside, section, #infoPanel div, .agreAni, .anime{
     display: inline-block;
 }
 aside a, aside > span {
     display: block;
 }
-.header2 a, aside a {
+.header2 a, aside a , .agreAni, .anime{
     text-decoration: none;
-    font-weight: bold;
 }
 /* HEADER */
     /* LOGO */
@@ -65,9 +64,6 @@ aside a, aside > span {
 }
 
 /* Main */
-main {
-    background: #00113C;
-}
     /* ASIDE */
     aside {
         width: 20%;
@@ -79,11 +75,14 @@ main {
     }
         .espacio {
             height: 8rem;
+            position: relative;
         }
         /* Icono de la imagen */
         .iconUsuAside {
             width: 75%;
             border-radius: 100%;
+            position: absolute;
+            bottom: 0;
         }
         .iconUsuAside img {
             width: 100%;
@@ -101,10 +100,13 @@ main {
         /* Links del aside */
         aside a {
             padding: 0.4rem 1rem;
+            position: relative;
         }
         aside a:hover {
             border-left: 0.4rem solid #001A5F;
             background: #444;
+            left: -2rem;
+            border-radius: 0rem 0.4rem 0.4rem 0rem;
         }
     
     /* Section */
@@ -122,6 +124,8 @@ main {
         .filtros select {
             border-radius: 0rem 0rem 1rem 1rem;
             padding: 0.2rem 0.5rem;
+            overflow: hidden;
+            overflow-y: auto;
             display: none;
         }
         .filtros button {
@@ -130,8 +134,61 @@ main {
             padding: 0.4rem 0.8rem;
             border-radius: 1rem;
         }
-        
-
+    /* Portadas de Anime */
+    .agreAni {
+        background: #717171;
+        color: rgba(255, 255, 255, .8);
+        font-size: 4rem;
+    }
+    .agreAni:hover {
+        color: #717171;
+        background: rgba(255, 255, 255, .8);
+    }
+    .agreAni, .portadaA {
+        width: 9rem;
+        height: 12rem;
+        border-radius: 0.4rem;
+        overflow: hidden;
+    }
+    .portadaA {
+        position: relative;
+    }
+    .anime {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .anime > img {
+        width: 100%;
+        height: 100%;
+    }
+    .anime > span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: rgba(255, 255, 255, .8);
+    }
+    .anime:hover > span {
+        background: #000;
+        color: #fff;
+    }
+    .eliminarA {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        color: rgba(255, 255, 255, .8);
+        padding: 0.6rem;
+        border-radius: 0rem 0rem 0rem 0.4rem;
+        cursor: pointer;
+    } 
+    .eliminarA:hover {
+        background: #000;
+        color: #fff;
+        font-size: 1.2rem;
+    }
     
     /* Bordes */
     .panelControl, .iconUsuAside {

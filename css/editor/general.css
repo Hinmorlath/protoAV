@@ -29,7 +29,7 @@
 }
 /* Otro más para el fondo de los nombres de cada anime, aunque chance este si e quede como predeterminado */
 .anime > span, .eliminarA {
-    background: #000;
+    background: rgba(0,0,0,.8);
 }
 #infoPanel select {
     background: #000;
@@ -56,4 +56,9 @@
 .masCaps {
     background: #692E04;
     border: none;
+}
+
+/* Main del editor */
+main {
+    background: #00113C;
 }
