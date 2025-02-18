@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./../img/AnimaVivo_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/iconos.css">
     <link rel="stylesheet" href="./../css/editor/agregar.css">
     <title>Agregar Anime</title>
 </head>
@@ -12,22 +14,24 @@
     <!-- Header a la hora de subir un anime -->
     <header class="header1">
         <!-- Enlace para regresar al menú del editor -->
-        <a href="./animes.html">
+        <a class="logoCh" href="./animes.html">
             <img src="./../img/AnimaVivo_logo.png" alt="Logotipo" height="128px" width="128px">
         </a>
 
         <!-- Nombre del editor que está subiendo este anime -->
-        <div>
+        <div class="nomTit">
             Subido por:
             <span id="nomEditor">NombreEditor</span>
         </div>
-
-        <!-- Herramientas y notificaciones -->
-        <div class="noti">
-            <!-- Notificaciones -->
-            <div><span></span></div>
-            <!-- Herramientas con el ícono del editor -->
-            <div><img src="" alt="Icono Editor" height="128px" width="128px"></div>
+        
+        <!-- Icono del usuario y las herramientas que ofrece este Rol -->
+        <div class="herUsu">
+            <div class="icoNot">
+                <span class="fa-regular fa-bell"></span>
+            </div>
+            <div id="iconUsuario">
+                <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+            </div>
         </div>
     </header>
 
@@ -35,19 +39,22 @@
     <main>
         <!-- Formulario para subir un anime -->
         <form action="#" method="post">
-            <!-- Para subir la imagen en horizontal del Anime -->
-            <input type="file" name="horImg" id="horImg">
-
-            <!-- Para el nombre Original del anime -->
-            <input type="text" name="nomOriAni" id="nomOriAni" placeholder="Nombre original del Anime" autofocus autocomplete="on">
-            <!-- Nombre corto del anime a subir (Opcional) -->
-            <input type="text" name="nomCorAni" id="nomCorAni" placeholder="Nombre corte del anime" autocomplete="on">
-            <!-- Nombre del Director o Directores que haya tenido el anime, el número de Directores puede variar dependiendo del estudio o el número de temporadas -->
-            <input type="text" name="nomDirAni" id="nomDirAni" placeholder="Nombre(s) del(los) director(es)" autocomplete="on">
-            <!-- Sinopsis del anime -->
-            <Textarea placeholder="Sinopsis"></Textarea>
-
-            <br>
+            <div class="secInp1">
+                <!-- Para subir la imagen en horizontal del Anime -->
+                <label for="horImg">
+                    <span class="fa-regular fa-image"></span>
+                </label>
+                <input type="file" name="horImg" id="horImg">
+    
+                <!-- Para el nombre Original del anime -->
+                <input type="text" name="nomOriAni" id="nomOriAni" placeholder="Nombre original del Anime" autofocus autocomplete="on">
+                <!-- Nombre corto del anime a subir (Opcional) -->
+                <input type="text" name="nomCorAni" id="nomCorAni" placeholder="Nombre corte del anime" autocomplete="on">
+                <!-- Nombre del Director o Directores que haya tenido el anime, el número de Directores puede variar dependiendo del estudio o el número de temporadas -->
+                <input type="text" name="nomDirAni" id="nomDirAni" placeholder="Nombre(s) del(los) director(es)" autocomplete="on">
+                <!-- Sinopsis del anime -->
+                <Textarea placeholder="Sinopsis"></Textarea>
+            </div>
 
             <!-- año de emisión del anime -->
             <input type="month" name="añoAni" id="yearAni" placeholder="Año">

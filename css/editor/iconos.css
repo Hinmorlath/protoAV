@@ -37,3 +37,13 @@
     content: "\f1da";
     margin-right: 0.6rem;
 }
+
+/* AGREGAR ANIME */
+.logoCh::before {
+    font: var(--fa-font-solid);
+    content: "\f0d9";
+    margin-right: 1rem;
+}
+a.logoCh:hover + .logoCh::before {
+    margin-right: 1.5rem;
+}

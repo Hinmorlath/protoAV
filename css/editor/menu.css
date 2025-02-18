@@ -59,6 +59,9 @@ aside a, aside > span {
     }
 
 /* #Header2  */
+.header2 {
+    position: sticky;
+}
 .header2 a {
     color: rgba(255, 255, 255, .8);
 }
@@ -110,6 +113,12 @@ aside a, aside > span {
         }
     
     /* Section */
+    #infoPanel select{
+        position: absolute;
+        z-index: 10;
+        left: 0.5rem;
+        top: 1.8rem;
+    }
     section {
         width: 79%;
     }
@@ -123,9 +132,10 @@ aside a, aside > span {
         }
         .filtros select {
             border-radius: 0rem 0rem 1rem 1rem;
-            padding: 0.2rem 0.5rem;
+            padding: 0.4rem 0.6rem;
             overflow: hidden;
             overflow-y: auto;
+            outline: none;
             display: none;
         }
         .filtros button {
@@ -133,6 +143,16 @@ aside a, aside > span {
             border: none;
             padding: 0.4rem 0.8rem;
             border-radius: 1rem;
+            position: relative;
+            z-index: 20;
+            cursor: pointer;
+        }
+        .filtros > div {
+            position: relative;
+        }
+        /* Filtro por botón */
+        #geneInfoPanel:hover > #genero, #duraMInfoPanel:hover > #duraM, #duraCInfoPanel:hover > #duraC, #demogInfoPanel:hover > #demografia {
+            display: block;
         }
     /* Portadas de Anime */
     .agreAni {

@@ -1,4 +1,72 @@
-input, textarea {
+/* GENERAL */
+* {
+    color: rgba(255, 255, 255, .8);
+}
+
+.header1 a{
+    text-decoration: none;
+}
+
+/* HEADER */
+.header1 div {
+    display: inline-block;
+}
+/* LOGO */
+    .logoCh {
+        display: inline-block;
+        width: 5%;
+    }
+    .logoCh > img {
+        height: 100%;
+        width: 100%;
+    }
+    .nomTit {
+        width: 50%;
+        align-items: center;
+    }
+    /* Herramientas del Usuario */.herUsu {
+        width: 15%;
+    }
+    /* Iconos de herramientas para el usuario */
+    .herUsu > div {
+        width: 30%;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 2rem;
+        padding: 0.6rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+    /* Imagen que abarca al icono del usuario */
+    #iconUsuario > img {
+        width: 100%;
+        height: 100%;
+    }
+
+/* MAIN */
+/* general */
+input, textarea, label[for="horImg"] {
+    background: rgba(0, 0, 0, .6);
+    border:none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    outline: none;
+}
+
+/* Formulario */
+    .secInp1 > input, .secInp1 > textarea, label[for="horImg"] {
+        width: 48%;
+        display: inline-block;
+    }
+    label[for="horImg"]{
+        height: 8rem;
+        border: 0.4rem dashed rgba(255, 255, 255, .8);
+        font-size: 5rem;
+    }
+    .secInp1 > input[type=file] {
+        display: none;
+    }
+
+/* input, textarea {
     background: rgba(0, 0, 0, .6);
     border: none;
 }
@@ -23,4 +91,4 @@ input, textarea {
 
 #horImg, #imgTemp {
     border: 3px dashed rgba(0, 0, 0, .8);
-}
+} */
