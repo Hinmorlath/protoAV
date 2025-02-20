@@ -71,7 +71,7 @@ aside a, aside > span {
     aside {
         width: 20%;
         border-radius: 2.2rem;
-        background: #3A0000;
+        background: linear-gradient(#3A0000,#000);
     }
     aside, aside a {
         color: rgba(255, 255, 255, .8);
@@ -118,6 +118,7 @@ aside a, aside > span {
         z-index: 10;
         left: 0.5rem;
         top: 1.8rem;
+        border: none;
     }
     section {
         width: 79%;
@@ -139,7 +140,7 @@ aside a, aside > span {
             display: none;
         }
         .filtros button {
-            background: #3A0000;
+            background: linear-gradient(#3A0000 35%,#000);
             border: none;
             padding: 0.4rem 0.8rem;
             border-radius: 1rem;
@@ -154,6 +155,10 @@ aside a, aside > span {
         #geneInfoPanel:hover > #genero, #duraMInfoPanel:hover > #duraM, #duraCInfoPanel:hover > #duraC, #demogInfoPanel:hover > #demografia {
             display: block;
         }
+        select option:hover {
+            background: rgba(255, 255, 255, .8);
+            color: #000;
+        }
     /* Portadas de Anime */
     .agreAni {
         background: #717171;
@@ -163,6 +168,9 @@ aside a, aside > span {
     .agreAni:hover {
         color: #717171;
         background: rgba(255, 255, 255, .8);
+    }
+    .agreAni:hover > span {
+        transform: scale(1.5);
     }
     .agreAni, .portadaA {
         width: 9rem;
@@ -189,10 +197,14 @@ aside a, aside > span {
         width: 100%;
         text-align: center;
         color: rgba(255, 255, 255, .8);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .anime:hover > span {
         background: #000;
         color: #fff;
+        white-space: normal;
     }
     .eliminarA {
         position: absolute;
@@ -205,9 +217,11 @@ aside a, aside > span {
         cursor: pointer;
     } 
     .eliminarA:hover {
-        background: #000;
+        background: #600;
         color: #fff;
-        font-size: 1.2rem;
+    }
+    .eliminarA:hover > span {
+        transform: scale(1.2);
     }
     
     /* Bordes */

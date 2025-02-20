@@ -7,9 +7,20 @@
     font-weight: bold;
 }
 
+/* Ocultar todos los checkbox que tiene el sitio web */
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+input[type=checkbox] + label, input[type=radio] + label {
+    display: block;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0.2rem 0.5rem;
+}
+
 /* color del background de los portales */
 .main-portal{
-    background: #00113C;
+    background: linear-gradient(135deg,#00113C 25%,#3A0000 75%);
     height: 100vh;
 }
 
@@ -27,11 +38,11 @@
 .iconUsuAside {
     background: #011500;
 }
-/* Otro más para el fondo de los nombres de cada anime, aunque chance este si e quede como predeterminado */
+/* Otro más para el fondo de los nombres de cada anime, aunque chance este si se quede como predeterminado */
 .anime > span, .eliminarA {
     background: rgba(0,0,0,.8);
 }
-#infoPanel select {
+#infoPanel select, .listDespl{
     background: #000;
 }
 /* Otro más para el color de botón del buscador color: rgba(255, 255, 255, .6) */
@@ -44,13 +55,17 @@
 }
 .rol {
     color: rgba(255, 255, 255, .5);
+    box-shadow: 0rem 0.4rem 0.8rem 0 rgba(0,0,0,.2), 0 0.8rem 1.5rem 0 rgba(0,0,0,.19);
+}
+.rol:hover {
+    transform: rotateY('360deg');
 }
 /* colores del espectador */
 .espectador {
-    background: #063804;
+    background: linear-gradient(-24deg,#001A5F 22%,#063804 70%);
 }
 .editor {
-    background: #3A0000;
+    background: linear-gradient(-24deg,#001A5F 22%,#3A0000 70%);
 }
 /* Color café */
 .masCaps {
@@ -60,6 +75,6 @@
 
 /* Main del editor */
 main {
-    background: #00113C;
+    background: linear-gradient(#00113C 20%,#000 100%);
     padding: 1rem 3rem;
 }

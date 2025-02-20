@@ -2,6 +2,9 @@
 * {
     color: rgba(255, 255, 255, .8);
 }
+.ocultar {
+    display: none;
+}
 
 .header1 a{
     text-decoration: none;
@@ -66,29 +69,63 @@ input, textarea, label[for="horImg"] {
         display: none;
     }
 
-/* input, textarea {
-    background: rgba(0, 0, 0, .6);
-    border: none;
-}
-.agregar, .editar, #numCap {
-    background: #fff;
-    border: none;
-}
 
-.btnAgreCap, .agreTemp {
-    background: #000;
-}
-.agreTemp {
-    border: 10px solid #fff;
-}
-#etiAnime {
-    border: 5px solid rgba(255, 255, 255, .8);
-}
-
-.listOpc > div {
-    background: #000;
-}
-
-#horImg, #imgTemp {
-    border: 3px dashed rgba(0, 0, 0, .8);
-} */
+    /* Filtros */
+    .listOpc {
+        display: inline-block;
+        position: relative;
+    }
+    .listOpc > div {
+        border-radius: 0rem 0rem 1rem 1rem;
+        overflow: hidden;
+        overflow-y: auto;
+        outline: none;
+        display: none;
+    }
+    .listOpc:hover > div {
+        display: block;
+    }
+    .listDespl {
+        position: absolute;
+        z-index: 10;
+        left: 0.5rem;
+        top: 1.8rem;
+        border: none;
+    }
+    .listOpc button {
+        background: linear-gradient(#3A0000 35%,#000);
+        border: none;
+        padding: 0.4rem 0.8rem;
+        border-radius: 1rem;
+        position: relative;
+        z-index: 20;
+        cursor: pointer;
+    }
+    /* Filtro por botón */
+    #geneInfoPanel:hover > #genero, #duraMInfoPanel:hover > #duraM, #duraCInfoPanel:hover > #duraC, #demogInfoPanel:hover > #demografia {
+        display: block;
+    }
+    .listOpc button.editar {
+        width: 100%;
+        border-radius: 0;
+        background: rgba(255, 255, 255, .8);
+        color: #000;
+    }
+    .listOpc button.editar:hover {
+        background: #000;
+        color: rgba(255, 255, 255, .8);
+    }
+    /* formulario oculto de las listas desplegables */
+    .opcListDespl button, .opcListDespl input[type=text] {
+        display: inline-block;
+    }
+    .listEdi {
+        position: absolute;
+        top: 0;
+        background: #000;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+        z-index: 30;
+    }

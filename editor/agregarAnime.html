@@ -39,6 +39,7 @@
     <main>
         <!-- Formulario para subir un anime -->
         <form action="#" method="post">
+            <!-- Sección de los primeros inputs -->
             <div class="secInp1">
                 <!-- Para subir la imagen en horizontal del Anime -->
                 <label for="horImg">
@@ -56,154 +57,165 @@
                 <Textarea placeholder="Sinopsis"></Textarea>
             </div>
 
-            <!-- año de emisión del anime -->
-            <input type="month" name="añoAni" id="yearAni" placeholder="Año">
-            <!-- Lista desplegable de selección multiple para los géneros -->
-            <div class="listOpc">
-                <button>Géneros <span></span></button>
-                <div>
+            <!-- Sección de los segundo inputs -->
+            <div class="secInp2">
+                <!-- año de emisión del anime -->
+                <input type="month" name="añoAni" id="yearAni" placeholder="Año">
+                <!-- Lista desplegable de selección multiple para los géneros -->
+                <div class="listOpc">
+                    <button>Géneros</button>
                     <!-- Contenedores de los input -->
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="generos" id="accion" value="Acción">
-                        <label for="accion">Acción</label>
+                    <div class="listDespl">
+                        <div class="listDef">
+                            <input type="checkbox" name="generos" id="accion" value="Acción">
+                            <label for="accion">Acción</label>
+    
+                            <input type="checkbox" name="generos" id="aventura" value="Aventura">
+                            <label for="aventura">Aventura</label>
+    
+                            <input type="checkbox" name="generos" id="cienciaF" value="Ciencia Ficción">
+                            <label for="cienciaF">Ciencia Ficción</label>
+                            
+                            <input type="checkbox" name="generos" id="comedia" value="Comedia">
+                            <label for="comedia">Comedia</label>
+                            
+                            <input type="checkbox" name="generos" id="comediaR" value="Comedia Romántica">
+                            <label for="comediaR">Comedia Romántica</label>
+                            
+                            <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                            <button class="editar"><span></span>Editar</button>
+                        </div>
+                        <!-- Formulario para editar las listas desplegables y sus opciones -->
+                        <div class="listEdi ocultar">
+                            <!-- opciones -->
+                            <div class="opcListDespl">
+                                <button>
+                                    <span class="fa-solid fa-xmark"></span>
+                                </button>
+                                <input type="text" value="Acción">
+                            </div>
+                            <div class="opcListDespl">
+                                <button>
+                                    <span class="fa-solid fa-xmark"></span>
+                                </button>
+                                <input type="text" value="Aventura">
+                            </div>
+                            <div class="opcListDespl">
+                                <button>
+                                    <span class="fa-solid fa-xmark"></span>
+                                </button>
+                                <input type="text" value="Ciencia Ficción">
+                            </div>
+                            <div class="opcListDespl">
+                                <button>
+                                    <span class="fa-solid fa-xmark"></span>
+                                </button>
+                                <input type="text" value="Comedia">
+                            </div>
+                            <div class="opcListDespl">
+                                <button>
+                                    <span class="fa-solid fa-xmark"></span>
+                                </button>
+                                <input type="text" value="Comedia Romántica">
+                            </div>
+                            <div class="btn-form-listDespl">
+                                <button class="agregar">Agregar</button>
+                                <button class="guardar">Guardar</button>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="generos" id="aventura" value="Aventura">
-                        <label for="aventura">Aventura</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="generos" id="cienciaF" value="Ciencia Ficción">
-                        <label for="cienciaF">Ciencia Ficción</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="generos" id="comedia" value="Comedia">
-                        <label for="comedia">Comedia</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="generos" id="comediaR" value="Comedia Romántica">
-                        <label for="comediaR">Comedia Romántica</label>
-                    </div>
-                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button class="editar"><span></span>Editar</button>
-                    <button class="agregar"><span></span>Agregar</button>
-                    <button class="guardar"><span></span>Guardar</button>
                 </div>
-            </div>
-            <!-- Lista desplegable de selección para la duración de minutos -->
-            <div class="listOpc">
-                <button>Duración(Minutos) <span></span></button>
-                <div>
-                    <!-- Contenedores de los input -->
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionM" id="5" value="5">
-                        <label for="5">5 minutos</label>
+                <!-- Lista desplegable de selección para la duración de minutos -->
+                <div class="listOpc">
+                    <button>Duración(Minutos)</button>
+                    <div class="listDespl">
+                        <!-- Contenedores de los input -->
+                        <div class="listDef">
+                            <input type="radio" name="DuracionM" id="5" value="5">
+                            <label for="5">5 minutos</label>
+
+                            <input type="radio" name="DuracionM" id="10" value="10">
+                            <label for="10">10 minutos</label>
+                            
+                            <input type="radio" name="DuracionM" id="20" value="20">
+                            <label for="20">20 minutos</label>
+                            
+                            <input type="radio" name="DuracionM" id="30" value="30">
+                            <label for="30">30 minutos</label>
+                            
+                            <input type="radio" name="DuracionM" id="50" value="50">
+                            <label for="50">50 minutos</label>
+                            <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                            <button class="editar">Editar</button>
+                        </div>
+                        <div class="listEdi ocultar">
+                            <button class="agregar">Agregar</button>
+                            <button class="guardar">Guardar</button>
+                        </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionM" id="10" value="10">
-                        <label for="10">10 minutos</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionM" id="20" value="20">
-                        <label for="20">20 minutos</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionM" id="30" value="30">
-                        <label for="30">30 minutos</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionM" id="50" value="50">
-                        <label for="50">50 minutos</label>
-                    </div>
-                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button class="editar"><span></span>Editar</button>
-                    <button class="agregar"><span></span>Agregar</button>
-                    <button class="guardar"><span></span>Guardar</button>
                 </div>
-            </div>
-            <!-- Lista desplegable de selección para la duración de capitulos -->
-            <div class="listOpc">
-                <button>Duración(Capitulos) <span></span></button>
-                <div>
-                    <!-- Contenedores de los input -->
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionC" id="1-5" value="1 a 5">
-                        <label for="1-5">1 a 5 capitulos</label>
+                <!-- Lista desplegable de selección para la duración de capitulos -->
+                <div class="listOpc">
+                    <button>Duración(Capitulos) <span></span></button>
+                    <div class="listDespl">
+                        <!-- Contenedores de los input -->
+                        <div class="listDef">
+                            <input type="radio" name="DuracionC" id="1-5" value="1 a 5">
+                            <label for="1-5">1 a 5 capitulos</label>
+                            
+                            <input type="radio" name="DuracionC" id="6-12" value="6 a 12">
+                            <label for="6-12">6 a 12 capitulos</label>
+                            
+                            <input type="radio" name="DuracionC" id="13-24" value="13 a 24">
+                            <label for="13-24">13 a 24 capitulos</label>
+                            
+                            <input type="radio" name="DuracionC" id="25-50" value="25 a 50">
+                            <label for="25-50">25 a 50 capitulos</label>
+                            
+                            <input type="radio" name="DuracionC" id="50-100" value="50 a 100">
+                            <label for="50-100">50 a 100 capitulos</label>
+                            <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                            <button class="editar">Editar</button>
+                        </div>
+                        <div class="listEdi ocultar">
+                            <button class="agregar">Agregar</button>
+                            <button class="guardar">Guardar</button>
+                        </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionC" id="6-12" value="6 a 12">
-                        <label for="6-12">6 a 12 capitulos</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionC" id="13-24" value="13 a 24">
-                        <label for="13-24">13 a 24 capitulos</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionC" id="25-50" value="25 a 50">
-                        <label for="25-50">25 a 50 capitulos</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="radio" name="DuracionC" id="50-100" value="50 a 100">
-                        <label for="50-100">50 a 100 capitulos</label>
-                    </div>
-                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button class="editar"><span></span>Editar</button>
-                    <button class="agregar"><span></span>Agregar</button>
-                    <button class="guardar"><span></span>Guardar</button>
                 </div>
-            </div>
-            <!-- Lista desplegable de selección multiple para la demografía -->
-            <div class="listOpc">
-                <button>Demografía <span></span></button>
-                <div>
-                    <!-- Contenedores de los input -->
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="demografía" id="bishojo" value="Bishojo">
-                        <label for="accion">Bishojo</label>
+                <!-- Lista desplegable de selección multiple para la demografía -->
+                <div class="listOpc">
+                    <button>Demografía</button>
+                    <div class="listDespl">
+                        <!-- Contenedores de los input -->
+                        <div class="listDef">
+                            <input type="checkbox" name="demografía" id="bishojo" value="Bishojo">
+                            <label for="bishojo">Bishojo</label>
+
+                            <input type="checkbox" name="demografía" id="bishonen" value="Bishonen">
+                            <label for="bishonen">Bishonen</label>
+
+                            <input type="checkbox" name="demografía" id="ecchi" value="Ecchi">
+                            <label for="ecchi">Ecchi</label>
+
+                            <input type="checkbox" name="demografía" id="harem" value="Harem">
+                            <label for="harem">Harem</label>
+                            
+                            <input type="checkbox" name="demografía" id="seinen" value="Seinen">
+                            <label for="seinen">Seinen</label>
+
+                            <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
+                            <button class="editar">Editar</button>
+                        </div>
+                        <div class="listEdi ocultar">
+                            <button class="agregar">Agregar</button>
+                            <button class="guardar">Guardar</button>
+                        </div>
                     </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="demografía" id="bishonen" value="Bishonen">
-                        <label for="bishonen">Bishonen</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="demografía" id="ecchi" value="Ecchi">
-                        <label for="ecchi">Ecchi</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="demografía" id="harem" value="Harem">
-                        <label for="harem">Harem</label>
-                    </div>
-                    <div>
-                        <span></span>
-                        <input type="checkbox" name="demografía" id="seinen" value="Seinen">
-                        <label for="seinen">Seinen</label>
-                    </div>
-                    <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                    <button class="editar"><span></span>Editar</button>
-                    <button class="agregar"><span></span>Agregar</button>
-                    <button class="guardar"><span></span>Guardar</button>
                 </div>
+                <!-- Input para saber si el anime está o no en Emisión -->
+                <label for="emision">En Emisión</label><input type="checkbox" name="emisión" id="emision" value=True>
             </div>
-            <!-- Input para saber si el anime está o no en Emisión -->
-            <label for="emision">En Emisión</label><input type="checkbox" name="emisión" id="emision" value=True>
 
             <!-- Sección de una temporada entera -->
             <div class="infoTempAnime">
