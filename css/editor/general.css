@@ -11,7 +11,7 @@
 input[type=checkbox], input[type=radio] {
     display: none;
 }
-input[type=checkbox] + label, input[type=radio] + label {
+input[type=checkbox]:not(.toggle) + label, input[type=radio] + label {
     display: block;
     cursor: pointer;
     white-space: nowrap;
@@ -56,9 +56,6 @@ input[type=checkbox] + label, input[type=radio] + label {
 .rol {
     color: rgba(255, 255, 255, .5);
     box-shadow: 0rem 0.4rem 0.8rem 0 rgba(0,0,0,.2), 0 0.8rem 1.5rem 0 rgba(0,0,0,.19);
-}
-.rol:hover {
-    transform: rotateY('360deg');
 }
 /* colores del espectador */
 .espectador {

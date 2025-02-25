@@ -39,6 +39,10 @@ aside a, aside > span {
             height: 2rem;
             width: 10%;
             cursor: pointer;
+            transition: background 0.1s ease-in-out;
+        }
+        #formBusc > button:hover {
+            background: rgba(255,255,255,.8);
         }
     .herUsu {
         width: 15%;
@@ -90,6 +94,7 @@ aside a, aside > span {
         .iconUsuAside img {
             width: 100%;
             height: 100%;
+            clip-path: circle(50%);
         }
 
         /* Texto span del aside */
@@ -104,6 +109,8 @@ aside a, aside > span {
         aside a {
             padding: 0.4rem 1rem;
             position: relative;
+            left: 0;
+            transition: all 0.3s ease-in-out;
         }
         aside a:hover {
             border-left: 0.4rem solid #001A5F;
@@ -155,6 +162,9 @@ aside a, aside > span {
         #geneInfoPanel:hover > #genero, #duraMInfoPanel:hover > #duraM, #duraCInfoPanel:hover > #duraC, #demogInfoPanel:hover > #demografia {
             display: block;
         }
+        select option {
+            transition: all 0.1s ease-in-out;
+        }
         select option:hover {
             background: rgba(255, 255, 255, .8);
             color: #000;
@@ -164,6 +174,9 @@ aside a, aside > span {
         background: #717171;
         color: rgba(255, 255, 255, .8);
         font-size: 4rem;
+    }
+    .agreAni, .agreAni * {
+        transition: all 0.2s ease-in-out;
     }
     .agreAni:hover {
         color: #717171;
@@ -200,11 +213,15 @@ aside a, aside > span {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        padding: 0.2rem 0.6rem;
+        max-height: 1.6rem;
+        transition: all 0.4s ease-in-out;
     }
     .anime:hover > span {
         background: #000;
         color: #fff;
         white-space: normal;
+        max-height: 7rem;
     }
     .eliminarA {
         position: absolute;
@@ -215,7 +232,11 @@ aside a, aside > span {
         padding: 0.6rem;
         border-radius: 0rem 0rem 0rem 0.4rem;
         cursor: pointer;
+        transition: all 0.1s ease-in-out;
     } 
+    .eliminarA > span {
+        transition: all 0.1s ease-in-out;
+    }
     .eliminarA:hover {
         background: #600;
         color: #fff;

@@ -5,19 +5,20 @@
     content: "\f0d7";
     margin-left: 0.6rem;
     display: inline-block;
+    transition: all 0.2s ease-in-out;
 }
 /* flechas que rotan */
 .filtros > div:hover > button::after, .listOpc:hover > button::after{
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 /* Checkbox antes de todos los label */
-input[type=checkbox] + label::before {
+input[type=checkbox]:not(.toggle) + label::before {
     font: var(--fa-font-regular);
     content: "\f0c8";
     margin-right: 0.6rem;
     display: inline-block;
 }
-input[type=checkbox]:checked + label::before {
+input[type=checkbox]:not(.toggle):checked + label::before {
     font: var(--fa-font-solid);
     content: "\f14a";
     margin-right: 0.6rem;

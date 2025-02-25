@@ -110,6 +110,7 @@ input, textarea, label[for="horImg"] {
         border-radius: 0;
         background: rgba(255, 255, 255, .8);
         color: #000;
+        transition: all 0.2s ease-in-out;
     }
     .listOpc button.editar:hover {
         background: #000;
@@ -128,4 +129,39 @@ input, textarea, label[for="horImg"] {
         overflow: hidden;
         overflow-y: auto;
         z-index: 30;
+    }
+    /* Icono para el input de Emisión */
+    .emision {
+        position: relative;
+    }
+    input[type=checkbox].toggle + label::before {
+        content: '';
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        width: 4rem;
+        height: 2rem;
+        background: #830000;
+        border: 0.2rem solid rgba(255, 255, 255, .8);
+        border-radius: 2rem;
+        transform: translateX(120%);
+        transition: all 0.3s ease-in-out;
+    }
+    input[type=checkbox].toggle + label::after {
+        content: '';
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: #ccc;
+        border-radius: 2rem;
+        transform: translate(30%, 25%);
+        transition: all 0.3s ease-in-out;
+    }
+    input#emision:checked ~ label[for="emision"]::before {
+        background: #165E0C;
+    }
+    input[type=checkbox].toggle:checked + label::after {
+        transform: translate(180%, 25%);
     }
