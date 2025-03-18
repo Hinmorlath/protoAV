@@ -1,7 +1,14 @@
-/* GENERAL */
-.logo, #formBusc, .herUsu, .herUsu > div, .header2 li, .panelControl, aside, section, #infoPanel div, .agreAni, .anime{
-    display: inline-block;
+body {
+    background: linear-gradient(var(--color2) 20%, var(--fondo) 100%);
+    min-height: 100vh;
 }
+/* Main del editor */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+/* GENERAL */
 aside a, aside > span {
     display: block;
 }
@@ -9,6 +16,15 @@ aside a, aside > span {
     text-decoration: none;
 }
 /* HEADER */
+.header1 {
+    background: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    height: 4.5rem;
+    padding: 0 1rem;
+}
     /* LOGO */
     .logo {
         width: 20%;
@@ -21,40 +37,58 @@ aside a, aside > span {
     /* BUSCADOR */
     #formBusc {
         width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
         /* Input para el buscador */
         #buscador {
             background: none;
             border: none;
             width: 60%;
-            padding: 1rem 0.5rem;
-            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
             font-weight: bold;
-            border-bottom: 2px solid rgba(255, 255, 255, .8);
+            border-bottom: 2px solid var(--texto1);
         }
         /* Botón para el buscador */
         #formBusc > button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: stretch;
             border: none;
             border-radius: 0 1rem 1rem 0;
-            height: 2rem;
             width: 10%;
             cursor: pointer;
+            background: var(--texto1);
             transition: background 0.1s ease-in-out;
         }
         #formBusc > button:hover {
-            background: rgba(255,255,255,.8);
+            background: rgba(255,255,255);
         }
     .herUsu {
-        width: 15%;
+        width: 10%;
+        display: flex;
+        justify-content: space-evenly;
     }
     /* Iconos de herramientas para el usuario */
     .herUsu > div {
         width: 30%;
-        background: rgba(255, 255, 255, .8);
+        display: flex;
+        aspect-ratio: 1/1;
+        justify-content: center;
+        align-items: center;
+        color: var(--texto1);
         border-radius: 2rem;
-        padding: 0.6rem;
+        overflow: hidden;
         cursor: pointer;
         font-size: 1.4rem;
+        transition: background 0.1s ease-in-out;
+    }
+    .herUsu > div:hover {
+        background: var(--texto1);
+        color: var(--texto2);
     }
     /* Imagen que abarca al icono del usuario */
     #iconUsuario > img {
@@ -64,28 +98,42 @@ aside a, aside > span {
 
 /* #Header2  */
 .header2 {
-    position: sticky;
+    background: var(--headerABC);
+}
+.header2 ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
 }
 .header2 a {
-    color: rgba(255, 255, 255, .8);
+    color: var(--texto1);
 }
 
 /* Main */
     /* ASIDE */
     aside {
-        width: 20%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        width: 18%;
         border-radius: 2.2rem;
-        background: linear-gradient(#3A0000,#000);
+        top: 4rem;
+        background: linear-gradient(var(--color1), var(--fondo));
     }
     aside, aside a {
-        color: rgba(255, 255, 255, .8);
+        color: var(--texto1);
     }
         .espacio {
-            height: 8rem;
+            height: 6rem;
             position: relative;
+            display: flex;
+            justify-content: center;
         }
         /* Icono de la imagen */
         .iconUsuAside {
+            display: flex;
+            aspect-ratio: 1/1;
             width: 75%;
             border-radius: 100%;
             position: absolute;
@@ -113,41 +161,61 @@ aside a, aside > span {
             transition: all 0.3s ease-in-out;
         }
         aside a:hover {
-            border-left: 0.4rem solid #001A5F;
-            background: #444;
-            left: -2rem;
+            border-left: 0.4rem solid var(--btnMenu1);
+            background: var(--btnMenu2);
+            left: -2.5rem;
             border-radius: 0rem 0.4rem 0.4rem 0rem;
         }
     
     /* Section */
-    #infoPanel select{
-        position: absolute;
-        z-index: 10;
-        left: 0.5rem;
-        top: 1.8rem;
+    #infoPanel {
+        margin-top: 1rem;
+    }
+    #infoPanel > div {
+        display: flex;
+        justify-content: space-between;
+    }
+    #infoPanel select {
         border: none;
     }
+    #infoPanel select, .listDespl{
+        background: var(--fondo);
+    }
     section {
-        width: 79%;
+        width: 72%;
     }
     h2 {
-        color: rgba(255, 255, 255, .8);
+        color: var(--texto1);
         font-size: 1.6rem;
     }
     /* Filtros */
+        .filtros {
+            display: flex;
+            gap: 1rem;
+        }
         .filtros select, .filtros button {
-            color: rgba(255, 255, 255, .8);
+            color: var(--texto1);
+        }
+        
+        .div-desplegable{
+            position: absolute;
+            z-index: 10;
+            left: 0.5rem;
+            top: 1.8rem;
+            max-height: 0rem;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            border-radius: 0rem 0rem 1rem 1rem;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
         }
         .filtros select {
-            border-radius: 0rem 0rem 1rem 1rem;
             padding: 0.4rem 0.6rem;
             overflow: hidden;
             overflow-y: auto;
             outline: none;
-            display: none;
         }
         .filtros button {
-            background: linear-gradient(#3A0000 35%,#000);
+            background: linear-gradient(var(--color1) 35%, var(--fondo));
             border: none;
             padding: 0.4rem 0.8rem;
             border-radius: 1rem;
@@ -159,35 +227,42 @@ aside a, aside > span {
             position: relative;
         }
         /* Filtro por botón */
-        #geneInfoPanel:hover > #genero, #duraMInfoPanel:hover > #duraM, #duraCInfoPanel:hover > #duraC, #demogInfoPanel:hover > #demografia {
-            display: block;
+        #geneInfoPanel:hover > div, #duraMInfoPanel:hover > div, #duraCInfoPanel:hover > div, #demogInfoPanel:hover > div {
+            max-height: 20rem;
         }
         select option {
             transition: all 0.1s ease-in-out;
         }
         select option:hover {
-            background: rgba(255, 255, 255, .8);
-            color: #000;
+            background: var(--texto1);
+            color: var(--texto2);
         }
     /* Portadas de Anime */
+    .animesSubidos {
+        display: grid !important;
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
     .agreAni {
-        background: #717171;
-        color: rgba(255, 255, 255, .8);
+        display: flex;
+        background: var(--agregar);
+        color: var(--texto1);
         font-size: 4rem;
+        justify-content: center;
+        align-items: center;
     }
     .agreAni, .agreAni * {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.1s ease-in-out;
     }
     .agreAni:hover {
-        color: #717171;
-        background: rgba(255, 255, 255, .8);
+        background: var(--texto1);
+        color: var(--agregar);
     }
     .agreAni:hover > span {
         transform: scale(1.5);
     }
     .agreAni, .portadaA {
-        width: 9rem;
-        height: 12rem;
+        width: 7.5rem;
+        aspect-ratio: 9/14;
         border-radius: 0.4rem;
         overflow: hidden;
     }
@@ -195,6 +270,7 @@ aside a, aside > span {
         position: relative;
     }
     .anime {
+        display: block;
         width: 100%;
         height: 100%;
         position: relative;
@@ -202,6 +278,11 @@ aside a, aside > span {
     .anime > img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+    }
+    /* Otro más para el fondo de los nombres de cada anime, aunque chance este si se quede como predeterminado */
+    .anime > span, .eliminarA {
+        background: var(--fondoT);
     }
     .anime > span {
         position: absolute;
@@ -209,13 +290,13 @@ aside a, aside > span {
         left: 0;
         width: 100%;
         text-align: center;
-        color: rgba(255, 255, 255, .8);
+        color: var(--texto1);
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         padding: 0.2rem 0.6rem;
         max-height: 1.6rem;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .anime:hover > span {
         background: #000;
@@ -228,7 +309,7 @@ aside a, aside > span {
         top: 0;
         right: 0;
         border: none;
-        color: rgba(255, 255, 255, .8);
+        color: var(--texto1);
         padding: 0.6rem;
         border-radius: 0rem 0rem 0rem 0.4rem;
         cursor: pointer;
@@ -244,8 +325,24 @@ aside a, aside > span {
     .eliminarA:hover > span {
         transform: scale(1.2);
     }
+
+    .paginador {
+        justify-content: center !important;
+        height: 2.4rem;
+        color: var(--texto1);
+        font-size: 0.6rem;
+        align-items: center;
+        gap: 2rem;
+    }
+    .pag {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .pag-active {
+        opacity: 1;
+    }
     
     /* Bordes */
     .panelControl, .iconUsuAside {
-        border: 0.5rem solid #000;
+        border: 0.5rem solid var(--fondo);
     }

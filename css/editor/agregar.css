@@ -164,4 +164,8 @@ input, textarea, label[for="horImg"] {
     }
     input[type=checkbox].toggle:checked + label::after {
         transform: translate(180%, 25%);
+        background: rgba(255, 255, 255, .8);
+    }
+    textarea {
+        resize: none;
     }

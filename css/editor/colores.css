@@ -1,0 +1,40 @@
+:root {
+    /* Colores primarios */
+    --color1: #3A0000;
+    --color2: #00113c;
+
+    /* Colores de texto 1 y 2 */
+    --texto1: rgba(255, 255, 255, 0.8);
+    --texto2: rgba(0, 0, 0, 0.8);
+
+    /* Color de fondo */
+    --fondo: #000;
+
+    /* Colores de las notificaciones */
+    --notifi1: #830000;
+    --notifi2: #570000;
+
+    /* Fondo de letras del Header */
+    --headerABC: #471E01;
+
+    /* Fondo buscador */
+    --buscador: #165E0C;
+
+    /* Botones del menú */
+    --btnMenu1: #001A5F;
+    --btnMenu2: #444;
+
+    /* Fondo de agregar anime */
+    --agregar: #717171;
+
+    /* Fondo del texto */
+    --fondoT: rgba(0, 0, 0, 0.8);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+    font-size: 100%;
+    font-weight: bold;
+}

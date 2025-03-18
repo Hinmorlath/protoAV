@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
-    <!-- <script data-search-pseudo-elements defer src="./../fontawesome/all.js"></script> -->
+    <link rel="stylesheet" href="./../css/editor/colores.css">
     <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./../css/editor/general.css">
     <link rel="stylesheet" href="./../css/editor/menu.css">
@@ -111,60 +111,69 @@
 
         <!-- Información de la opción del panel -->
         <section>
-            <!-- Título de la sección dependiente del panel -->
-            <h2 id="titSeccion">Animes</h2>
-
             <!-- Información cambiante del panel de control -->
             <div id="infoPanel">
-                <!-- Filtración de orden -->
-                 <div class="filtros">
-                     <!-- Control de la clasificación de los animes mostrados -->
-                     <button>Emsión</button>
-                     <!-- Botón para ver los géneros ¡TEMPORAL! -->
-                     <div id="geneInfoPanel">
-                         <button class="btn-genero">Género</button>
-                         <select name="Genero" id="genero" size="4">
-                             <option value="Acción">Acción</option>
-                             <option value="Aventura">Aventura</option>
-                             <option value="Ciencia Ficción">Ciencia Ficción</option>
-                             <option value="Comedia">Comedia</option>
-                             <option value="Comedia Romántica">Comedia Romántica</option>
-                         </select>
-                     </div>
-                     <!-- Botón o lista desplegable de la duración por minutos -->
-                     <div id="duraMInfoPanel">
-                         <button class="btn-duraM">Duración(Minutos)</button>
-                         <select name="DuracionM" id="duraM" size="4">
-                             <option value="5">5 Minutos</option>
-                             <option value="10">10 Minutos</option>
-                             <option value="20">20 Minutos</option>
-                             <option value="30">30 Minutos</option>
-                         </select>
-                     </div>
-                     <!-- Botón o lista desplegable de la duración por capítulos -->
-                     <div id="duraCInfoPanel">
-                         <button class="btn-duraC">Duración(Capitulos)</button>
-                         <select name="DuracionC" id="duraC" size="4">
-                             <option value="1 a 5">1 a 5 Capitulos</option>
-                             <option value="6 a 12">6 a 12 Capitulos</option>
-                             <option value="13 a 24">13 a 24 Capitulos</option>
-                             <option value="25 a 50">25 a 50 Capitulos</option>
-                         </select>
-                     </div>
-                     <!-- Boton desplegable de la demografia -->
-                     <div id="demogInfoPanel">
-                         <button class="btn-demog">Demografía</button>
-                         <select name="Demografia" id="demografia" size="4">
-                             <option value="Bishojo">Bishojo</option>
-                             <option value="Bishonen">Bishonen</option>
-                             <option value="Ecchi">Ecchi</option>
-                             <option value="Harem">Harem</option>
-                         </select>
-                     </div>
-                 </div>
+                <div>
+                    <!-- Título de la sección dependiente del panel -->
+                    <h2 id="titSeccion">Animes</h2>
+                    <!-- Filtración de orden -->
+                    <div class="filtros">
+                        <!-- Control de la clasificación de los animes mostrados -->
+                        <button>Emsión</button>
+                        <!-- Botón para ver los géneros ¡TEMPORAL! -->
+                        <div id="geneInfoPanel">
+                            <button class="btn-genero">Género</button>
+                            <div class="div-desplegable">
+                                <select name="Genero" id="genero" size="5">
+                                    <option value="Acción">Acción</option>
+                                    <option value="Aventura">Aventura</option>
+                                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                                    <option value="Comedia">Comedia</option>
+                                    <option value="Comedia Romántica">Comedia Romántica</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Botón o lista desplegable de la duración por minutos -->
+                        <div id="duraMInfoPanel">
+                            <button class="btn-duraM">Duración(Minutos)</button>
+                            <div class="div-desplegable">
+                                <select name="DuracionM" id="duraM" size="5">
+                                    <option value="5">5 Minutos</option>
+                                    <option value="10">10 Minutos</option>
+                                    <option value="20">20 Minutos</option>
+                                    <option value="30">30 Minutos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Botón o lista desplegable de la duración por capítulos -->
+                        <div id="duraCInfoPanel">
+                            <button class="btn-duraC">Duración(Capitulos)</button>
+                            <div class="div-desplegable">
+                                <select name="DuracionC" id="duraC" size="5">
+                                    <option value="1 a 5">1 a 5 Capitulos</option>
+                                    <option value="6 a 12">6 a 12 Capitulos</option>
+                                    <option value="13 a 24">13 a 24 Capitulos</option>
+                                    <option value="25 a 50">25 a 50 Capitulos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Boton desplegable de la demografia -->
+                        <div id="demogInfoPanel">
+                            <button class="btn-demog">Demografía</button>
+                            <div class="div-desplegable">
+                                <select name="Demografia" id="demografia" size="5">
+                                    <option value="Bishojo">Bishojo</option>
+                                    <option value="Bishonen">Bishonen</option>
+                                    <option value="Ecchi">Ecchi</option>
+                                    <option value="Harem">Harem</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- Seccion donde se visualizan los animes que se han subido -->
-                <div id="animesSubidos">
+                <div class="animesSubidos">
                     <!-- Enlace en forma de portada para subir más animes -->
                     <a class="agreAni" href="./agregarAnime.html">
                         <span class="fa-solid fa-plus"></span>
@@ -251,6 +260,55 @@
                         <button class="eliminarA">
                             <span class="fa-solid fa-trash-can"></span>
                         </button>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 10" height="128px" width="128px">
+                            <span>Anime 10</span>
+                        </a>
+                        <button class="eliminarA">
+                            <span class="fa-solid fa-trash-can"></span>
+                        </button>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 11" height="128px" width="128px">
+                            <span>Anime 11</span>
+                        </a>
+                        <button class="eliminarA">
+                            <span class="fa-solid fa-trash-can"></span>
+                        </button>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 12" height="128px" width="128px">
+                            <span>Anime 12</span>
+                        </a>
+                        <button class="eliminarA">
+                            <span class="fa-solid fa-trash-can"></span>
+                        </button>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 13" height="128px" width="128px">
+                            <span>Anime 13</span>
+                        </a>
+                        <button class="eliminarA">
+                            <span class="fa-solid fa-trash-can"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Paginador -->
+                <div class="paginador">
+                    <div class="pag pag-active">
+                        <span class="fa-solid fa-circle"></span>
+                    </div>
+                    <div class="pag">
+                        <span class="fa-solid fa-circle"></span>
+                    </div>
+                    <div class="pag">
+                        <span class="fa-solid fa-circle"></span>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS';
-    font-size: 100%;
-    font-weight: bold;
-}
-
 /* Ocultar todos los checkbox que tiene el sitio web */
 input[type=checkbox], input[type=radio] {
     display: none;
@@ -18,60 +9,13 @@ input[type=checkbox]:not(.toggle) + label, input[type=radio] + label {
     padding: 0.2rem 0.5rem;
 }
 
-/* color del background de los portales */
-.main-portal{
-    background: linear-gradient(135deg,#00113C 25%,#3A0000 75%);
-    height: 100vh;
-}
-
-/* colores primarios = azul:#00113C       rojo:#3A0000 */
-.header1 {
-    background: #3A0000;
-}
-
-/* Otro color más: #471E01 */
-.header2{
-    background: #471E01;
-}
-
 /* Otro más para la imagen de usuario en el Aside: #011500 */
-.iconUsuAside {
+.iconUsuAside, #iconUsuario {
     background: #011500;
 }
-/* Otro más para el fondo de los nombres de cada anime, aunque chance este si se quede como predeterminado */
-.anime > span, .eliminarA {
-    background: rgba(0,0,0,.8);
-}
-#infoPanel select, .listDespl{
-    background: #000;
-}
-/* Otro más para el color de botón del buscador color: rgba(255, 255, 255, .6) */
-#formBusc > button{
-    background: rgba(255, 255, 255, .6);
-}
-/* Color del contorno de los portales */
-.logoRol {
-    border-color: rgba(255, 255, 255, .5);
-}
-.rol {
-    color: rgba(255, 255, 255, .5);
-    box-shadow: 0rem 0.4rem 0.8rem 0 rgba(0,0,0,.2), 0 0.8rem 1.5rem 0 rgba(0,0,0,.19);
-}
-/* colores del espectador */
-.espectador {
-    background: linear-gradient(-24deg,#001A5F 22%,#063804 70%);
-}
-.editor {
-    background: linear-gradient(-24deg,#001A5F 22%,#3A0000 70%);
-}
+
 /* Color café */
 .masCaps {
     background: #692E04;
     border: none;
-}
-
-/* Main del editor */
-main {
-    background: linear-gradient(#00113C 20%,#000 100%);
-    padding: 1rem 3rem;
 }
