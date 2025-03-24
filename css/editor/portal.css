@@ -3,6 +3,12 @@
     background: linear-gradient(135deg, var(--color2) 25%, var(--color1) 75%);
     height: 100vh;
 }
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 4rem;
+}
 
 .rol {
     border-radius: 2rem;
@@ -29,12 +35,14 @@
 }
 
 .logoRol {
-    border-width: .5rem;
-    border-style: solid;
+    border: .5rem solid var(--texto1);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
     font-size: 4rem;
-    padding: 1.6rem;
-    border-color: var(--texto1);
+    margin-bottom: 1rem;
 }
 
 .titRol {
