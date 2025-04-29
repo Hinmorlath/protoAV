@@ -50,9 +50,11 @@
                 <input type="file" name="horImg" id="horImg">
     
                 <!-- Para el nombre Original del anime -->
-                <input type="text" name="nomOriAni" id="nomOriAni" placeholder="Nombre original del Anime" autofocus autocomplete="on">
+                <input type="text" name="nomOriAni" id="nomOriAni" placeholder="Nombre original del Anime" autofocus>
                 <!-- Nombre corto del anime a subir (Opcional) -->
-                <input type="text" name="nomCorAni" id="nomCorAni" placeholder="Nombre corte del anime" autocomplete="on">
+                <input type="text" name="nomCorAni" id="nomCorAni" placeholder="Nombre corto del anime (Opcional)">
+                <!-- Otros nombres anime a subir (Opcional) -->
+                <textarea name="otroNomAni" id="otroNomAni" placeholder="Otros nombres" rows="1"></textarea>
                 <!-- Nombre del Director o Directores que haya tenido el anime, el número de Directores puede variar dependiendo del estudio o el número de temporadas -->
                 <input type="text" name="nomDirAni" id="nomDirAni" placeholder="Nombre(s) del(los) director(es)" autocomplete="on">
                 <!-- Sinopsis del anime -->
@@ -222,194 +224,173 @@
                 </label>
             </div>
 
-            <!-- Sección de una temporada entera -->
-            <div class="infoTempAnime">
-                <!-- Sección donde están el nombre de la temporada, y los capítulos que conforman dicha temporada, además de su imagen y los botónes para eliminar la temporada y el botón de generar más capítulos -->
-                <div class="tempCap">
-                    <!-- Nombre de la temporada -->
-                    <input type="text" name="nomTemp" id="nomTem" placeholder="Nombre de la Temporada" autocomplete="on">
-                    <!-- Contenedor de La lista de capitulos, así como del botón para agregar capítulos -->
-                    <div>
-                        <!-- Sección de los capítulos que conforman la temporada -->
-                        <div class="cajaCap">
-                            <!-- Contenedor con todo lo que debe conformar 1 capitulo -->
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 1" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
+            <div class="temporadas">
+                <!-- Sección de una temporada entera -->
+                <div class="infoTempAnime">
+                    <!-- Sección donde estará el título de la temporada y el botón para agregar capítulos -->
+                    <div class="titTemp">
+                        <!-- Icono para mover la temporada -->
+                        <span class="fa-solid fa-bars-staggered" id="movTemp"></span>
+                        <!-- Título de la temporada -->
+                        <input type="text" name="nomTemp" id="temporada1" placeholder="Nombre de la temporada">
+
+                        <span>Agregar Capítulos</span>
+                        <!-- Contenedor del input agregaCapitulos -->
+                        <div>
+                            <!-- Input para agregar un número para los capítulos a agregar -->
+                            <input type="number" name="noCaps" id="noCaps">
+                            <!-- Botón para agregar confirmar agregar los capítulos -->
+                            <button>
+                                <span class="fa-solid fa-plus"></span>
+                            </button>
+                        </div>
+
+                        <!-- Botón para borrar la temporada -->
+                        <button>
+                            <span class="fa-regular fa-trash-can"></span>
+                        </button>
+
+                        <!-- Botón para visualizar la lista de los capítulos -->
+                        <span id="visCap" class="fa-solid fa-sort-down"></span>
+                    </div>
+
+                    <!-- Contenedor que se desgloza para visualizar la lista de capítulos -->
+                    <div class="contGen">
+                        <!-- Contenedor para los elementos que contienen la información de los capítulos y la imagen de temporada -->
+                        <div class="contInfoCaps">
+                            <!-- Contenedor de los capítulos y su botón de Agregar más capítulos -->
+                            <div class="contListGen">
+                                <!-- Contenedor sólamente de los capítulos -->
+                                <div class="contListCaps">
+                                    <!-- Contenedores de cada capítulo -->
+                                    <div class="capitulo">
+                                        <!-- Icono para poder mover el capítulo -->
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <!-- Input para nombrar el capítulo -->
+                                        <input type="text" name="cap1" id="cap1" value="Capitulo 1" readonly>
+                                        <!-- Botón para editar el nombre del capítulo -->
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <!-- Botón para eliminar el capítulo -->
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <!-- Botón para mantener los cambios después de editar el nombre del capítulo -->
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap2" id="cap2" value="Capitulo 2" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap3" id="cap3" value="Capitulo 3" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap4" id="cap4" value="Capitulo 4" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap5" id="cap5" value="Capitulo 5" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap6" id="cap6" value="Capitulo 6" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap7" id="cap7" value="Capitulo 7" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap8" id="cap8" value="Capitulo 8" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap9" id="cap9" value="Capitulo 9" readonly>
+                                        <span class="fa-solid fa-pencil"></span>
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap10" id="cap10" value="Capitulo 10" readonly>
+                                        <span class="fa-solid fa-pencil"></span> 
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap11" id="cap11" value="Capitulo 11" readonly>
+                                        <span class="fa-solid fa-pencil"></span> 
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                    <div class="capitulo">
+                                        <span class="fa-solid fa-bars-staggered" id="movCap"></span>
+                                        <input type="text" name="cap12" id="cap12" value="Capitulo 12" readonly>
+                                        <span class="fa-solid fa-pencil"></span> 
+                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span class="fa-solid fa-check"></span>
+                                    </div>
+                                </div>
+                                <!-- Botón para agregar capítulos -->
+                                <button>
+                                    <span>Agregar Capítulo</span>
+                                </button>
                             </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 2" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 3" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 4" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 5" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 6" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 7" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 8" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 9" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 10" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 11" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 12" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
-                            </div>
-                            <div class="cap">
-                                <!-- Icono para poder agarrar y soltar el capitulo -->
-                                <span></span>
-                                <!-- Input con el nombre del capitulo -->
-                                <input type="text" name="nomCap" id="nomCap" value="Capitulo 13" readonly>
-                                <!-- Icono para editar el nombre del capítulo -->
-                                <span></span>
-                                <!-- Icono para borrar el capítulo -->
-                                <span></span>
+
+                            <!-- Imagen de la temporada -->
+                            <div class="imgTem">
+                                <!-- Label que se mostrará en vez de la imagen normal -->
+                                <label for="imgTemp1">
+                                    <span class="fa-solid fa-image"></span>
+                                </label>
+                                <input type="file" name="imgTemp1" id="imgTemp1">
                             </div>
                         </div>
-                        <!-- Botón para agregar un capítulo nuevo, este tendrá nombre "Capitulo" por defecto, así como también tener un número consecutivo del capitulo anterior agregado -->
-                        <button class="btnAgreCap">
-                            <span></span>
-                            Agregar Capitulo
-                        </button>
                     </div>
+
+                    <!-- Botón para la siguiente temporada -->
+                    <button>
+                        <span>Agregar Temporada</span>
+                    </button>
                 </div>
 
-                <!-- Input para agregar capitulos a partir de un número para la cantidad a generar -->
-                <div>
-                    <span>Agregar Capítulos</span>
-                    <!-- Contenedor del input:number y de su botón -->
-                    <div>
-                        <!-- Input con su botón para agregar capítulos -->
-                        <input type="number" name="numCap" id="numCap" min="0">
-                        <button class="masCaps">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Input para agregar la imagen de la temporada -->
-                <input type="file" name="imgTemp" id="imgTemp">
-
-                <!-- Botón para eliminar la temporada -->
-                <button>
-                    <span></span>
-                </button>
-                
-                <!-- Botón para agregar otra temporada en secuencia de posición de la actual temporada -->
-                <button class="agreTemp">
-                    <span></span>
-                    Agregar Temporada
-                </button>
+                <!-- Las siguientes temporadas deben de agregar a estas misma caja -->
             </div>
 
             <!-- Sección para poner las etiquetas o palabras clave para el motor de búsqueda del navegador -->
-            <textarea name="etiAnime" id="etiAnime" placeholder="Etiquetas:" autocomplete="on"></textarea>
-
-            <span>No olvides revisar bien los datos antes de guardar</span>
-
-            <!-- Botón para enviar los datos -->
-            <button type="submit">
-                <span></span>
-                Guardar
-            </button>
+            <div class="ultInfo">
+                <textarea name="etiAnime" id="etiAnime" placeholder="Etiquetas:" autocomplete="on"></textarea>
+    
+                <span>No olvides revisar bien los datos antes de guardar</span>
+    
+                <!-- Botón para enviar los datos -->
+                <button type="submit">
+                    <span></span>
+                    Guardar
+                </button>
+            </div>
         </form>
     </main>
 </body>
