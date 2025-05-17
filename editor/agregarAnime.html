@@ -47,14 +47,14 @@
                 <label for="horImg">
                     <span class="fa-regular fa-image"></span>
                 </label>
-                <input type="file" name="horImg" id="horImg">
+                <input type="file" name="horImg" id="horImg" accept="image/*">
     
                 <!-- Para el nombre Original del anime -->
                 <input type="text" name="nomOriAni" id="nomOriAni" placeholder="Nombre original del Anime" autofocus>
                 <!-- Nombre corto del anime a subir (Opcional) -->
                 <input type="text" name="nomCorAni" id="nomCorAni" placeholder="Nombre corto del anime (Opcional)">
                 <!-- Otros nombres anime a subir (Opcional) -->
-                <textarea name="otroNomAni" id="otroNomAni" placeholder="Otros nombres" rows="1"></textarea>
+                <input name="otroNomAni" id="otroNomAni" placeholder="Otros nombres (Opcional)">
                 <!-- Nombre del Director o Directores que haya tenido el anime, el número de Directores puede variar dependiendo del estudio o el número de temporadas -->
                 <input type="text" name="nomDirAni" id="nomDirAni" placeholder="Nombre(s) del(los) director(es)" autocomplete="on">
                 <!-- Sinopsis del anime -->
@@ -67,7 +67,7 @@
                 <input type="month" name="añoAni" id="yearAni" placeholder="Año">
                 <!-- Lista desplegable de selección multiple para los géneros -->
                 <div class="listOpc">
-                    <button>Géneros</button>
+                    <button type="button">Géneros</button>
                     <!-- Contenedores de los input -->
                     <div class="listDespl">
                         <div class="listDef">
@@ -87,51 +87,51 @@
                             <label for="comediaR">Comedia Romántica</label>
                             
                             <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                            <button class="editar"><span></span>Editar</button>
+                            <button type="button" class="editar"><span></span>Editar</button>
                         </div>
                         <!-- Formulario para editar las listas desplegables y sus opciones -->
                         <div class="listEdi ocultar">
                             <!-- opciones -->
                             <div class="opcListDespl">
-                                <button>
+                                <button type="button">
                                     <span class="fa-solid fa-xmark"></span>
                                 </button>
                                 <input type="text" value="Acción">
                             </div>
                             <div class="opcListDespl">
-                                <button>
+                                <button type="button">
                                     <span class="fa-solid fa-xmark"></span>
                                 </button>
                                 <input type="text" value="Aventura">
                             </div>
                             <div class="opcListDespl">
-                                <button>
+                                <button type="button">
                                     <span class="fa-solid fa-xmark"></span>
                                 </button>
                                 <input type="text" value="Ciencia Ficción">
                             </div>
                             <div class="opcListDespl">
-                                <button>
+                                <button type="button">
                                     <span class="fa-solid fa-xmark"></span>
                                 </button>
                                 <input type="text" value="Comedia">
                             </div>
                             <div class="opcListDespl">
-                                <button>
+                                <button type="button">
                                     <span class="fa-solid fa-xmark"></span>
                                 </button>
                                 <input type="text" value="Comedia Romántica">
                             </div>
                             <div class="btn-form-listDespl">
-                                <button class="agregar">Agregar</button>
-                                <button class="guardar">Guardar</button>
+                                <button type="button" class="agregar">Agregar</button>
+                                <button type="button" class="guardar">Guardar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Lista desplegable de selección para la duración de minutos -->
                 <div class="listOpc">
-                    <button>Duración(Minutos)</button>
+                    <button type="button">Duración(Minutos)</button>
                     <div class="listDespl">
                         <!-- Contenedores de los input -->
                         <div class="listDef">
@@ -150,17 +150,17 @@
                             <input type="radio" name="DuracionM" id="50" value="50">
                             <label for="50">50 minutos</label>
                             <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                            <button class="editar">Editar</button>
+                            <button type="button" class="editar">Editar</button>
                         </div>
                         <div class="listEdi ocultar">
-                            <button class="agregar">Agregar</button>
-                            <button class="guardar">Guardar</button>
+                            <button type="button" class="agregar">Agregar</button>
+                            <button type="button" class="guardar">Guardar</button>
                         </div>
                     </div>
                 </div>
                 <!-- Lista desplegable de selección para la duración de capitulos -->
                 <div class="listOpc">
-                    <button>Duración(Capitulos) <span></span></button>
+                    <button type="button">Duración(Capitulos) <span></span></button>
                     <div class="listDespl">
                         <!-- Contenedores de los input -->
                         <div class="listDef">
@@ -179,17 +179,17 @@
                             <input type="radio" name="DuracionC" id="50-100" value="50 a 100">
                             <label for="50-100">50 a 100 capitulos</label>
                             <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                            <button class="editar">Editar</button>
+                            <button type="button" class="editar">Editar</button>
                         </div>
                         <div class="listEdi ocultar">
-                            <button class="agregar">Agregar</button>
-                            <button class="guardar">Guardar</button>
+                            <button type="button" class="agregar">Agregar</button>
+                            <button type="button" class="guardar">Guardar</button>
                         </div>
                     </div>
                 </div>
                 <!-- Lista desplegable de selección multiple para la demografía -->
                 <div class="listOpc">
-                    <button>Demografía</button>
+                    <button type="button">Demografía</button>
                     <div class="listDespl">
                         <!-- Contenedores de los input -->
                         <div class="listDef">
@@ -209,11 +209,11 @@
                             <label for="seinen">Seinen</label>
 
                             <!-- Botónes para editar, agregar o guardar cambios a los inputs -->
-                            <button class="editar">Editar</button>
+                            <button type="button" class="editar">Editar</button>
                         </div>
                         <div class="listEdi ocultar">
-                            <button class="agregar">Agregar</button>
-                            <button class="guardar">Guardar</button>
+                            <button type="button" class="agregar">Agregar</button>
+                            <button type="button" class="guardar">Guardar</button>
                         </div>
                     </div>
                 </div>
@@ -232,26 +232,29 @@
                         <!-- Icono para mover la temporada -->
                         <span class="fa-solid fa-bars-staggered" id="movTemp"></span>
                         <!-- Título de la temporada -->
-                        <input type="text" name="nomTemp" id="temporada1" placeholder="Nombre de la temporada">
+                        <input type="text" name="nomTemp" id="temporada1" placeholder="Nombre de la temporada" class="inputTitTemp">
 
-                        <span>Agregar Capítulos</span>
-                        <!-- Contenedor del input agregaCapitulos -->
-                        <div>
-                            <!-- Input para agregar un número para los capítulos a agregar -->
-                            <input type="number" name="noCaps" id="noCaps">
-                            <!-- Botón para agregar confirmar agregar los capítulos -->
-                            <button>
-                                <span class="fa-solid fa-plus"></span>
-                            </button>
+                        <!-- Sólo una caja para dividir cada parte -->
+                        <div class="flex">
+                            <span>Agregar Capítulos</span>
+                            <!-- Contenedor del input agregaCapitulos -->
+                            <div>
+                                <!-- Input para agregar un número para los capítulos a agregar -->
+                                <input type="number" name="noCaps" id="noCaps">
+                                <!-- Botón para agregar confirmar agregar los capítulos -->
+                                <button type="button">
+                                    <span class="fa-solid fa-plus"></span>
+                                </button>
+                            </div>
                         </div>
 
                         <!-- Botón para borrar la temporada -->
-                        <button>
+                        <button type="button" class="eliminar">
                             <span class="fa-regular fa-trash-can"></span>
                         </button>
 
                         <!-- Botón para visualizar la lista de los capítulos -->
-                        <span id="visCap" class="fa-solid fa-sort-down"></span>
+                        <span id="visCap" class="visCap fa-solid fa-caret-down"></span>
                     </div>
 
                     <!-- Contenedor que se desgloza para visualizar la lista de capítulos -->
@@ -260,6 +263,9 @@
                         <div class="contInfoCaps">
                             <!-- Contenedor de los capítulos y su botón de Agregar más capítulos -->
                             <div class="contListGen">
+                                <!-- Cajas de desvanecimiento -->
+                                <div class="desvTop"></div>
+                                <div class="desvBott"></div>
                                 <!-- Contenedor sólamente de los capítulos -->
                                 <div class="contListCaps">
                                     <!-- Contenedores de cada capítulo -->
@@ -269,11 +275,11 @@
                                         <!-- Input para nombrar el capítulo -->
                                         <input type="text" name="cap1" id="cap1" value="Capitulo 1" readonly>
                                         <!-- Botón para editar el nombre del capítulo -->
-                                        <span class="fa-solid fa-pencil"></span>
+                                        <span id="editarCap" class="fa-solid fa-pencil"></span>
                                         <!-- Botón para eliminar el capítulo -->
-                                        <span class="fa-regular fa-trash-can"></span>
+                                        <span id="borrarCap" class="fa-regular fa-trash-can"></span>
                                         <!-- Botón para mantener los cambios después de editar el nombre del capítulo -->
-                                        <span class="fa-solid fa-check"></span>
+                                        <span id="aceptarCap" class="ocultar fa-solid fa-check"></span>
                                     </div>
                                     <div class="capitulo">
                                         <span class="fa-solid fa-bars-staggered" id="movCap"></span>
@@ -308,7 +314,7 @@
                                         <input type="text" name="cap6" id="cap6" value="Capitulo 6" readonly>
                                         <span class="fa-solid fa-pencil"></span>
                                         <span class="fa-regular fa-trash-can"></span>
-                                        <span class="fa-solid fa-check"></span>
+                                        <span class="ocultar fa-solid fa-check"></span>
                                     </div>
                                     <div class="capitulo">
                                         <span class="fa-solid fa-bars-staggered" id="movCap"></span>
@@ -354,7 +360,7 @@
                                     </div>
                                 </div>
                                 <!-- Botón para agregar capítulos -->
-                                <button>
+                                <button type="button">
                                     <span>Agregar Capítulo</span>
                                 </button>
                             </div>
@@ -365,13 +371,13 @@
                                 <label for="imgTemp1">
                                     <span class="fa-solid fa-image"></span>
                                 </label>
-                                <input type="file" name="imgTemp1" id="imgTemp1">
+                                <input class="ocultar" type="file" name="imgTemp1" id="imgTemp1" accept="image/*">
                             </div>
                         </div>
                     </div>
 
                     <!-- Botón para la siguiente temporada -->
-                    <button>
+                    <button type="button">
                         <span>Agregar Temporada</span>
                     </button>
                 </div>

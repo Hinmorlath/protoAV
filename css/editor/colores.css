@@ -29,6 +29,13 @@
 
     /* Fondo del texto */
     --fondoT: rgba(0, 0, 0, 0.8);
+
+    /* Fondo del númerador automático */
+    --fondoNum: #AD7248;
+    /* Fondo del botón del númerador automático */
+    --fondoNumBtn: #692E04;
+    /* Fondo de los items capítulos */
+    --fondoItemCap: #41C9B9;
 }
 *{
     padding: 0;
