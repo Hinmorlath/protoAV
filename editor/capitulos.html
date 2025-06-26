@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/editor/colores.css">
+    <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/menu.css">
+    <link rel="stylesheet" href="./../css/editor/iconos.css">
     <title>Capitulos</title>
 </head>
 <body>
     <!-- Header que tiene un editor, que es parecido al de un Espectador -->
     <header>
         <!-- Header 1 -->
-        <div id="header1">
+        <div class="header1">
             <!-- Logotipo -->
-            <a href="#" id="logo">
-                <img src="" alt="Logo" height="128px" width="128px">
+            <a href="#" id="logo" class="logo">
+                <img src="./../img/AnimaVivo.png" alt="Logo" height="128px" width="256px">
             </a>
             <!-- Buscador -->
-            <form method="post" autocomplete="on">
-                <input type="search" name="buscador" id="buscador">
-                <button type="submit"></button>
+            <form id="formBusc" method="post">
+                <input type="search" name="buscador" id="buscador" autocomplete="on" placeholder="Buscar...">
+                <button type="submit">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                </button>
             </form>
             <!-- Icono del usuario y las herramientas que ofrece este Rol -->
-            <div id="iconUsuario">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+            <div class="herUsu">
+                <div class="icoNot">
+                    <span class="fa-regular fa-bell"></span>
+                </div>
+                <div id="iconUsuario">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
         </div>
 
         <!-- Header 2 -->
-        <div id="header2">
+        <div class="header2">
             <!-- Alfabeto -->
             <ul>
                 <li><a href="#">#</a></li>
@@ -63,150 +76,202 @@
     <!-- Main del Editor -->
     <main>
         <!-- Panel de control del Editor -->
-        <aside id="panelControl">
-            <!-- Icono o Imagen del Usuario -->
-            <div id="iconUsuAside">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+        <aside class="panelControl">
+            <div class="espacio">
+                <!-- Icono o Imagen del Usuario -->
+                <div class="iconUsuAside">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
             <!-- Bienvenida y nombre del usuario -->
-            <span id="bien">Bienvenido</span>
+            <span>Bienvenido</span>
             <span id="nomUsuAside">1er Nombre del Usuario</span>
 
             <!-- Opciones del Editor -->
-            <a href="./animes.html">
-                <span></span><span>Animes</span>
-            </a>
             <a href="#">
-                <span></span><span>Capítulos</span>
+                <!-- <span class="fa-solid fa-clapperboard"></span> -->
+                <span class="film">Animes</span>
+            </a>
+            <a href="./capitulos.html">
+                <span class="list">Capítulos</span>
             </a>
             <a href="./sagas.html">
-                <span></span><span>Sagas</span>
+                <span class="photo-film">Sagas</span>
             </a>
             <a href="./animesPendientes.html">
-                <span></span><span>Animes Pendientes</span>
+                <span class="arrows-rotate">Animes Pendientes</span>
             </a>
             <a href="./comentarios.html">
-                <span></span><span>Comentarios</span>
+                <span class="comments">Comentarios</span>
             </a>
             <a href="./historialAnime.html">
-                <span></span><span>Historial</span>
+                <span class="clock-rotate">Historial</span>
             </a>
         </aside>
 
         <!-- Información de la opción del panel -->
         <section>
-            <!-- Título de la sección dependiente del panel -->
-            <span id="titSeccion">Animes</span>
-
+            
             <!-- Información cambiante del panel de control -->
             <div id="infoPanel">
-                <!-- Control de la clasificación de los animes mostrados -->
-                <button>Emsión</button>
-                <!-- Botón para ver los géneros ¡TEMPORAL! -->
                 <div>
-                    <button id="geneInfoPanel">Género <span></span></button>
-                    <select name="Genero" id="genero" size="4">
-                        <option value="Acción">Acción</option>
-                        <option value="Aventura">Aventura</option>
-                        <option value="Ciencia Ficción">Ciencia Ficción</option>
-                        <option value="Comedia">Comedia</option>
-                        <option value="Comedia Romántica">Comedia Romántica</option>
-                    </select>
-                </div>
-                <!-- Botón o lista desplegable de la duración por minutos -->
-                <div>
-                    <button id="duraMInfoPanel">Duración(Minutos) <span></span></button>
-                    <select name="DuracionM" id="duraM" size="4">
-                        <option value="5">5 Minutos</option>
-                        <option value="10">10 Minutos</option>
-                        <option value="20">20 Minutos</option>
-                        <option value="30">30 Minutos</option>
-                    </select>
-                </div>
-                <!-- Botón o lista desplegable de la duración por capítulos -->
-                <div>
-                    <button id="duraCInfoPanel">Duración(Capitulos) <span></span></button>
-                    <select name="DuracionC" id="duraC" size="4">
-                        <option value="1 a 5">1 a 5 Capitulos</option>
-                        <option value="6 a 12">6 a 12 Capitulos</option>
-                        <option value="13 a 24">13 a 24 Capitulos</option>
-                        <option value="25 a 50">25 a 50 Capitulos</option>
-                    </select>
-                </div>
-                <!-- Boton desplegable de la demografia -->
-                <div>
-                    <button id="demogInfoPanel">Demografía <span></span></button>
-                    <select name="Demografia" id="demografia" size="4">
-                        <option value="Bishojo">Bishojo</option>
-                        <option value="Bishonen">Bishonen</option>
-                        <option value="Ecchi">Ecchi</option>
-                        <option value="Harem">Harem</option>
-                    </select>
+                    <!-- Título de la sección dependiente del panel -->
+                    <h2 id="titSeccion">Capítulos</h2>
+                    <!-- Filtración de orden -->
+                    <div class="filtros">
+                        <!-- Control de la clasificación de los animes mostrados -->
+                        <button>Emsión</button>
+                        <!-- Botón para ver los géneros ¡TEMPORAL! -->
+                        <div id="geneInfoPanel">
+                            <button class="btn-genero">Género</button>
+                            <div class="div-desplegable">
+                                <select name="Genero" id="genero" size="5">
+                                    <option value="Acción">Acción</option>
+                                    <option value="Aventura">Aventura</option>
+                                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                                    <option value="Comedia">Comedia</option>
+                                    <option value="Comedia Romántica">Comedia Romántica</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Botón o lista desplegable de la duración por minutos -->
+                        <div id="duraMInfoPanel">
+                            <button class="btn-duraM">Duración(Minutos)</button>
+                            <div class="div-desplegable">
+                                <select name="DuracionM" id="duraM" size="5">
+                                    <option value="5">5 Minutos</option>
+                                    <option value="10">10 Minutos</option>
+                                    <option value="20">20 Minutos</option>
+                                    <option value="30">30 Minutos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Botón o lista desplegable de la duración por capítulos -->
+                        <div id="duraCInfoPanel">
+                            <button class="btn-duraC">Duración(Capitulos)</button>
+                            <div class="div-desplegable">
+                                <select name="DuracionC" id="duraC" size="5">
+                                    <option value="1 a 5">1 a 5 Capitulos</option>
+                                    <option value="6 a 12">6 a 12 Capitulos</option>
+                                    <option value="13 a 24">13 a 24 Capitulos</option>
+                                    <option value="25 a 50">25 a 50 Capitulos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Boton desplegable de la demografia -->
+                        <div id="demogInfoPanel">
+                            <button class="btn-demog">Demografía</button>
+                            <div class="div-desplegable">
+                                <select name="Demografia" id="demografia" size="5">
+                                    <option value="Bishojo">Bishojo</option>
+                                    <option value="Bishonen">Bishonen</option>
+                                    <option value="Ecchi">Ecchi</option>
+                                    <option value="Harem">Harem</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <!-- Seccion donde se visualizan los animes que se han subido para poder editar sus capitulos -->
-                <div id="capsAnimes">
-                    
+                <!-- Seccion donde se visualizan los animes que se han subido -->
+                <div class="animesSubidos">
                     <!-- Lista de animes con sus enlaces -->
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 1" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 1" height="128px" width="128px">
                             <span>Anime 1</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 2" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 2" height="128px" width="128px">
                             <span>Anime 2</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 3" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
                             <span>Anime 3</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 4" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 4" height="128px" width="128px">
                             <span>Anime 4</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 5" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 5" height="128px" width="128px">
                             <span>Anime 5</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 6" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 6" height="128px" width="128px">
                             <span>Anime 6</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 7" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 7" height="128px" width="128px">
                             <span>Anime 7</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 8" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 8" height="128px" width="128px">
                             <span>Anime 8</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 9" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 9" height="128px" width="128px">
                             <span>Anime 9</span>
                         </a>
                     </div>
                     <div class="portadaA">
-                        <a href="#" id="anime">
-                            <img src="" alt="Anime 10" height="128px" width="128px">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 10" height="128px" width="128px">
                             <span>Anime 10</span>
                         </a>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 11" height="128px" width="128px">
+                            <span>Anime 11</span>
+                        </a>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 12" height="128px" width="128px">
+                            <span>Anime 12</span>
+                        </a>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 13" height="128px" width="128px">
+                            <span>Anime 13</span>
+                        </a>
+                    </div>
+                    <div class="portadaA">
+                        <a href="#" class="anime">
+                            <img src="./../img/pAnime/Anime1.jpg" alt="Anime 14" height="128px" width="128px">
+                            <span>Anime 14</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Paginador -->
+                <div class="paginador">
+                    <div class="pag pag-active">
+                        <span class="fa-solid fa-circle"></span>
+                    </div>
+                    <div class="pag">
+                        <span class="fa-solid fa-circle"></span>
+                    </div>
+                    <div class="pag">
+                        <span class="fa-solid fa-circle"></span>
                     </div>
                 </div>
             </div>
