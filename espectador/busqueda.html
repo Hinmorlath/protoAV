@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaVivo | Búsqueda</title>
+</head>
+<body>
+    
+    <!-- Header de un usuario tipo Espectador -->
+    <header>
+        <!-- Header 1 -->
+        <div id="header1">
+            <!-- Logotipo -->
+            <a href="./home.html" id="logo">
+                <img src="" alt="Logo"  height="128px" width="128px">
+            </a>
+            <!-- Buscador -->
+            <form method="post">
+                <input type="search" name="buscador" id="buscador" autocomplete="on">
+                <button type="submit"></button>
+            </form>
+            <!-- Herramientas de usuario -->
+            <div class="herrSup">
+                <!-- Botón de notificaciones -->
+                <span></span>
+                <!-- Opciones de usuario -->
+                <div class="opcUsua">
+                    <!-- Nombre del espectador -->
+                    <span>NombreUsuario</span>
+                    <!-- Imagen del espectador -->
+                    <div class="imgUsuario">
+                        <!-- Aquí hay que ver la manera de que se puedan intercalar entre img y span, para cuando haya o no imagen para el espectador -->
+                        <img src="#" alt="Imagen del espectador">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header 2 -->
+        <div id="header2">
+            <!-- Alfabeto -->
+            <ul>
+                <li><a href="#">#</a></li>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navegador -->
+    <aside>
+        <nav>
+            <li>
+                <span></span>
+                <span>Menú</span>
+            </li>
+            <li>
+                <span></span>
+                <span>Inicio</span>
+            </li>
+            <li>
+                <span></span>
+                <span>En emisión</span>
+            </li>
+            <!-- Lista de Género -->
+            <li>
+                <span></span>
+                <span>Género</span>
+                <ul>
+                    <li>Aventura</li>
+                    <li>Terror</li>
+                    <li>Acción</li>
+                    <li>Suspenso</li>
+                    <li>Comedia</li>
+                </ul>
+            </li>
+            <!-- Duración en minutos -->
+            <li>
+                <span></span>
+                <span>Minutos</span>
+                <ul>
+                    <li>1 - 5 Minutos</li>
+                    <li>6 - 14 Minutos</li>
+                    <li>15 - 30 Minutos</li>
+                    <li>Películas</li>
+                </ul>
+            </li>
+            <!-- Duración en Capitulos -->
+            <li>
+                <span></span>
+                <span>Capitulos</span>
+                <ul>
+                    <li>1 - 15 Episodios</li>
+                    <li>16 - 24 Episodios</li>
+                    <li>25 - 50 Episodios</li>
+                    <li>51 - 120 Episodios</li>
+                    <li>121 Episodios...</li>
+                </ul>
+            </li>
+            <!-- Demografía -->
+            <li>
+                <span></span>
+                <span>Demografía</span>
+                <ul>
+                    <li>Ecchi</li>
+                    <li>Harem</li>
+                    <li>Seinen</li>
+                    <li>Shojo</li>
+                    <li>Shounen</li>
+                </ul>
+            </li>
+            <!-- Sagas -->
+            <li>
+                <span></span>
+                <span>Sagas</span>
+            </li>
+            <!-- Pendientes -->
+            <li>
+                <span></span>
+                <span>Pendientes</span>
+            </li>
+            <hr>
+            <!-- Favoritos -->
+            <li>
+                <span></span>
+                <span>Favoritos</span>
+            </li>
+            <!-- Mi lista de Animes    -->
+            <li>
+                <span></span>
+                <span>Mi lista Anime</span>
+            </li>
+        </nav>
+    </aside>
+
+    <!-- Sección de los animes y las sagas buscadas (Aunque se parece estructuralmente a las de mi lista) -->
+    <main>
+        <!-- Sagas del Espectador -->
+        <section>
+            <span>Sagas <i>de la página siguiente</i><!--Esta parte debe de poder cambiarse cada que sea por alguna búsqueda en concreto--></span>
+            <hr>
+            <!-- Contenedor de las sagas que están en la lista Anime del Espectador -->
+            <div class="sagas">
+                <!-- Lista de animes con sus enlaces -->
+                <div class="portadaS">
+                    <a href="./saga.html" id="saga">
+                        <img src="" alt="Saga 1" height="128px" width="128px">
+                        <span>Saga 1</span>
+                    </a>
+                </div>
+                <div class="portadaS">
+                    <a href="#" id="saga">
+                        <img src="" alt="Saga 2" height="128px" width="128px">
+                        <span>Saga 2</span>
+                    </a>
+                </div>
+                <div class="portadaS">
+                    <a href="#" id="saga">
+                        <img src="" alt="Saga 3" height="128px" width="128px">
+                        <span>Saga 3</span>
+                    </a>
+                </div>
+                <div class="portadaS">
+                    <a href="#" id="saga">
+                        <img src="" alt="Saga 4" height="128px" width="128px">
+                        <span>Saga 4</span>
+                    </a>
+                </div>
+                <div class="portadaS">
+                    <a href="#" id="saga">
+                        <img src="" alt="Saga 5" height="128px" width="128px">
+                        <span>Saga 5</span>
+                    </a>
+                </div>
+                <div class="portadaS">
+                    <a href="#" id="saga">
+                        <img src="" alt="Saga 6" height="128px" width="128px">
+                        <span>Saga 6</span>
+                    </a>
+                </div>
+                <div class="portadaS">
+                    <a href="#" id="saga">
+                        <img src="" alt="Saga 7" height="128px" width="128px">
+                        <span>Saga 7</span>
+                    </a>
+                </div>
+                <div class="portadaS">
+                    <a href="#" id="saga">
+                        <img src="" alt="Saga 8" height="128px" width="128px">
+                        <span>Saga 8</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animes del Espectador -->
+        <section>
+            <span>Mis Animes</span>
+            <hr>
+            <!-- Contenedor de los animes que están en la lista Anime del Espectador -->
+            <div class="animes">
+                <!-- Lista de animes con sus enlaces -->
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 1" height="128px" width="128px">
+                        <span>Anime 1</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 2" height="128px" width="128px">
+                        <span>Anime 2</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 3</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 4" height="128px" width="128px">
+                        <span>Anime 4</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 5" height="128px" width="128px">
+                        <span>Anime 5</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 6" height="128px" width="128px">
+                        <span>Anime 6</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 7" height="128px" width="128px">
+                        <span>Anime 7</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 8" height="128px" width="128px">
+                        <span>Anime 8</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 9" height="128px" width="128px">
+                        <span>Anime 9</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 10" height="128px" width="128px">
+                        <span>Anime 10</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 11" height="128px" width="128px">
+                        <span>Anime 11</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 12" height="128px" width="128px">
+                        <span>Anime 12</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 13" height="128px" width="128px">
+                        <span>Anime 13</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 14" height="128px" width="128px">
+                        <span>Anime 14</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 15" height="128px" width="128px">
+                        <span>Anime 15</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 16" height="128px" width="128px">
+                        <span>Anime 16</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 17" height="128px" width="128px">
+                        <span>Anime 17</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 18" height="128px" width="128px">
+                        <span>Anime 18</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 19" height="128px" width="128px">
+                        <span>Anime 19</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 20" height="128px" width="128px">
+                        <span>Anime 20</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 21" height="128px" width="128px">
+                        <span>Anime 21</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 22" height="128px" width="128px">
+                        <span>Anime 22</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 23" height="128px" width="128px">
+                        <span>Anime 23</span>
+                    </a>
+                </div>
+                <div class="portadaA">
+                    <a href="anime.html" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 24" height="128px" width="128px">
+                        <span>Anime 24</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paginación -->
+        <div class="paginacion">
+            <div class="pNum actual">1</div>
+            <div class="pOculto">...</div>
+            <div class="pNum">2</div>
+            <div class="pNum">3</div>
+            <div class="pNum">4</div>
+            <div class="pNum">5</div>
+            <div class="pNum">6</div>
+            <div class="pOculto">...</div>
+            <div class="pNum">7</div>
+        </div>
+
+        <!-- Redes sociales -->
+        <footer>
+            <!-- Discord -->
+            <!-- Youtube -->
+            <!-- Instagram -->
+        </footer>
+    </main>
+</body>
+</html>
