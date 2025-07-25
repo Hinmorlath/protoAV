@@ -36,6 +36,10 @@
     --fondoNumBtn: #692E04;
     /* Fondo de los items capítulos */
     --fondoItemCap: #41C9B9;
+
+    /* Fondo de los items temporadas en "Editar capítulos" */
+    --fondoItemTemp: #011500;
+    --fondoItemCap2: #063804;
 }
 *{
     padding: 0;

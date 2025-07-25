@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/editor/colores.css">
+    <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./../css/editor/menu.css">
+    <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/iconos.css">
+    <link rel="stylesheet" href="./../css/editor/agregar.css">
+    <link rel="stylesheet" href="./../css/editor/editarC.css">   
     <title>Editar Capitulo</title>
 </head>
 <body>
     
     <!-- Header a la hora de editar los capitulos y temporadas de un anime, que en sí, es el mismo que el de agregar un Anime -->
-    <header>
+    <header class="header1">
         <!-- Enlace para regresar al menú del editor -->
-        <a href="./animes.html">
-            <img src="" alt="Logotipo" height="128px" width="128px">
+        <a class="logoCh" href="./animes.html">
+            <img src="./../img/AnimaVivo_logo.png" alt="Logotipo" height="128px" width="128px">
         </a>
 
         <!-- Nombre del editor que está subiendo este anime -->
-        <div>
+        <div class="">
             Subido por:
             <span id="nomEditor">NombreEditor</span>
         </div>
 
-        <!-- Herramientas y notificaciones -->
-        <div class="noti">
-            <!-- Notificaciones -->
-            <div><span></span></div>
-            <!-- Herramientas con el ícono del editor -->
-            <div>
-                <img src="" alt="Icono Editor" height="128px" width="128px">
+        <!-- Icono del usuario y las herramientas que ofrece este Rol -->
+        <div class="herUsu">
+            <div class="icoNot">
+                <span class="fa-regular fa-bell"></span>
+            </div>
+            <div id="iconUsuario">
+                <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
             </div>
         </div>
     </header>
@@ -34,98 +42,103 @@
     <!-- Contenedor del contenido, valga la redundancia, del anime -->
     <main>
         <!-- formulario para editar el contenido del anime -->
-        <form action="#" method="post">
+        <form class="formEdiCap" action="#" method="post">
             <!-- segundo header con el título del anime y además un input para poder mostrar si un anime está en emisión o no -->
-            <div>
+            <div class="nomAnimEdiCap">
                 <span>Nombre del anime</span>
                 <!-- Input para saber si el anime está o no en Emisión -->
-                <label for="emision">En Emisión</label><input type="checkbox" name="emisión" id="emision" value=True>
+                <input type="checkbox" class="toggle2" name="emisión" id="emision" value=True>
+                <label for="emision">En Emisión</label>
             </div>
 
             <!-- Panel de navegación para editar los capítulos, además de ser capaz de agregar temporadas y capítulos desde aquí -->
-            <aside>
+            <aside class="asideEdiCap">
                 <!-- contenedores de las temporada -->
                 <div class="tempComp">
                     <!-- Contenedor de lo que debería de tener un bloque de temporada -->
                     <div class="tempCap">
-                        <span></span>
+                        <span class="fa-solid fa-bars-staggered"></span>
                         <input type="text" name="temp" id="" value="Temporada 1" readonly>
-                        <span></span>
+                        <span class="fa-solid fa-pencil"></span>
+                        <span class="fa-solid fa-caret-down"></span>
                     </div>
-                    <!-- Div para contener los capítulos de la temporada en cuestión -->
-                    <div class="capComp">
-                        <!-- Contenedores de los capítulos -->
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 1</span>
-                            <span></span>
+                    <!-- Contenedor del contenedor de los capítulos y el botón -->
+                    <div class="capYBtn">
+                        <!-- Div para contener los capítulos de la temporada en cuestión -->
+                        <div class="capComp">
+                            <!-- Contenedores de los capítulos -->
+                            <div class="cap">
+                                <span class="fa-solid fa-bars-staggered"></span>
+                                <span class="nomCap">Capitulo 1</span>
+                                <span class="fa-solid fa-trash-can"></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 2</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 3</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 4</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 5</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 6</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 7</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 8</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 9</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 10</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 11</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 12</span>
+                                <span></span>
+                            </div>
+                            <div class="cap">
+                                <span></span>
+                                <span>Capitulo 13</span>
+                                <span></span>
+                            </div>
                         </div>
-                        <div class="cap">
+                        <!-- Botón para agregar más capítulo a la temporada en cuestión -->
+                        <button class="btnAgreEdiCap">
                             <span></span>
-                            <span>Capitulo 2</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 3</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 4</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 5</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 6</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 7</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 8</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 9</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 10</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 11</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 12</span>
-                            <span></span>
-                        </div>
-                        <div class="cap">
-                            <span></span>
-                            <span>Capitulo 13</span>
-                            <span></span>
-                        </div>
+                            Agregar Capítulo
+                        </button>
                     </div>
-                    <!-- Botón para agregar más capítulo a la temporada en cuestión -->
-                    <button>
-                        <span></span>
-                        Agregar Capítulo
-                    </button>
                 </div>
                 <div class="tempComp">
                     <!-- Contenedor de lo que debería de tener un bloque de temporada -->
@@ -136,28 +149,31 @@
                     </div>
                 </div>
                 <!-- Botón para agregar un nueva temporada, hay que tratar de hacer que por defecto agregue un capítulo -->
-                <button>
+                <button class="btnAgreEdiCap">
                     <span></span>
                     Agregar Temporada
                 </button>
             </aside>
 
             <!-- Sección que cambiará de acuerdo al capítulo seleccionado -->
-            <section>
+            <section class="infoCaps">
                 <!-- Título del capítulo -->
                 <div class="titCap">
+                    <span class="fa-solid fa-pencil"></span>
+                    <span class="fa-solid fa-x ocultar"></span>
                     <input type="text" name="nomCap" id="" readonly value="Capitulo 7">
-                    <span></span>
                 </div>
                 <!-- Sección de los servidores -->
                 <div class="servComp">
                     <span>Servidores</span>
                     <!-- inputs para poder editar el nombre del servidor y su código embed -->
                     <!-- También, la idea de escribir el nombre del servidor, es para que haga un llamado automático a la bd y complete los campos de manera automática a excepción al código embed que es lo único diferente en cada servidor -->
-                    <!-- ¡¡IMPORTANTE!!  Este podría hacerse con un datalist posiblemente -->
-                    <input type="text" name="nomServidor" id="nomServidor" placeholder="Nombre del Servidor" autocomplete="on">
-                    <!-- Código embed -->
-                    <input type="text" name="codEmbed" id="codEmbed" placeholder="Código Embed">
+                    <div class="inputsServ">
+                        <!-- ¡¡IMPORTANTE!!  Este podría hacerse con un datalist posiblemente -->
+                        <input type="text" name="nomServidor" id="nomServidor" placeholder="Nombre del Servidor" autocomplete="on">
+                        <!-- Código embed -->
+                        <input type="text" name="codEmbed" id="codEmbed" placeholder="Código Embed">
+                    </div>
                     <!-- Contenedor de los colores para el botón del servidor -->
                     <div class="coloServ">
                         <span>Color:</span>
@@ -180,90 +196,101 @@
                                 <option value="solido" selected>Sólido</option>
                                 <option value="degradado">Degradado</option>
                             </select>
-                            <!-- input para el color del fondo -->
-                            <input type="color" name="colorSolText" id="colorSolText">
+                            <!-- input para el color1 del fondo -->
+                            <input type="color" name="colorSolText1" id="colorSolText1">
+                            <!-- input para el color2 del fondo -->
+                            <input type="color" name="colorSolText2" id="colorSolText2">
+                            <!-- seleccionar dirección para el fondo -->
+                            <select name="dirColorFondo" id="dirColorFondo">
+                                <option value="0deg">↑</option>
+                                <option value="45deg">↗</option>
+                                <option value="90deg">→</option>
+                                <option value="135deg">↘</option>
+                                <option value="180deg">↓</option>
+                                <option value="225deg">↙</option>
+                                <option value="270deg">←</option>
+                                <option value="315deg">↖</option>
+                            </select>
                         </div>
                     </div>
                     <!-- Contenedor de los servidores dentro de un capítulo -->
-                    <div class="servComp">
+                    <div class="servsComp">
                         <!-- contenedor de los servidores en forma de lista -->
                         <div class="servs">
                             <!-- contenedores de cada servidor -->
-                            <div class="serv">
+                            <div class="serv uqload">
                                 <span>Uqload</span>
                                 <!-- Botón para eliminar el servidor de este capítulo -->
                                 <button>
-                                    <span></span>
+                                    <span class="fa-solid fa-trash-can"></span>
                                 </button>
                             </div>
-                            <div class="serv">
+                            <div class="serv mp4Upload">
                                 <span>Mp4Upload</span>
                                 <!-- Botón para eliminar el servidor de este capítulo -->
                                 <button>
-                                    <span></span>
+                                    <span class="fa-solid fa-trash-can"></span>
                                 </button>
                             </div>
-                            <div class="serv">
+                            <div class="serv yourUpload">
                                 <span>YourUpload</span>
                                 <!-- Botón para eliminar el servidor de este capítulo -->
                                 <button>
-                                    <span></span>
+                                    <span class="fa-solid fa-trash-can"></span>
                                 </button>
                             </div>
-                            <div class="serv">
+                            <div class="serv okru">
                                 <span>Ok.ru</span>
                                 <!-- Botón para eliminar el servidor de este capítulo -->
                                 <button>
-                                    <span></span>
+                                    <span class="fa-solid fa-trash-can"></span>
                                 </button>
                             </div>
                         </div>
                         <!-- botón para agregar otro servidor más al capítulo en cuestión -->
                         <button>
-                            <span></span>
+                            <span class="fa-solid fa-plus-circle"></span>
                         </button>
                     </div>
                 </div>
                 <!-- Seccion donde se podrá agregar un botón extra, además de poder poner las etiquetas de este capítulo -->
-                <div class="infoExtra">
-                    <!-- Contenedor para los botones extra -->
-                    <div class="btnsExtra">
-                        Botones Extra
-                        <!-- Panel donde se visualizarán todos los botones extra que tenga este capítulo -->
-                        <div class="btnsExtraComp">
-                            <!-- contenedores de cada botón extra -->
-                            <div class="btnExtra">
-                                Saltar relleno
-                                <span></span>
-                                <!-- Botón para eliminar el botón extra -->
-                                <button>
-                                    <span></span>
-                                </button>
-                            </div>
+                <!-- Contenedor para los botones extra -->
+                <div class="btnsExtra">
+                    <span>Botones Extra</span>
+                    <!-- Panel donde se visualizarán todos los botones extra que tenga este capítulo -->
+                    <div class="btnsExtraComp">
+                        <!-- contenedores de cada botón extra -->
+                        <div class="btnExtra">
+                            <span>
+                                Saltar relleno >
+                            </span>
+                            <!-- Botón para eliminar el botón extra -->
+                            <button>
+                                <span class="fa-solid fa-trash-can"></span>
+                            </button>
                         </div>
-                        <!-- Botón para agregar un botón Extra -->
-                        <button>
-                            <span></span>
-                            Agregar Botón
-                        </button>
-                        <!-- Información del botón extra a agregar -->
-                        <input type="text" name="nomBtnExtra" id="nomBtnExtra" placeholder="Título del botón">
-                        <!-- Url al cual va direccionado dicho botón -->
-                        <input type="text" name="linkBtnExtra" id="linkBtnExtra">
                     </div>
-                    <!-- Contenedor de las estiquetas del capítulos -->
-                    <div class="etiqCapComp">
-                        Etiqueta:
-                        <textarea name="etiqCap" id="etiqCap" placeholder="Etiquetas para poder se encontrado por el motor del navegador"></textarea>
-                    </div>
+                    <!-- Botón para agregar un botón Extra -->
+                    <button type="button">
+                        Agregar Botón
+                    </button>
+                    <!-- Información del botón extra a agregar -->
+                    <input type="text" name="nomBtnExtra" id="nomBtnExtra" placeholder="Título del botón">
+                    <!-- Url al cual va direccionado dicho botón -->
+                    <textarea name="linkBtnExtra" id="linkBtnExtra" placeholder="Link o Enlace para el botón"></textarea>
                 </div>
+                <!-- Contenedor de las estiquetas del capítulos -->
+                <div class="etiqCapComp">
+                    Etiqueta:
+                    <textarea name="etiqCap" id="etiqCap" placeholder="Etiquetas para poder ser encontrado por el motor del navegador"></textarea>
+                </div>
+                
+                <!-- Botón para poder guardar todos los cambios hechos para los capítulos -->
+                <button type="submit">
+                    <span></span>
+                    Guardar
+                </button>
             </section>
-
-            <!-- Botón para poder guardar todos los cambios hechos para los capítulos -->
-            <button type="submit">
-                <span></span>
-                Guardar
-            </button>
         </form>
     </main>
 

@@ -3,7 +3,7 @@
     color: var(--texto1);
 }
 .ocultar {
-    display: none;
+    display: none !important;
 }
 
 /* HEADER */
@@ -22,6 +22,8 @@
 /* MAIN */
 main {
     padding: 1rem 0;
+    height: calc(100vh - 4.5rem);
+    overflow-y: auto;
 }
 /* Tamaño del formulario */
     .formAgrAnim {
@@ -327,9 +329,17 @@ input, textarea, label[for="horImg"] {
         border-radius: 0.8rem;
     }
     /* Estilo del botón de guardar */
-    .ultInfo > button {
+    .ultInfo > button, .infoCaps > button  {
         border: none;
         background: #063804;
         border-radius: 0.8rem;
         font-size: 1.2rem;
+        cursor: pointer;
+    }
+    .ultInfo > button:active, .infoCaps > button:active  {
+        border: none;
+        background: var(--fondo);
+        border-radius: 0.8rem;
+        font-size: 1.2rem;
+        cursor: pointer;
     }

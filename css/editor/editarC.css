@@ -1,0 +1,431 @@
+.ocultar {
+    display: none;
+}
+/* Estructura del main y el form */
+.formEdiCap {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 3rem;
+    gap: 0.5rem 1rem;
+    width: 90%;
+}
+
+/* Titúlo del anime y emisión */
+    .nomAnimEdiCap {
+        grid-column: 1 / 3;
+        background-color: var(--color1);
+        display: flex;
+        padding: 0.6rem 1rem;
+        border-radius: 0.8rem;
+    }
+        /* Texto dentro del contenedor del título */
+        .nomAnimEdiCap > span {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Botón de emisión */
+        .nomAnimEdiCap > label {
+            margin-right: 3rem;
+        }
+        input[type=checkbox].toggle2 + label::before {
+            content: '';
+            cursor: pointer;
+            position: absolute;
+            width: 4rem;
+            height: 1.8rem;
+            background: #830000;
+            border-radius: 2rem;
+            transform: translate(130%, -20%);
+            transition: background 0.3s ease-in-out;
+        }
+        input[type=checkbox].toggle2 + label::after {
+            content: '';
+            cursor: pointer;
+            position: absolute;
+            width: 1.8rem;
+            height: 1.8rem;
+            background: #ccc;
+            border-radius: 2rem;
+            transform: translate(10%, -20%);
+            transition: transform 0.3s ease-in-out;
+        }
+        input#emision:checked ~ label[for="emision"]::before {
+            background: #165E0C;
+        }
+        input[type=checkbox].toggle2:checked + label::after {
+            transform: translate(140%, -20%);
+            background: rgba(255, 255, 255, 1);
+        }
+/* Aside de los capítulos */
+    .asideEdiCap {
+        width: 100%;
+        top: 0;
+        border: 0.4rem solid var(--fondo);
+        border-radius: 0.6rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0.1rem 0;
+    }
+    /* Contenedores de los títulos */
+        .tempCap {
+            display: flex;
+            padding: 0.4rem 0.6rem;
+            background-color: var(--fondoItemTemp);
+            border: 0.1rem solid var(--texto1);
+            border-radius: 0.4rem;
+            gap: 5%;
+        }
+        .tempCap > input {
+            flex-grow: 1;
+            width: 100%;
+            background: none;
+            padding: 0;
+        }
+    /* Contenedor de el contenedor de los items de los caps y el botón de agregar más capítulos */
+        .capYBtn {
+            margin: 0 4%;
+            padding: 0 2%;
+            background: var(--fondo);
+        }
+        /* Contenedor de los items de los caps     */
+            .capComp {
+                overflow-y: auto;
+                height: 15rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1%;
+            }
+            /* Item capítulo */
+                .cap {
+                    display: flex;
+                    background: var(--fondoItemCap2);
+                    border: 0.1rem solid;
+                    border-radius: 0.6rem;
+                    padding: 0.4rem 0.6rem;
+                    align-items: center;
+                    font-size: 0.8rem;
+                    gap: 5%;
+                }
+                .cap > .nomCap {
+                    flex-grow: 1;
+                    text-align: left;
+                }
+            /* Estilos de botónes para agregar capitulos y temporadas */
+                .btnAgreEdiCap {
+                    background: var(--fondoT);
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    padding: 0.6rem;
+                    align-items: center;
+                    transition: background 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+                .btnAgreEdiCap:hover {
+                    background: var(--texto1);
+                    color: var(--fondoT);
+                }
+/* Section de la información de los capítulos */
+    .infoCaps {
+        width: 100%;
+        border: 0.1rem solid;
+        border-radius: 0.8rem;
+        background: var(--fondo);
+        padding: 0.5rem 1rem;
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        grid-template-rows: auto auto 1fr auto;
+        gap: 0.8rem;
+    }
+    /* Título de los capítulos */
+        .titCap {
+            font-size: 1.5rem;
+            grid-column: 1/3;
+            height: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+        .titCap > span {
+            background: var(--texto1);
+            border-radius: 0.6rem;
+            color: var(--texto2);
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+            transition: background 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .titCap > span:hover {
+            background: var(--texto2);
+            color: var(--texto1);
+        }
+    /* Sección de los servidores */
+        .servComp {
+            grid-column: 1/3;
+            background: var(--color1);
+            border: 0.3rem solid;
+            border-radius: 1rem;
+            padding: 0.4rem 0.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+        .servComp > span {
+            font-size: 1.2rem;
+        }
+        /* Inputs para agregar un servidor */
+            .inputsServ {
+                display: flex;
+                gap: 1rem;
+            }
+            .inputsServ > #codEmbed {
+                flex-grow: 1;
+            }
+            .inputsServ input {
+                background: var(--texto1);
+                color: var(--texto2);
+                border-radius: 0.6rem;
+                padding: 0.4rem 0.8rem;
+                transition: background 0.2s ease-in;
+            }
+            .inputsServ input:focus {
+                background: var(--texto2);
+                color: var(--texto1);
+            }
+        /* Inputs de los colores del servidor */
+            .coloServ {
+                display: flex;
+                gap: 1rem;
+                align-items: baseline;
+            }
+            .coloServ > span {
+                font-size: 1.2rem;
+            }
+            .coloServ select {
+                background: var(--color2);
+                border-radius: 1rem;
+                padding: 0 0.4rem;
+                border: none;
+            }
+            .coloTextServ, .coloFondServ {
+                flex-grow: 1;
+            }
+            .coloServ input[type="color"] {
+                background: var(--texto1);
+                padding: 0;
+                border-radius: 0.4rem;
+            }
+            #dirColorFondo {
+                padding: 0.2rem 0.6rem;
+            }
+        /* Contenedor de los diseños de los servidores */
+            .servsComp{
+                display: flex;
+                overflow: hidden;
+                border-radius: 1rem;
+            }
+            /* Contenedor de los items servidores */
+                .servs {
+                    flex-grow: 1;
+                    display: flex;
+                    overflow-x: auto;
+                    background: var(--fondoT);
+                    padding: 0.4rem 0.8rem;
+                    gap: 0.8rem;
+                }
+                /* Estilo general de items */
+                    .serv {
+                        display: flex;
+                        overflow: hidden;
+                        border-radius: 0.6rem;
+                        border: 0.4rem  solid;
+                        border-right: 0;
+                    }
+                    .serv > span {
+                        padding: 0.2rem 0.6rem;
+                    }
+                    .serv > button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0.2rem 0.4rem;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    .serv > button:hover > span {
+                        color: var(--texto2);
+                    }
+                /* Colores personalizados de servidores */
+                    /* uqload */
+                    .uqload {
+                        border-color: #0B4E75;
+                    }
+                    .uqload > span {
+                        color: #0B4E75;
+                        background: #d9d9d9;
+                    }
+                    .uqload > button {
+                        background: #0B4E75;
+                    }
+                    .uqload > button > span {
+                        color: #d9d9d9;
+                    }
+                    /* mp4Upload */
+                    /* PENDIENTE DE AVERIGUAR LOS DEGRADADOS EN EL TEXTO Y LOS BORDES AL SER LLAMADOS */
+                    .mp4Upload {
+                        border-color: #fff;
+                    }
+                    .mp4Upload > span {
+                        color: #fff;
+                        background: #000;
+                    }   
+                    .mp4Upload > button {
+                        background: #fff;
+                    }
+                    .mp4Upload > button > span {
+                        color: #000;
+                    }
+                    /* yourUpload */
+                    /* AVERIGUAR COMO HACER ESTILOS PERSONALIZADOS POR PALABRAS */
+                    .yourUpload {
+                        border-color: #0B5F8F;
+                    }
+                    .yourUpload > span {
+                        color: #0B5F8F;
+                        background: #d9d9d9;
+                    }
+                    .yourUpload > button {
+                        background: #0B5F8F;
+                    }
+                    .yourUpload > button > span {
+                        color: #d9d9d9;
+                    }
+                    /* okru */
+                    .okru {
+                        border-color: #fff;
+                    }
+                    .okru > span {
+                        color: #fff;
+                        background: #EE8208;
+                    }
+                    .okru > button {
+                        background: #fff;
+                    }
+                    .okru > button > span {
+                        color: #EE8208;
+                    }
+            /* Botón para agregar servidores */
+                .servsComp > button {
+                    background: rgba(255, 255, 255, .3);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.2rem 1rem;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    transition: background 0.2s ease-in;
+                    border: none;
+                }
+                .servsComp > button:hover {
+                    background: rgba(255, 255, 255, .5);
+                }
+    /* Sección de los botones extra */
+        .btnsExtra {
+            grid-row: 3 / 5;
+            background: rgba(255, 255, 255, .2);
+            padding: 0.4rem;
+            border-radius: 1rem;
+            display: grid;
+            grid-template-columns: 5fr 2fr;
+            grid-template-rows: auto auto auto 1fr;
+            gap: 0.4rem;
+        }
+        /* Título */
+            .btnsExtra > span {
+                grid-column: 1 / 3;
+                font-size: 1.2rem;
+                padding: 0 1rem;
+            }
+        /* Contenedor de los botones extra */
+            .btnsExtraComp {
+                grid-row: 2 / 5;
+                background: var(--fondo);
+                padding: 0.4rem 0.8rem;
+                overflow-y: auto;
+            }
+            /* Item de los botones extra */
+                .btnExtra {
+                    display: inline-flex;
+                    background: var(--fondoItemCap2);
+                    gap: 0.4rem;
+                    align-items: center;
+                    border-radius: 1rem;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .btnExtra > span {
+                    padding: 0 0.6rem;
+                }
+                .btnExtra > button {
+                    background: rgba(0,0,0,.3);
+                    border: none;
+                    padding: 0.4rem 0.8rem;
+                    cursor: pointer;
+                }
+                .btnExtra > button:hover > span {
+                    color: #fff;
+                }
+        /* Botón para agregar un botón extra del contenedor antes mencionado */
+            .btnsExtra > button {
+                color: rgba(0,0,0,.5);
+                border: none;
+                background: rgba(255, 255, 255, .6);
+                cursor: pointer;
+                border-radius: 0.8rem;
+                padding: 0.2rem;
+            }
+            .btnsExtra > button:hover {
+                color: #000;
+            }
+            .btnsExtra > button:active {
+                background: rgba(0,0,0,.5);
+                color: rgba(255, 255, 255, .6);
+            }
+        /* Nombre del nuevo botón extra y su link */
+            .btnsExtra > input {
+                width: 100%;
+            }
+            .btnsExtra > input, .btnsExtra > textarea {
+                padding: 0.4rem 0.8rem;
+                background: var(--texto1);
+                color: var(--texto2);
+                border-radius: 0.6rem;
+                transition: background 0.2s ease-in;
+            }
+            .btnsExtra > input:focus, .btnsExtra > textarea:focus {
+                background: var(--texto2);
+                color: var(--texto1);
+            }
+    /* Etiquetas */
+        .etiqCapComp {
+            display: flex;
+            flex-direction: column;
+        }
+        .etiqCapComp >  textarea {
+            flex-grow: 1;
+            width: 100%;
+            border-radius: 0.8rem;
+            border: 0.2rem solid;
+            padding: 0.6rem 0.4rem;
+        }
+    /* Botón para guardar el formulario */
+        .infoCaps > button {
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.6rem;
+        }
