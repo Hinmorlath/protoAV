@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaVivo | Iniciar Sesión</title>
+</head>
+<body>
+    <!-- Contenedor de toda la página -->
+    <main class="iS">
+        <!-- Botón para poder regresar al index principal -->
+        <a href="./index.html" class="btn-Regreso">
+            <span class="fa-solid fa-torii-gate"></span>
+            Inicio
+        </a>
+
+        <!-- Imagen de Logo -->
+        <img src="./../img/AnimaVivo.png" alt="AnimaVivo">
+
+        <!-- Contenedor de ambos formularios -->
+        <div class="iS-R">
+            <!-- Formulario de Iniciar Sesión -->
+            <form class="iSFormulario" action="#" method="post">
+                <!-- Input para el nombre y su label -->
+                <div>
+                    <label for="nomUser">Nombre de Usuario:</label>
+                    <!-- Contenedor del input del nombre -->
+                    <div class="inputs">
+                        <!-- input nombre -->
+                        <input type="text" name="nomUser" id="nomUser" placeholder="Escribe tu nombre de Usuario" autofocus required>
+                        <span class="fa-solid fa-user"></span>
+                    </div>
+                </div>
+                <!-- Input para la contraseña -->
+                <div>
+                    <label for="passUser">Contraseña:</label>
+                    <!-- Contenedor del input contraseña -->
+                    <div class="inputs">
+                        <!-- input contraseña -->
+                        <input type="text" name="passUser" id="passUser" required placeholder="Escribe tu contraseña">
+                        <!-- PENDIENTE checar cómo funciona el input de mostrar y ocultar la contraseña -->
+                        <span class="fa-solid fa-eye"></span>
+                    </div>
+                </div>
+                <!-- Contenedor de enviar un formulario y recordar la contraseña -->
+                <div>
+                    <!-- btn submit -->
+                    <button>Iniciar</button>
+                    <!-- PENDIENTE cómo recuperar la contraseña -->
+                    <span>Recordar contraseña</span>
+                </div>
+            </form>
+
+            <!-- Formulario de Registro -->
+            <form class="rFormulario" action="#" method="post">
+                <!-- Input para el nombre y su label -->
+                <div>
+                    <label for="nomUser">Nombre de Usuario:</label>
+                    <!-- Contenedor del input del nombre -->
+                    <div class="inputs">
+                        <!-- input nombre -->
+                        <input type="text" name="nomUser" id="nomUser" placeholder="Escribe un nombre de Usuario" required>
+                        <span class="fa-solid fa-user"></span>
+                    </div>
+                </div>
+                <!-- Input para la contraseña -->
+                <div>
+                    <label for="passUser">Contraseña:</label>
+                    <!-- Contenedor del input contraseña -->
+                    <div class="inputs">
+                        <!-- input contraseña -->
+                        <input type="text" name="passUser" id="passUser" required placeholder="Escribe una contraseña">
+                        <!-- PENDIENTE checar cómo funciona el input de mostrar y ocultar la contraseña -->
+                        <span class="fa-solid fa-eye"></span>
+                    </div>
+                </div>
+                <!-- Input para la confirmar la contraseña -->
+                <div>
+                    <label for="passUser">Confirma:</label>
+                    <!-- Contenedor del input contraseña -->
+                    <div class="inputs">
+                        <!-- input contraseña -->
+                        <input type="text" name="passUser" id="passUser" placeholder="Confirma tu contraseña">
+                        <!-- PENDIENTE checar cómo funciona el input de mostrar y ocultar la contraseña -->
+                        <span class="fa-solid fa-eye"></span>
+                    </div>
+                </div>
+                <!-- Contenedor de enviar un formulario y recordar la contraseña -->
+                <div>
+                    <!-- btn submit -->
+                    <button>Iniciar</button>
+                    <!-- PENDIENTE cómo recuperar la contraseña -->
+                    <span>Recordar contraseña</span>
+                </div>
+            </form>
+        </div>
+
+        <!-- Caja de animación -->
+        <div class="semiC">
+            <!-- Contenedor de los botones -->
+            <div class="btnsCambio">
+                <!-- Botón de Registrarse -->
+                <button type="button">Registrarme</button>
+                <!-- Botón de regresar al formulario de iniciar Sesión -->
+                <button type="button">Regresar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
