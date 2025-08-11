@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagas</title>
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/editor/colores.css">
+    <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/menu.css">
+    <link rel="stylesheet" href="./../css/editor/iconos.css">
+    <title>AnimaVivo | Sagas</title>
 </head>
 <body>
     <!-- Header que tiene un editor, que es parecido al de un Espectador -->
     <header>
         <!-- Header 1 -->
-        <div id="header1">
+        <div class="header1">
             <!-- Logotipo -->
-            <a href="#" id="logo">
-                <img src="" alt="Logo" height="128px" width="128px">
+            <a href="#" id="logo" class="logo">
+                <img src="./../img/AnimaVivo.png" alt="Logo" height="128px" width="128px">
             </a>
             <!-- Buscador -->
-            <form method="post" autocomplete="on">
+            <form method="post" autocomplete="on" id="formBusc">
                 <input type="search" name="buscador" id="buscador">
-                <button type="submit"></button>
+                <button type="submit">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                </button>
             </form>
             <!-- Icono del usuario y las herramientas que ofrece este Rol -->
-            <div id="iconUsuario">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+            <div class="herUsu">
+                <div class="icoNot">
+                    <span class="fa-regular fa-bell"></span>
+                </div>
+                <div id="iconUsuario">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
         </div>
 
         <!-- Header 2 -->
-        <div id="header2">
+        <div class="header2">
             <!-- Alfabeto -->
             <ul>
                 <li><a href="#">#</a></li>
@@ -63,165 +76,192 @@
     <!-- Main del Editor -->
     <main>
         <!-- Panel de control del Editor -->
-        <aside id="panelControl">
-            <!-- Icono o Imagen del Usuario -->
-            <div id="iconUsuAside">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+        <aside class="panelControl">
+            <div class="espacio">
+                <!-- Icono o Imagen del Usuario -->
+                <div class="iconUsuAside">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
             <!-- Bienvenida y nombre del usuario -->
-            <span id="bien">Bienvenido</span>
+            <span>Bienvenido</span>
             <span id="nomUsuAside">1er Nombre del Usuario</span>
 
             <!-- Opciones del Editor -->
             <a href="./animes.html">
-                <span></span><span>Animes</span>
+                <span class="film">Animes</span>
             </a>
             <a href="./capitulos.html">
-                <span></span><span>Capítulos</span>
+                <span class="list">Capítulos</span>
             </a>
             <a href="#">
-                <span></span><span>Sagas</span>
+                <span class="photo-film">Sagas</span>
             </a>
             <a href="./animesPendientes.html">
-                <span></span><span>Animes Pendientes</span>
+                <span class="arrows-rotate">Animes Pendientes</span>
             </a>
             <a href="./comentarios.html">
-                <span></span><span>Comentarios</span>
+                <span class="comments">Comentarios</span>
             </a>
             <a href="./historialAnime.html">
-                <span></span><span>Historial</span>
+                <span class="clock-rotate">Historial</span>
             </a>
         </aside>
 
         <!-- Información de la opción del panel -->
         <section>
-            <!-- Título de la sección dependiente del panel -->
-            <span id="titSeccion">Sagas</span>
-
+            
             <!-- Información cambiante del panel de control -->
             <div id="infoPanel">
-                <!-- Control de la clasificación de las sagas mostradas -->
-                <!-- Botón para ver los géneros ¡TEMPORAL! -->
                 <div>
-                    <button id="geneInfoPanel">Género <span></span></button>
-                    <select name="Genero" id="genero" size="4">
-                        <option value="Acción">Acción</option>
-                        <option value="Aventura">Aventura</option>
-                        <option value="Ciencia Ficción">Ciencia Ficción</option>
-                        <option value="Comedia">Comedia</option>
-                        <option value="Comedia Romántica">Comedia Romántica</option>
-                    </select>
-                </div>
-                <!-- Botón o lista desplegable de la duración por minutos -->
-                <div>
-                    <button id="duraMInfoPanel">Duración(Minutos) <span></span></button>
-                    <select name="DuracionM" id="duraM" size="4">
-                        <option value="5">5 Minutos</option>
-                        <option value="10">10 Minutos</option>
-                        <option value="20">20 Minutos</option>
-                        <option value="30">30 Minutos</option>
-                    </select>
-                </div>
-                <!-- Botón o lista desplegable de la duración por capítulos -->
-                <div>
-                    <button id="duraCInfoPanel">Duración(Capitulos) <span></span></button>
-                    <select name="DuracionC" id="duraC" size="4">
-                        <option value="1 a 5">1 a 5 Capitulos</option>
-                        <option value="6 a 12">6 a 12 Capitulos</option>
-                        <option value="13 a 24">13 a 24 Capitulos</option>
-                        <option value="25 a 50">25 a 50 Capitulos</option>
-                    </select>
-                </div>
-                <!-- Boton desplegable de la demografia -->
-                <div>
-                    <button id="demogInfoPanel">Demografía <span></span></button>
-                    <select name="Demografia" id="demografia" size="4">
-                        <option value="Bishojo">Bishojo</option>
-                        <option value="Bishonen">Bishonen</option>
-                        <option value="Ecchi">Ecchi</option>
-                        <option value="Harem">Harem</option>
-                    </select>
+                    <!-- Título de la sección dependiente del panel -->
+                    <h2 id="titSeccion">Sagas</h2>
+                    <!-- Control de la clasificación de las sagas mostradas -->
+                    <div class="filtros">
+                        <!-- Botón para ver los géneros ¡TEMPORAL! -->
+                        <div id="geneInfoPanel">
+                            <button class="btn-genero" type="button">Género</button>
+                            <div class="div-desplegable">
+                                <select name="Genero" id="genero" size="4">
+                                    <option value="Acción">Acción</option>
+                                    <option value="Aventura">Aventura</option>
+                                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                                    <option value="Comedia">Comedia</option>
+                                    <option value="Comedia Romántica">Comedia Romántica</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Botón o lista desplegable de la duración por minutos -->
+                        <div id="duraMInfoPanel">
+                            <button class="btn-duraM" type="button">Duración(Minutos)</button>
+                            <div class="div-desplegable">
+                                <select name="DuracionM" id="duraM" size="4">
+                                    <option value="5">5 Minutos</option>
+                                    <option value="10">10 Minutos</option>
+                                    <option value="20">20 Minutos</option>
+                                    <option value="30">30 Minutos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Botón o lista desplegable de la duración por capítulos -->
+                        <div id="duraCInfoPanel">
+                            <button class="btn-duraC" type="button">Duración(Capitulos)</button>
+                            <div class="div-desplegable">
+                                <select name="DuracionC" id="duraC" size="4">
+                                    <option value="1 a 5">1 a 5 Capitulos</option>
+                                    <option value="6 a 12">6 a 12 Capitulos</option>
+                                    <option value="13 a 24">13 a 24 Capitulos</option>
+                                    <option value="25 a 50">25 a 50 Capitulos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Boton desplegable de la demografia -->
+                        <div id="demogInfoPanel">
+                            <button class="btn-demog" type="button">Demografía</button>
+                            <div class="div-desplegable">
+                                <select name="Demografia" id="demografia" size="4">
+                                    <option value="Bishojo">Bishojo</option>
+                                    <option value="Bishonen">Bishonen</option>
+                                    <option value="Ecchi">Ecchi</option>
+                                    <option value="Harem">Harem</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Seccion donde se visualizan las sagas que se han elaborados -->
-                <div id="sagasSubidas">
+                <div class="sagasSubidas">
                     <!-- Enlace en forma de portada para subir más sagas -->
-                    <a href="./agregarSaga.html">
-                        <span></span>
+                    <a class="agreSaga" href="./agregarSaga.html">
+                        <span class="fa-solid fa-plus"></span>
                     </a>
                     
                     <!-- Lista de animes con sus enlaces -->
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 1" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 1" height="128px" width="128px">
                             <span>Saga 1</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
                     </div>
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 2" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 2" height="128px" width="128px">
                             <span>Saga 2</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
                     </div>
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 3" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 3" height="128px" width="128px">
                             <span>Saga 3</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
                     </div>
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 4" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 4" height="128px" width="128px">
                             <span>Saga 4</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
                     </div>
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 5" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 5" height="128px" width="128px">
                             <span>Saga 5</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
                     </div>
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 6" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 6" height="128px" width="128px">
                             <span>Saga 6</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
                     </div>
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 7" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 7" height="128px" width="128px">
                             <span>Saga 7</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
                     </div>
                     <div class="portadaS">
-                        <a href="#" id="saga">
-                            <img src="" alt="Saga 8" height="128px" width="128px">
+                        <a href="#" class="saga">
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 8" height="128px" width="128px">
                             <span>Saga 8</span>
                         </a>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash-can"></span>
                         </button>
+                    </div>
+                </div>
+
+                <!-- Paginador -->
+                <div class="paginador">
+                    <div class="pag pag-active">
+                        <span class="fa-solid fa-circle"></span>
+                    </div>
+                    <div class="pag">
+                        <span class="fa-solid fa-circle"></span>
+                    </div>
+                    <div class="pag">
+                        <span class="fa-solid fa-circle"></span>
                     </div>
                 </div>
             </div>

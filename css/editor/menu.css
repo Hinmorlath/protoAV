@@ -7,12 +7,13 @@ main {
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    height: calc(100vh - 6.7rem);
 }
 /* GENERAL */
 aside a, aside > span {
     display: block;
 }
-.header2 a, aside a , .agreAni, .anime{
+.header2 a, aside a , .agreAni, .anime, .agreSaga, .saga{
     text-decoration: none;
 }
 /* HEADER */
@@ -115,7 +116,7 @@ aside a, aside > span {
         display: flex;
         flex-direction: column;
         position: relative;
-        height: 100%;
+        height: calc(100% - 4rem);
         width: 18%;
         border-radius: 2.2rem;
         top: 4rem;
@@ -174,6 +175,7 @@ aside a, aside > span {
         justify-content: space-evenly;
         gap: 0.2rem;
         padding: 0.6rem;
+        height: 100%;
     }
     #infoPanel > div {
         display: flex;
@@ -246,7 +248,7 @@ aside a, aside > span {
         display: grid !important;
         grid-template-columns: auto auto auto auto auto auto auto;
     }
-    .agreAni {
+    .agreAni, .agreSaga {
         display: flex;
         background: var(--agregar);
         color: var(--texto1);
@@ -254,14 +256,14 @@ aside a, aside > span {
         justify-content: center;
         align-items: center;
     }
-    .agreAni, .agreAni * {
+    .agreAni, .agreAni * , .agreSaga, .agreSaga *{
         transition: all 0.1s ease-in-out;
     }
-    .agreAni:hover {
+    .agreAni:hover, .agreSaga:hover {
         background: var(--texto1);
         color: var(--agregar);
     }
-    .agreAni:hover > span {
+    .agreAni:hover > span, .agreSaga:hover > span {
         transform: scale(1.5);
     }
     .agreAni, .portadaA {
@@ -270,16 +272,21 @@ aside a, aside > span {
         border-radius: 0.4rem;
         overflow: hidden;
     }
-    .portadaA {
+    .agreSaga, .portadaS {
+        border-radius: 0.4rem;
+        overflow: hidden;
+        aspect-ratio: 16/9;
+    }
+    .portadaA, .portadaS {
         position: relative;
     }
-    .anime {
+    .anime, .saga {
         display: block;
         width: 100%;
         height: 100%;
         position: relative;
     }
-    .anime > img {
+    .anime > img, .saga > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -288,7 +295,10 @@ aside a, aside > span {
     .anime > span, .eliminarA {
         background: var(--fondoT);
     }
-    .anime > span {
+    .saga > span {
+        background: rgba(80,0,0,0.94);
+    }
+    .anime > span, .saga > span {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -302,7 +312,7 @@ aside a, aside > span {
         max-height: 1.6rem;
         transition: all 0.3s ease-in-out;
     }
-    .anime:hover > span {
+    .anime:hover > span, .saga:hover > span {
         background: #000;
         color: #fff;
         white-space: normal;
@@ -349,4 +359,12 @@ aside a, aside > span {
     /* Bordes */
     .panelControl, .iconUsuAside {
         border: 0.5rem solid var(--fondo);
+    }
+
+    /* Estilos para las sagas */
+    div.sagasSubidas {
+        flex-grow: 1;
+        display: grid !important;
+        grid-template-columns: auto auto auto auto;
+        gap: 0.5rem;
     }
