@@ -88,12 +88,12 @@ input[type=radio]:checked + label::before {
     content: "\f303";
     margin-right: 0.6rem;
 }
-.contListGen > button::before, .infoTempAnime > button::before, .btnAgreEdiCap::before, .btnsExtra > button::before {
+.contListGen > button::before, .infoTempAnime > button::before, .btnAgreEdiCap::before, .btnsExtra > button::before, .btn-agreLT::before {
     font: var(--fa-font-solid);
     content: "\2b";
     margin-right: 0.6rem;
 }
-.ultInfo > button::before, .infoCaps > button::before {
+.ultInfo > button::before, .infoCaps > button::before, .guardarLT::before {
     font: var(--fa-font-regular);
     content: "\f0c7";
     margin-right: 0.6rem;
