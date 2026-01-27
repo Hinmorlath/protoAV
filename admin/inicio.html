@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <script src="./../fontawesome/all.js"></script>
+    <title>AnimaVivo | Inicio - Gráfica General</title>
+</head>
+<body>
+    <!-- Header del administrador que estará en todas las páginas -->
+    <header>
+        <!-- Caja de las notificaciones -->
+        <div class="noti-admin">
+            <span class="fa-regular fa-bell"></span>
+        </div>
+
+        <!-- Caja del logo -->
+        <div class="conten-Logo">
+            <img src="./../img/AnimaVivo.png" alt="AnimaVivo Logo">
+        </div>
+
+        <!-- Caja de Info del admin y herramientas extra -->
+        <div class="userAdmin">
+            <!-- Nombre del admin -->
+            <span id="nomAdmin">Hinmorlath</span>
+            <!-- Imagen del Admin -->
+            <div class="imgAdmin">
+                <img src="./../img/users/Vivotaku 2.png" alt="Imagen del Admin" id="imgUserAdmin">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main del rol del administrador -->
+    <main>
+        <!-- nav principal del admin -->
+        <nav>
+            <!-- Enlace de las estadísticas -->
+            <a href="#">Estadísticas</a>
+            <!-- Enlace de la página de los usuarios -->
+            <a href="#">Usuarios <span id="contadorUsers">1</span></a>
+            <!-- Enlace de la página de Reportes -->
+            <a href="#">Reportes <span id="reportesNL">3</span></a>
+        </nav>
+
+        <!-- Panel de control que mostrará lo que normalmente cambie por el nav -->
+        <div class="panel">
+            <!-- Select que mostrará las gráficas -->
+            <select name="graficas" id="graficas">
+                <option class="iconG" value="general">General</option>
+                <option class="iconNSO" value="nav-so">Naveg - SO</option>
+                <option class="iconP" value="pais">Paises</option>
+            </select>
+
+            <!-- Contenedor de las diferentes gráficas y/o información a mostrar -->
+            <div class="panelGrafico">
+                <div class="infoG">
+                    <!-- Contenedor del div de la gráfica general -->
+                    <div id="graficaGnrl">
+                        <!-- Aquí irá la información de la gráfica y la gráfica en sí -->
+                    </div>
+
+                    <!-- Primer caja de información -->
+                    <div class="infoG1">
+                        <!-- Cajas de información de lapágina en general -->
+                        <div class="vt">
+                            Visitas Totales
+                            <span id="visitasT">1860434</span>
+                        </div>
+
+                        <div class="ct">
+                            Comentarios Totales
+                            <span id="comenT">118604</span>
+                        </div>
+
+                        <div class="st">
+                            Seguidores Totales
+                            <span id="seguidoresT">1804</span>
+                        </div>
+                    </div>
+
+                    <!-- Segunda caja de información -->
+                    <div class="infoG2">
+                        <!-- Caja informática por período -->
+                        <div class="infoPeriodo">
+                            <!-- Select controlador de periodo -->
+                            <Select>
+                                <option value="1">1 día</option>
+                                <option value="3">3 días</option>
+                                <option value="7">7 días</option>
+                            </Select>
+
+                            <!-- divs con información que cambia por el periodo -->
+                            <div class="vis">Visitas <span id="canVis">25</span></div>
+                            <div class="com">Comentarios <span id="canCom">4.3k</span></div>
+                            <div class="seg">Seguidores <span id="canSeg">4</span></div>
+                        </div>
+
+                        <!-- Caja con información fija -->
+                        <div class="sinc">
+                            <div>
+                                Hoy
+                                <span>73894</span>
+                            </div>
+                            <div>
+                                Ayer
+                                <span>73894</span>
+                            </div>
+                            <div>
+                                Esta semana
+                                <span>73894</span>
+                            </div>
+                            <div>
+                                Semana Pasada
+                                <span>73894</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tercera caja de información -->
+                    <div class="infoG3">
+                        <!-- Contenedores de información fija -->
+                        <div>
+                            Este Mes
+                            <span>97356</span>
+                        </div>
+                        <div>
+                            Este Mes
+                            <span>97356</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Caja contenedora de sagas -->
+                <div class="contSagas">
+                    <!-- contenedor del input que servirá como buscador de todo el contenido para este contenedor -->
+                    <div class="buscador">
+                        <!-- Este input debe de buscar en automático lo que se esté escribiendo desde que empieza uno a escribir en él -->
+                        <input type="search" name="busAni" id="busAni" placeholder="busca los Animes que quieras" autocomplete="on">
+                        <!-- Botón para hacer que lo que se está buscando en el input:search si e encuentre -->
+                        <button type="button">
+                            <span class="fa-solid fa-magnifying-glass"></span>
+                        </button>
+                    </div>
+
+                    <!-- contenedor de sólamente las sagas existentes -->
+                    <div class="sagass">
+                        <!-- Lista de animes -->
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 1" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 1</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 2" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 2</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 3" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 3</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 4" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 4</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 5" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 5</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 6" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 6</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 7" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 7</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Saga 8" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Saga 8</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Caja contenedora de animes -->
+                <div class="contAnim">
+                    <!-- contenedor del input que servirá como buscador de todo el contenido para este contenedor -->
+                    <div class="buscador">
+                        <!-- Este input debe de buscar en automático lo que se esté escribiendo desde que empieza uno a escribir en él -->
+                        <input type="search" name="busAni" id="busAni" placeholder="busca los Animes que quieras" autocomplete="on">
+                        <!-- Botón para hacer que lo que se está buscando en el input:search si e encuentre -->
+                        <button type="button">
+                            <span class="fa-solid fa-magnifying-glass"></span>
+                        </button>
+                    </div>
+
+                    <!-- contenedor de sólamente los animes existentes -->
+                    <div class="animess">
+                        <!-- Lista de animes -->
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 1" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 1</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 2" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 2</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 3" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 3</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 4" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 4</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 5" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 5</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 6" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 6</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 7" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 7</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                        <a href="#" class="portadaS">
+                            <!-- Portada del anime -->
+                            <img src="./../img/pSaga/Saga1.jpg" alt="Anime 8" height="128px" width="128px">
+                            <!-- Nombre del anime -->
+                            <span>Anime 8</span>
+                            <!-- Botón para eliminar el anime -->
+                            <button type="button" class="eliminar">
+                                <span class="fa-regular fa-trash"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+                    
+                    
