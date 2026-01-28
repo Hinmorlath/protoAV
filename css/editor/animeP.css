@@ -1,0 +1,78 @@
+.sinc {
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+/* Estilos del formulario */
+form.formAniP {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: .8rem;
+    background: var(--fondoT);
+    border-radius: 0.4rem;
+    color: var(--texto1);
+    border: 0.2rem solid var(--texto1);
+}
+    /* Estilos del input y label de la imagen */
+    .formAniP > input[type="file"] {
+        display: none;
+    }
+    .formAniP > label {
+        display: flex;
+        border: 0.3rem dashed;
+        border-radius: 0.6rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        aspect-ratio: 9 / 14;
+        cursor: pointer;
+        transition: color 0.3s ease, background 0.3s ease;
+    }
+    .formAniP > label:hover {
+        background: var(--texto1);
+        color: var(--fondoT);
+    }
+    /* Estilos de los inputs del nombre y la descripcion  */
+    .formAniP > input, .formAniP > textarea, .formAniP > button {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+        border: none;
+    }
+    .formAniP > input, .formAniP > textarea {
+        border-radius: 0.4rem;
+    }
+    .formAniP > textarea {
+        resize: none;
+        flex-grow: 1;
+    }
+    .formAniP > button {
+        border-radius: 0.6rem;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        cursor: pointer;
+        color: rgba(255, 255, 255, .8);
+    }
+    /* Colores de los botones */
+    .formAniP > button[type="reset"] {
+        background: #940000;
+    }
+    .formAniP > button[type="reset"]:hover {
+        background: #830000;
+    }
+    .formAniP > button[type="submit"] {
+        background: #165e1d;
+    }
+    .formAniP > button[type="submit"]:hover {
+        background: #276f1d;
+    }
+
+/* Estilos a modificar de los ya establecidos */
+.animesSubidos {
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0.4rem 1rem;
+}
+.portadaA {
+    cursor: pointer;
+}

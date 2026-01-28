@@ -51,6 +51,8 @@ aside a, aside > span {
             font-size: 1rem;
             font-weight: bold;
             border-bottom: 2px solid var(--texto1);
+            outline: none;
+            color: var(--texto1);
         }
         /* Botón para el buscador */
         #formBusc > button {

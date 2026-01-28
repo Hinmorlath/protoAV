@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/editor/colores.css">
+    <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/menu.css">
+    <link rel="stylesheet" href="./../css/editor/iconos.css">
+    <link rel="stylesheet" href="./../css/editor/animeP.css">
     <title>Animes Pendientes</title>
 </head>
-<body>    
+<body>
     <!-- Header que tiene un editor, que es parecido al de un Espectador -->
     <header>
         <!-- Header 1 -->
-        <div id="header1">
+        <div class="header1">
             <!-- Logotipo -->
-            <a href="#" id="logo">
-                <img src="" alt="Logo" height="128px" width="128px">
+            <a href="#" id="logo" class="logo">
+                <img src="./../img/AnimaVivo.png" alt="Logo" height="128px" width="128px">
             </a>
             <!-- Buscador -->
-            <form method="post">
-                <input type="search" name="buscador" id="buscador" autocomplete="on">
-                <button type="submit"></button>
+            <form method="post" autocomplete="on" id="formBusc">
+                <input type="search" name="buscador" id="buscador">
+                <button type="submit">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                </button>
             </form>
             <!-- Icono del usuario y las herramientas que ofrece este Rol -->
-            <div id="iconUsuario">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+            <div class="herUsu">
+                <div class="icoNot">
+                    <span class="fa-regular fa-bell"></span>
+                </div>
+                <div id="iconUsuario">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
         </div>
 
         <!-- Header 2 -->
-        <div id="header2">
+        <div class="header2">
             <!-- Alfabeto -->
             <ul>
                 <li><a href="#">#</a></li>
@@ -63,47 +77,52 @@
     <!-- Main del Editor -->
     <main>
         <!-- Panel de control del Editor -->
-        <aside id="panelControl">
-            <!-- Icono o Imagen del Usuario -->
-            <div id="iconUsuAside">
-                <img src="" alt="Icono del usuario" height="128px" width="128px">
+        <aside class="panelControl">
+            <div class="espacio">
+                <!-- Icono o Imagen del Usuario -->
+                <div class="iconUsuAside">
+                    <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+                </div>
             </div>
             <!-- Bienvenida y nombre del usuario -->
-            <span id="bien">Bienvenido</span>
+            <span>Bienvenido</span>
             <span id="nomUsuAside">1er Nombre del Usuario</span>
 
             <!-- Opciones del Editor -->
             <a href="./animes.html">
-                <span></span><span>Animes</span>
+                <span class="film">Animes</span>
             </a>
             <a href="./capitulos.html">
-                <span></span><span>Capítulos</span>
+                <span class="list">Capítulos</span>
             </a>
             <a href="./sagas.html">
-                <span></span><span>Sagas</span>
+                <span class="photo-film">Sagas</span>
             </a>
-            <a href="#">
-                <span></span><span>Animes Pendientes</span>
+            <a href="./animesPendientes.html">
+                <span class="arrows-rotate">Animes Pendientes</span>
             </a>
             <a href="./comentarios.html">
-                <span></span><span>Comentarios</span>
+                <span class="comments">Comentarios</span>
             </a>
             <a href="./historialAnime.html">
-                <span></span><span>Historial</span>
+                <span class="clock-rotate">Historial</span>
             </a>
         </aside>
 
         <!-- Información de la opción del panel -->
-        <section>
-            <!-- Título de la sección dependiente del panel -->
-            <span id="titSeccion">Animes Pendientes</span>
+        <section id="infoPanel">
+            <div>
+                <!-- Título de la sección dependiente del panel -->
+                <h2 id="titSeccion">Animes Pendientes</h2>
+            </div>
 
             <!-- Información cambiante del panel de control -->
-            <div id="infoPanel">
+            <div class="sinc">
                 <!-- formulario para poder subir y modificar los "anuncios" para los animes pendientes -->
-                <form action="" method="post">
+                <form class="formAniP" action="#" method="post">
                     <!-- input para poder subir la imagen del anime pendiente -->
                     <input type="file" name="imgAniPen" id="imgAniPen">
+                    <label for="imgAniPen"><span class="fa-solid fa-image"></span></label>
                     <!-- input para el título del Anime pendiente -->
                     <!-- La idea también es hacer que la información de algún anime pendiente que ya existe se ponga en el formulario para poder modificarlo -->
                     <input type="text" name="nomAniPen" id="nomAniPen" placeholder="Título del próximo anime">
@@ -111,84 +130,83 @@
                     <textarea name="desAniPen" id="desAniPen" placeholder="Descripción del próximo Anime"></textarea>
                     <!-- botón para recetear el formulario -->
                     <button type="reset">
-                        <span></span>
                         Cancelar
                     </button>
                     <!-- botón para guardar los cambios del anime -->
                     <button type="submit">
-                        <span></span> Guardar / <span></span> Agregar
+                        <span class="fa-solid fa-floppy-disk"></span> Guardar / <span class="fa-solid fa-plus"></span> Agregar
                     </button>
                 </form>
                 
                 <!-- Seccion donde se visualizan los animes pendientes que se han subido -->
-                <div id="animesSubidos">
+                <div class="animesSubidos">
                     <!-- Lista de animes pendientes subidos hasta ahora -->
-                    <div class="portadaA">
-                        <img src="" alt="Anime 1" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 1" height="128px" width="128px">
                         <span>Anime 1</span>
                         <button class="eliminarA">
-                            <span></span>
+                            <span class="fa-solid fa-trash"></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 2" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 2" height="128px" width="128px">
                         <span>Anime 2</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 3" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
                         <span>Anime 3</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 4" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 4" height="128px" width="128px">
                         <span>Anime 4</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 5" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 5" height="128px" width="128px">
                         <span>Anime 5</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 6" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 6" height="128px" width="128px">
                         <span>Anime 6</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 7" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 7" height="128px" width="128px">
                         <span>Anime 7</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 8" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 8" height="128px" width="128px">
                         <span>Anime 8</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 9" height="128px" width="128px">
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 9" height="128px" width="128px">
                         <span>Anime 9</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
                     </div>
-                    <div class="portadaA">
-                        <img src="" alt="Anime 1" height="128px" width="128px">
-                        <span>Anime 1</span>
+                    <div class="portadaA anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 10" height="128px" width="128px">
+                        <span>Anime 10</span>
                         <button class="eliminarA">
                             <span></span>
                         </button>
