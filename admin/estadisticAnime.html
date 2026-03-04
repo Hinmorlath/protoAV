@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <script src="./../fontawesome/all.js"></script>
+    <title>AnimaVivo | Estadísticas del Anime</title>
+</head>
+<body>
+    <!-- Header del administrador que estará en todas las páginas -->
+    <header>
+        <!-- Caja de las notificaciones -->
+        <div class="noti-admin">
+            <span class="fa-regular fa-bell"></span>
+        </div>
+
+        <!-- Caja del logo -->
+        <div class="conten-Logo">
+            <img src="./../img/AnimaVivo.png" alt="AnimaVivo Logo">
+        </div>
+
+        <!-- Caja de Info del admin y herramientas extra -->
+        <div class="userAdmin">
+            <!-- Nombre del admin -->
+            <span id="nomAdmin">Hinmorlath</span>
+            <!-- Imagen del Admin -->
+            <div class="imgAdmin">
+                <img src="./../img/users/Vivotaku 2.png" alt="Imagen del Admin" id="imgUserAdmin">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main del rol del administrador -->
+    <main>
+        <!-- Sección de información en general del anime, aquí no se editan estos datos porque para eso está el rol del editor -->
+        <div class="contInfo">
+            <!-- Link de retorno al panel principal -->
+            <a href="./inicio.html">
+                <!-- caja contenedora de la imagen, ya editando estilos vez si es o no necesaria -->
+                <div class="contImg">
+                    <!-- Imagen de la página -->
+                    <img src="./../img/AnimaVivo_logo_bordeBlanco.png" alt="Logo Blanco">
+                </div>
+            </a>
+
+            <!-- Contenedor de la información -->
+            <div class="info">
+                <!-- Portada del anime -->
+                <div class="portadaA">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Portada del anime">
+                </div>
+
+                <!-- Nombre del Anime -->
+                <span>Anime #1</span>
+
+                <!-- Metadatos del anime (por llamarlo así) -->
+                <div class="metaInfo">
+                    <!-- Indicaciones de la información y su contenido que debería de ser cambiable -->
+                    <div>Subido por: <span>NombreEditor</span></div>
+                    <div>Año de Emisión: <span>2026</span></div>
+                    <div>Director(es): <span>Kenji Kasanagi</span></div>
+                    <div>Género: <span>Acción, Ciencia Ficción, Comedia, Drama, Escolar</span></div>
+                    <div>Demografía: <span>Seinen, Shonen, Yuri</span></div>
+                </div>
+
+                <!-- Sinopsis del anime -->
+                <div>
+                    Sinopsis: <br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem in exercitationem aliquid nisi pariatur maxime totam, labore excepturi, sunt eius praesentium officia voluptate eos maiores dolor? Nostrum, delectus quo?</span>
+                </div>
+            </div>
+        </div>
+        <!-- Es la misma estructura de datos a mostrar que la página en general, solo que por anime o saga -->
+        
+        <!-- Contenedor de las diferentes gráficas y/o información a mostrar -->
+        <div class="panelGrafico">
+            <div class="infoG">
+                <!-- Contenedor del div de la gráfica general -->
+                <div id="graficaGnrl">
+                    <!-- Aquí irá la información de la gráfica y la gráfica en sí -->
+                </div>
+
+                <!-- Primer caja de información -->
+                <div class="infoG1">
+                    <!-- Cajas de información de lapágina en general -->
+                    <div class="vt">
+                        Visitas Totales
+                        <span id="visitasT">1860434</span>
+                    </div>
+
+                    <div class="ct">
+                        Comentarios Totales
+                        <span id="comenT">118604</span>
+                    </div>
+
+                    <div class="st">
+                        Seguidores Totales
+                        <span id="seguidoresT">1804</span>
+                    </div>
+                </div>
+
+                <!-- Segunda caja de información -->
+                <div class="infoG2">
+                    <!-- Caja informática por período -->
+                    <div class="infoPeriodo">
+                        <!-- Select controlador de periodo -->
+                        <Select>
+                            <option value="1">1 día</option>
+                            <option value="3">3 días</option>
+                            <option value="7">7 días</option>
+                        </Select>
+
+                        <!-- divs con información que cambia por el periodo -->
+                        <div class="vis">Visitas <span id="canVis">25</span></div>
+                        <div class="com">Comentarios <span id="canCom">4.3k</span></div>
+                        <div class="seg">Seguidores <span id="canSeg">4</span></div>
+                    </div>
+
+                    <!-- Caja con información fija -->
+                    <div class="sinc">
+                        <div>
+                            Hoy
+                            <span>73894</span>
+                        </div>
+                        <div>
+                            Ayer
+                            <span>73894</span>
+                        </div>
+                        <div>
+                            Esta semana
+                            <span>73894</span>
+                        </div>
+                        <div>
+                            Semana Pasada
+                            <span>73894</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tercera caja de información -->
+                <div class="infoG3">
+                    <!-- Contenedores de información fija -->
+                    <div>
+                        Este Mes
+                        <span>97356</span>
+                    </div>
+                    <div>
+                        Este Mes
+                        <span>97356</span>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        
+    </main>
+</body>
+</html>
