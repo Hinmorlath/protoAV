@@ -1,0 +1,23 @@
+/* Estilos de los cuadros que númeran los comentarios y los reportes */
+.vistComen {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    color: var(--texto1);
+    font-size: 0.8rem;
+}
+.vistComen > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+/* Colores */
+.noVistos {
+    background: rgba(131, 0, 0, .8);
+}
+.comentarios {
+    background: rgba(22, 94, 12, .8);
+}

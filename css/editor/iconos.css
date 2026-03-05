@@ -98,3 +98,14 @@ input[type=radio]:checked + label::before {
     content: "\f0c7";
     margin-right: 0.6rem;
 }
+/* COMENTARIOS */
+.noVistos::before {
+    font: var(--fa-font-solid);
+    content: "\f070";
+    margin-right: 0.6rem;
+}
+.comentarios::before {
+    font: var(--fa-font-solid);
+    content: "\f086";
+    margin-right: 0.6rem;
+}

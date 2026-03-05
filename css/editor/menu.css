@@ -199,7 +199,8 @@ aside a, aside > span {
     /* Filtros */
         .filtros {
             display: flex;
-            gap: 1rem;
+            flex: 1;
+            justify-content: space-around;
         }
         .filtros select, .filtros button {
             color: var(--texto1);
