@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <script src="./../fontawesome/all.js"></script>
+    <title>AnimaVivo | Inicio - Navegadores y Sistemas Operativos</title>
+</head>
+<body>
+    <!-- Header del administrador que estará en todas las páginas -->
+    <header>
+        <!-- Caja de las notificaciones -->
+        <div class="noti-admin">
+            <span class="fa-regular fa-bell"></span>
+        </div>
+
+        <!-- Caja del logo -->
+        <div class="conten-Logo">
+            <img src="./../img/AnimaVivo.png" alt="AnimaVivo Logo">
+        </div>
+
+        <!-- Caja de Info del admin y herramientas extra -->
+        <div class="userAdmin">
+            <!-- Nombre del admin -->
+            <span id="nomAdmin">Hinmorlath</span>
+            <!-- Imagen del Admin -->
+            <div class="imgAdmin">
+                <img src="./../img/users/Vivotaku 2.png" alt="Imagen del Admin" id="imgUserAdmin">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main del rol del administrador -->
+    <main>
+        <!-- nav principal del admin -->
+        <nav>
+            <!-- Enlace de las estadísticas -->
+            <a href="#">Estadísticas</a>
+            <!-- Enlace de la página de los usuarios -->
+            <a href="#">Usuarios <span id="contadorUsers">1</span></a>
+            <!-- Enlace de la página de Reportes -->
+            <a href="#">Reportes <span id="reportesNL">3</span></a>
+        </nav>
+
+        <!-- Panel de control que mostrará lo que normalmente cambie por el nav -->
+        <div class="panel">
+            <!-- Select que mostrará las gráficas -->
+            <select name="graficas" id="graficas">
+                <option class="iconG" value="general">General</option>
+                <option class="iconNSO" value="nav-so">Naveg - SO</option>
+                <option class="iconP" value="pais">Paises</option>
+            </select>
+
+            <!-- Contenedor de las diferentes gráficas y/o información a mostrar -->
+            <div class="panelGrafico">
+                <!-- Contenedor de la gráfica de pastel y la tabla -->
+                <div class="contGrafs">
+                    <div id="pastelNav">
+                        <!-- Aquí irá la gráfica de pastel de los navegadores usados para el sitio web -->
+                    </div>
+                    <!-- Tabla de número de usuarios que usan la aplicación de acuerdo a su navegador -->
+                    <div class="tablaInfo">
+                        <!-- Cabecera de la tabla -->
+                        <div class="contHead">
+                            <!-- Título -->
+                            <span>Navegadores</span>
+                            <!-- Selector de rango de la tabla -->
+                            <select name="rangoNav" id="rangoNav">
+                                <option value="3">3 días</option>
+                                <option value="7">7 días</option>
+                                <option value="30">30 días</option>
+                            </select>
+                        </div>
+
+                        <!-- contenedor de la tabla -->
+                        <div class="conTab">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">Chrome</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">25K</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">Safari</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">12K</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">Firefox</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">9K</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">Samsung Browser</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">982</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Contenedor de la gráfica de pastel y la tabla -->
+                <div class="contGrafs">
+                    <div id="pastelSO">
+                        <!-- Aquí irá la gráfica de pastel de los sistemas operativos usados para el sitio web -->
+                    </div>
+                    <!-- Tabla de número de usuarios que usan la aplicación de acuerdo a su Sistema Operativo -->
+                    <div class="tablaInfo">
+                        <!-- Cabecera de la tabla -->
+                        <div class="contHead">
+                            <!-- Título -->
+                            <span>Sistemas Operativos</span>
+                            <!-- Selector de rango de la tabla -->
+                            <select name="rangoSO" id="rangoSO">
+                                <option value="3">3 días</option>
+                                <option value="7">7 días</option>
+                                <option value="30">30 días</option>
+                            </select>
+                        </div>
+
+                        <!-- contenedor de la tabla -->
+                        <div class="conTab">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">Windows</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">25K</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">Android</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">12K</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">iPhone</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">9K</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="colorG"></div>
+                                    </td>
+                                    <td>
+                                        <span class="nom">Macintosh</span>
+                                    </td>
+                                    <td>
+                                        <span class="cantUsers">982</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
