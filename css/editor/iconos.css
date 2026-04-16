@@ -1,6 +1,6 @@
 /* GENERALES */
 /* Desplegables */
-.filtros > div > button::after, .listOpc > button::after{
+.filtros > div > button::after, .listOpc > button::after, .titTemp::after{
     font: var(--fa-font-solid);
     content: "\f0d7";
     margin-left: 0.6rem;
@@ -8,7 +8,7 @@
     transition: all 0.2s ease-in-out;
 }
 /* flechas que rotan */
-.filtros > div:hover > button::after, .listOpc:hover > button::after{
+.filtros > div:hover > button::after, .listOpc:hover > button::after, .tempComen:hover > .titTemp::after{
     transform: rotate(-180deg);
 }
 /* Checkbox antes de todos los label */
@@ -107,5 +107,16 @@ input[type=radio]:checked + label::before {
 .comentarios::before {
     font: var(--fa-font-solid);
     content: "\f086";
+    margin-right: 0.6rem;
+}
+.leidos::before {
+    font: var(--fa-font-solid);
+    content: "\f560";
+    margin-right: 0.6rem;
+    font-size: 1.2rem;
+}
+.titCap::before {
+    font: var(--fa-font-regular);
+    content: "\f075";
     margin-right: 0.6rem;
 }

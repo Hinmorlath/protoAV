@@ -3,50 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/editor/colores.css">
+    <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./../css/editor/general.css">
+    <link rel="stylesheet" href="./../css/editor/menu.css">
+    <link rel="stylesheet" href="./../css/editor/iconos.css">
+    <link rel="stylesheet" href="./../css/editor/comentariosAS.css">
     <title>Comentarios</title>
 </head>
 <body>
     <!-- Header a la hora de hacer una saga, que es practicamente el mismo header que aparece a la hora de agregar una anime -->
-    <header>
-        <!-- Enlace para regresar al menú del editor, aunque de la saga debería de regresar al menú de las sagas -->
-        <a href="./comentarios.html">
-            <span></span>
-            <img src="" alt="Logotipo" height="128px" width="128px">
+    <header class="header1">
+        <!-- Enlace para regresar al menú del editor -->
+        <a class="logoCh" href="./animes.html">
+            <img src="./../img/AnimaVivo_logo.png" alt="Logotipo" height="128px" width="128px">
         </a>
+
+        <!-- Nombre del editor que está subiendo este anime -->
+        <div class="nomTit">
+            Subido por:
+            <span id="nomEditor">NombreEditor</span>
+        </div>
         
-        <!-- Herramientas y notificaciones -->
-        <div class="noti">
-            <!-- Notificaciones -->
-            <div><span></span></div>
-            <!-- Herramientas con el ícono del editor -->
-            <div><img src="" alt="Icono Editor" height="128px" width="128px"></div>
+        <!-- Icono del usuario y las herramientas que ofrece este Rol -->
+        <div class="herUsu">
+            <div class="icoNot">
+                <span class="fa-regular fa-bell"></span>
+            </div>
+            <div id="iconUsuario">
+                <img src="./../img/AnimaVivo_logo.png" alt="Icono del usuario" height="128px" width="128px">
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- Sección donde se mostrarán los comentarios de los animes dependiendo de qué sección de temporada y capítulo, así como el anime en sí -->
-        <section>
+        <!-- Div donde se mostrarán los comentarios de los animes dependiendo de qué sección de temporada y capítulo, así como el anime en sí -->
+        <div class="divComen">
             <!-- Encabezado del chat-comentarios, pero que cambiará dependiendo de la selección -->
             <div class="aniComen">
                 <!-- info de los comentarios -->
                 <div class="infoComen">
                     <!-- Imagen del anime -->
-                    <img src="" alt="Anime 1">
+                    <div class="imgAS">
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Anime 1">
+                    </div>
                     <!-- Nombre del anime -->
                     <span>Anime 1</span>
-                    <!-- Temporada actual en la que se muestran los comentarios, en el caso de que los comentarios sean del anime en sí, pues esta sección no se mostrará -->
-                    <span>Temporada 1,</span>
-                    <!-- Lo mismo de las temporadas, pero en vez de las temporadas es con los capítulos -->
-                    <span>Capitulo 1</span>
+                    <div>
+                        <!-- Temporada actual en la que se muestran los comentarios, en el caso de que los comentarios sean del anime en sí, pues esta sección no se mostrará -->
+                        <span>Temporada 1,</span>
+                        <!-- Lo mismo de las temporadas, pero en vez de las temporadas es con los capítulos -->
+                        <span>Capitulo 1</span>
+                    </div>
                 </div>
                 <!-- botón improvisado para marcar como leídos a los comentarios -->
                 <div class="leidos">
-                    <span></span>
                     Marcar como leídos todos los comentarios del Anime
                 </div>
                 <!-- botón para ver todos los reportes relacionados al anime -->
                  <a href="./reportesAnime.html">
-                    <span></span>
+                    <span class="fa-solid fa-triangle-exclamation"></span>
                  </a>
             </div>
 
@@ -56,94 +73,108 @@
                 <div class="tempComen">
                     <!-- Título de la temporada -->
                     <div class="titTemp">
-                        Temporada 1
+                        <span>Temporada 1</span>
                         <!-- Este span es para que se indique el número de comentarios que no se han leído -->
                         <span>1</span>
-                        <!-- Este span es para desglozar los capítulos de la temporada en cuestión -->
-                        <span></span>
                     </div>
                     <!-- Contenedor de los capítulos por los que se navega paralos comentarios -->
                     <div class="capComen">
                         <!-- Contenedor de cada capítulo -->
                         <div class="titCap">
-                            <!-- Simplemente un ícono de comentario -->
-                            <span></span>
                             <!-- Título del capítulo -->
-                            Capitulo 1
+                            <span>
+                                Capitulo 1
+                            </span>
                             <!-- Número de comentarios no leídos por capítulo -->
                             <span>1</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 2
+                            <span>
+                                Capitulo 2
+                            </span>
                             <span>2</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 3
+                            <span>
+                                Capitulo 3
+                            </span>
                             <span>3</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 4
+                            <span>
+                                Capitulo 4
+                            </span>
                             <span>4</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 5
+                            <span>
+                                Capitulo 5
+                            </span>
                             <span>5</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 6
+                            <span>
+                                Capitulo 6
+                            </span>
                             <span>6</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 7
+                            <span>
+                                Capitulo 7
+                            </span>
                             <span>7</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 8
+                            <span>
+                                Capitulo 8
+                            </span>
                             <span>8</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 9
+                            <span>
+                                Capitulo 9
+                            </span>
                             <span>9</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 10<span>10</span>
+                            <span>
+                                Capitulo 10
+                            </span>
+                            <span>10</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 11<span>11</span>
+                            <span>
+                                Capitulo 11
+                            </span>
+                            <span>11</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 12<span>12</span>
+                            <span>
+                                Capitulo 12
+                            </span>
+                            <span>12</span>
                         </div>
                         <div class="titCap">
-                            <span></span>
-                            Capitulo 13<span>13</span>
+                            <span>
+                                Capitulo 13
+                            </span>
+                            <span>13</span>
                         </div>
                     </div>
                 </div>
                 <div class="tempComen">
                     <div class="titTemp">
-                        Temporada 2<span>2</span><span></span>
+                        <span>Temporada 2</span><span>2</span>
                     </div>
                 </div>
                 <div class="tempComen">
                     <div class="titTemp">
-                        Temporada 3<span>3</span><span></span>
+                        <span>Temporada 3</span><span>3</span>
                     </div>
                 </div>
                 <div class="tempComen">
                     <div class="titTemp">
-                        Temporada 4<span>4</span><span></span>
+                        <span>Temporada 4</span><span>4</span>
                     </div>
                 </div>
             </div>
@@ -157,18 +188,20 @@
                         <!-- Header de un comentario -->
                         <div class="headComen">
                             <!-- Imagen del usuario que hizo el comentario -->
-                            <img src="" alt="ImgUser">
+                            <div>
+                                <img src="./../img/users/Vivotaku 2.png" alt="ImgUser">
+                            </div>
                             <!-- Información más detallada del comentario -->
                             <div class="metaComen">
                                 <!-- Nombre del usuario -->
-                                <span>NombreUsuario</span>
+                                <span id="name">NombreUsuario</span>
                                 <!-- Fecha del comentario -->
-                                <span>FechaComen</span>
+                                <span id="date">FechaComen</span>
                                 <!-- Hora en el que se hizo el comentario -->
-                                <span>HoraComen</span>
+                                <span id="time">HoraComen</span>
                                 <!-- Botón de opciones del comentario -->
                                 <div>
-                                    <span></span>
+                                    <span class="fa-solid fa-ellipsis-vertical"></span>
                                 </div>
                             </div>
                         </div>
@@ -181,9 +214,9 @@
                             <!-- Icono para dar likes a un comentario -->
                             <div class="likeComen">
                                 <!-- Icono de like que debe cambiar dependiendo del estado booleano -->
-                                <span></span>
+                                <span class="fa-regular fa-heart"></span>
                                 <!-- Número de likes -->
-                                 <span>5</span>
+                                 <span id="likes">5</span>
                             </div>
                         </div>
                     </div>
@@ -193,7 +226,9 @@
                         <!-- Header de un comentario -->
                         <div class="headComen">
                             <!-- Imagen del usuario que hizo el comentario -->
-                            <img src="" alt="ImgUser">
+                            <div>
+                                <img src="./../img/users/Vivotaku 2.png" alt="ImgUser">
+                            </div>
                             <!-- Información más detallada del comentario -->
                             <div class="metaComen">
                                 <!-- Nombre del usuario -->
@@ -201,10 +236,10 @@
                                 <!-- Fecha del comentario -->
                                 <span>FechaComen</span>
                                 <!-- Hora en el que se hizo el comentario -->
-                                <span>HoraComen</span>
+                                <span id="time">HoraComen</span>
                                 <!-- Botón de opciones del comentario -->
                                 <div>
-                                    <span></span>
+                                    <span class="fa-solid fa-ellipsis-vertical"></span>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +252,7 @@
                             <!-- Icono para dar likes a un comentario -->
                             <div class="likeComen">
                                 <!-- Icono de like que debe cambiar dependiendo del estado booleano -->
-                                <span></span>
+                                <span class="fa-regular fa-heart"></span>
                                 <!-- Número de likes -->
                                  <span>5</span>
                             </div>
@@ -227,7 +262,9 @@
                                 <!-- Header de un comentario -->
                                 <div class="headComen">
                                     <!-- Imagen del usuario que hizo el comentario -->
-                                    <img src="" alt="ImgUser">
+                                    <div>
+                                        <img src="./../img/users/Vivotaku 2.png" alt="ImgUser">
+                                    </div>
                                     <!-- Información más detallada del comentario -->
                                     <div class="metaComen">
                                         <!-- Nombre del usuario -->
@@ -235,21 +272,21 @@
                                         <!-- Fecha del comentario -->
                                         <span>FechaComen</span>
                                         <!-- Hora en el que se hizo el comentario -->
-                                        <span>HoraComen</span>
+                                        <span id="time">HoraComen</span>
                                         <!-- Botón de opciones del comentario -->
                                         <div>
-                                            <span></span>
+                                            <span class="fa-solid fa-ellipsis-vertical"></span>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Contenedor del comentario respuesta -->
-                                <form action="" method="post" class="contComen">
+                                <form action="#" method="post" class="contComen">
                                     <!-- Input para escribir la respuesta -->
                                     <input type="text" name="respComen" id="respComen" placeholder="Escribe tu respuesta">
                                     <!-- Botón para enviar la respuesta -->
                                     <button type="submit">
                                         <!-- Ícono de envío -->
-                                        <span></span>
+                                        <span class="fa-solid fa-paper-plane"></span>
                                     </button>
                                 </form>
                             </div>
@@ -261,7 +298,9 @@
                         <!-- Header de un comentario -->
                         <div class="headComen">
                             <!-- Imagen del usuario que hizo el comentario -->
-                            <img src="" alt="ImgUser">
+                            <div>
+                                <img src="./../img/users/Vivotaku 2.png" alt="ImgUser">
+                            </div>
                             <!-- Información más detallada del comentario -->
                             <div class="metaComen">
                                 <!-- Nombre del usuario -->
@@ -269,10 +308,10 @@
                                 <!-- Fecha del comentario -->
                                 <span>FechaComen</span>
                                 <!-- Hora en el que se hizo el comentario -->
-                                <span>HoraComen</span>
+                                <span id="time">HoraComen</span>
                                 <!-- Botón de opciones del comentario -->
                                 <div>
-                                    <span></span>
+                                    <span class="fa-solid fa-ellipsis-vertical"></span>
                                 </div>
                             </div>
                         </div>
@@ -285,9 +324,9 @@
                             <!-- Icono para dar likes a un comentario -->
                             <div class="likeComen">
                                 <!-- Icono de like que debe cambiar dependiendo del estado booleano -->
-                                <span></span>
+                                <span class="fa-regular fa-heart"></span>
                                 <!-- Número de likes -->
-                                 <span>5</span>
+                                 <span id="likes">5</span>
                             </div>
                         </div>
                     </div>
@@ -296,19 +335,22 @@
                 <!-- Formulario para enviar los comentarios hechos por el Editor -->
                 <form action="" method="post" class="formComen">
                     <!-- Icono para las opciones de emojis -->
-                    <span></span>
+                    <span class="fa-regular fa-face-smile-wink"></span>
                     <!-- Input donde se escribirá el comentario del Editor -->
                     <input type="text" name="editComen" id="editComen" placeholder="Escribe tu comentario">
                     <!-- Input para subir una imagen en un comentario -->
-                    <input type="file" name="imgComen" id="imgComen">
+                    <input type="file" style="display:none;" accept="image/*" name="imgComen" id="imgComen">
+                    <label for="imgComen">
+                        <span class="fa-regular fa-image"></span>
+                    </label>
                     <!-- botón para enviar el comentario -->
                     <button type="submit">
                         <!-- Ícono de envío -->
-                        <span></span>
+                        <span class="fa-solid fa-paper-plane"></span>
                     </button>
                 </form>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>
