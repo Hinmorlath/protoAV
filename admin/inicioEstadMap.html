@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaVivo | Inicio - Países</title>
+</head>
+<body>
+    <!-- Header del administrador que estará en todas las páginas -->
+    <header>
+        <!-- Caja de las notificaciones -->
+        <div class="noti-admin">
+            <span class="fa-regular fa-bell"></span>
+        </div>
+
+        <!-- Caja del logo -->
+        <div class="conten-Logo">
+            <img src="./../img/AnimaVivo.png" alt="AnimaVivo Logo">
+        </div>
+
+        <!-- Caja de Info del admin y herramientas extra -->
+        <div class="userAdmin">
+            <!-- Nombre del admin -->
+            <span id="nomAdmin">Hinmorlath</span>
+            <!-- Imagen del Admin -->
+            <div class="imgAdmin">
+                <img src="./../img/users/Vivotaku 2.png" alt="Imagen del Admin" id="imgUserAdmin">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main del rol del administrador -->
+    <main>
+        <!-- nav principal del admin -->
+        <nav>
+            <!-- Enlace de las estadísticas -->
+            <a href="#">Estadísticas</a>
+            <!-- Enlace de la página de los usuarios -->
+            <a href="#">Usuarios <span id="contadorUsers">1</span></a>
+            <!-- Enlace de la página de Reportes -->
+            <a href="#">Reportes <span id="reportesNL">3</span></a>
+        </nav>
+
+        <!-- Panel de control que mostrará lo que normalmente cambie por el nav -->
+        <div class="panel">
+            <!-- Select que mostrará las gráficas -->
+            <select name="graficas" id="graficas">
+                <option class="iconG" value="general">General</option>
+                <option class="iconNSO" value="nav-so">Naveg - SO</option>
+                <option class="iconP" value="pais">Paises</option>
+            </select>
+
+            <!-- Contenedor de las diferentes gráficas y/o información a mostrar -->
+            <div class="panelGrafico">
+                <!-- Grafica de mapa mundi -->
+                <div id="mapa">
+                    <!-- Aquí irá la gráfica de mapa mundi de dónde se está visualizando la aplicación -->
+                </div>
+                <!-- Grafica de pastel -->
+                <div id="pastel">
+                    <!-- Aquí irá la gráfica de pastel que muestra visualmente qué país ve la aplicación -->
+                </div>
+                                
+                <!-- Tabla de número de usuarios que usan la aplicación de acuerdo al país -->
+                <div class="tablaInfo">
+                    <!-- Cabecera de la tabla -->
+                    <div class="contHead">
+                        <!-- Título -->
+                        <span>Países</span>
+                        <!-- Selector de rango de la tabla -->
+                        <select name="rangoSO" id="rangoSO">
+                            <option value="3">3 días</option>
+                            <option value="7">7 días</option>
+                            <option value="30">30 días</option>
+                        </select>
+                    </div>
+
+                    <!-- contenedor de la tabla -->
+                    <div class="conTab">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="colorG"></div>
+                                </td>
+                                <td>
+                                    <span class="nom">España</span>
+                                </td>
+                                <td>
+                                    <span class="cantUsers">25K</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="colorG"></div>
+                                </td>
+                                <td>
+                                    <span class="nom">Perú</span>
+                                </td>
+                                <td>
+                                    <span class="cantUsers">12K</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="colorG"></div>
+                                </td>
+                                <td>
+                                    <span class="nom">México</span>
+                                </td>
+                                <td>
+                                    <span class="cantUsers">9K</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="colorG"></div>
+                                </td>
+                                <td>
+                                    <span class="nom">Bolivia</span>
+                                </td>
+                                <td>
+                                    <span class="cantUsers">982</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
