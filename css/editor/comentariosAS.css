@@ -147,7 +147,7 @@
         min-height: 22rem;
     }
         /* Contenedor de los cuadros de comentarios */
-        .secComen {
+        .secComen, .panelComen.reportes {
             padding: 1rem;
             overflow-y: auto;
             flex-grow: 1;
@@ -279,4 +279,44 @@
             form.formComen > button {
                 background: none;
                 border: none;
+            }
+
+        /* Estilos de los reportes */
+        .reporte {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 0.4rem 1rem;
+            border: 0.2rem solid;
+            padding: 1rem 1.6rem;
+            border-radius: 0.8rem;
+            background: linear-gradient(75deg, var(--color1), transparent);
+        }
+            /* Estilos de la imagen del reporte */
+            .reporte > div {
+                width: 5rem;
+                background: var(--texto1);
+                border-radius: 100%;
+                grid-row: 1 / span 2;
+                aspect-ratio: 1 / 1;
+                overflow: hidden;
+            }
+            .reporte > div > img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            /* Estilos de los nombres de usuario */
+            .reporte > span:first-of-type {
+                font-size: 1.2rem;
+            }
+            /* Estilos del párrafo */
+            .reporte > p {
+                font-weight: 100;
+                grid-column: 2 / span 2;
+            }
+            /* Estilos de la fecha */
+            .reporte > span:last-child {
+                grid-column: 1 / span 3;
+                font-size: 0.7rem;
+                text-align: end;
             }
