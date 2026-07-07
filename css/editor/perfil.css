@@ -1,0 +1,67 @@
+/* Estilos generales del formulario del perfil */
+form {
+    display: grid;
+    background: var(--color1);
+    padding: 1rem;
+    box-shadow: .2rem .2rem .3rem var(--fondo);
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "img datos1"
+        "datos2 datos2";
+    gap: .2rem 1.2rem;
+}
+
+    /* Estilos de la imagen de usuario */
+    .imgUserPerfil {
+        grid-area: img;
+        display: flex;
+        aspect-ratio: 1 / 1;
+    }
+        .imgUserPerfil > input {
+            display: none;
+        }
+        .imgUserPerfil > label {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background: rgba(0, 0, 0, .6);
+            border-radius: 50%;
+            font-size: clamp(20px, 5vw, 80px);
+        }
+
+    /* Estilos de los primeros y segundos datos */
+    .datos1 {
+        grid-area: datos1;
+    }
+    .datos2 {
+        grid-area: datos2;
+        justify-content: space-between;
+    }
+    .datos1, .datos2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        font-size: 0.8rem;
+    }
+        .datos1 > input, .datos2 > input, .datos2 > button {
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.6rem;
+            font-size: 1rem;
+            box-shadow: .1rem .1rem .3rem var(--fondoT);
+        }
+        .datos2 > button {
+            cursor: pointer;
+            background: #063804;
+            border: none;
+            padding: 0.6rem;
+        }
+    /* Estilos de los segundos datos junto con el botón de submit */
+    /* .datos2 {
+        grid-area: datos2;
+        display: flex;
+        flex-direction: column;
+    } */
