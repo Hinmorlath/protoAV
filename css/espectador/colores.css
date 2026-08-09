@@ -1,0 +1,60 @@
+:root {
+    /* Colores primarios */
+    --color1: #063804;
+    --color2: #001a5f;
+
+    /* Colores de texto 1 y 2 */
+    --texto1: rgba(255, 255, 255, 0.8);
+    --texto2: rgba(0, 0, 0, 0.8);
+
+    /* Fondos del texto */
+    --fondoT: rgba(0, 0, 0, 0.8);
+
+    /* Fondo de letras del Header */
+    --headerABC: #471E01;
+
+    /* Fondo buscador */
+    --buscador: #165E0C;
+
+    /* Colores de las notificaciones */
+    --notifi1: #0b4e75;
+    --notifi2: #00113c;
+
+    /* Color de letras del header #ABCD */
+    --ABCDE: #41c9b9;
+
+    /* Color del submenú */
+    --subMenu: #011500;
+
+    /* Color del fondo del submenú */
+    --fondoSub: #165e0c;
+
+    /* Fondo de información Extra */
+    --infoExt: #830000;
+
+    /* Fondo de la información del anime */
+    --fondoA1: rgba(1,21,0,.2);
+    --fondoA2: rgba(0,13,46,.2);
+    /* Fondo de la temporada */
+    --fondoTemp: #000;
+
+    /* Fondo de la temporada activa */
+    --fondoTempA: #0b5f8f;
+
+    /* Fondo del capitulo visto */
+    --fondoCapV: #063804;
+
+    /* Fondo de los botones anterior y siguiente */
+    --fondoBtnAS: #071706;
+
+    /* Fondo del btn extra */
+    --fondoBtnE: #471e01;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+    font-size: 100%;
+    font-weight: bold;
+}
