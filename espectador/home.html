@@ -6,26 +6,30 @@
     <link rel="shortcut icon" href="./../img/AnimaVivo_logo_bordeBlanco.png" type="image/x-icon">
     <link rel="stylesheet" href="./../css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./../css/espectador/colores.css">
+    <link rel="stylesheet" href="./../css/espectador/header.css">
+    <link rel="stylesheet" href="./../css/espectador/aside.css">
     <title>AnimaVivo | Home</title>
 </head>
 <body>
     <!-- Header de un usuario tipo espectador -->
     <header>
         <!-- Header 1 -->
-        <div id="header1">
+        <div class="header1">
             <!-- Logotipo -->
-            <a href="#" id="logo">
-                <img src="" alt="Logo"  height="128px" width="128px">
+            <a href="#" class="logo">
+                <img src="./../img/AnimaVivo.png" alt="Logo"  height="128px" width="128px">
             </a>
             <!-- Buscador -->
-            <form method="post">
-                <input type="search" name="buscador" id="buscador" autocomplete="on">
-                <button type="submit"></button>
+            <form class="buscador" method="post">
+                <input type="search" name="buscador" id="buscador" autocomplete="on" placeholder="Buscar...">
+                <button type="submit">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                </button>
             </form>
             <!-- Herramientas de usuario -->
             <div class="herrSup">
                 <!-- Botón de notificaciones -->
-                <span></span>
+                <span class="fa-solid fa-bell"></span>
                 <!-- Opciones de usuario -->
                 <div class="opcUsua">
                     <!-- Nombre del espectador -->
@@ -33,7 +37,7 @@
                     <!-- Imagen del espectador -->
                     <div class="imgUsuario">
                         <!-- Aquí hay que ver la manera de que se puedan intercalar entre img y span, para cuando haya o no imagen para el espectador -->
-                        <img src="#" alt="Imagen del espectador">
+                        <img src="./../img/users/Vivotaku 2.png" alt="Imagen del espectador">
                         <span></span>
                     </div>
                 </div>
@@ -41,7 +45,7 @@
         </div>
 
         <!-- Header 2 -->
-        <div id="header2">
+        <div class="header2">
             <!-- Alfabeto -->
             <ul>
                 <li><a href="#">#</a></li>
@@ -78,12 +82,25 @@
     <!-- Navegador -->
     <aside>
         <nav>
-            <li><span></span><span>Menú</span></li>
-            <li><span></span><span>Inicio</span></li>
-            <li><span></span><span>En emisión</span></li>
+            <li>
+                <span class="fa-solid fa-bars"></span>
+                <span>Menú</span>
+            </li>
+            <li>
+                <a href="./home.html">
+                    <span class="fa-solid fa-torii-gate"></span>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-solid fa-jet-fighter"></span>
+                    <span>En emisión</span>
+                </a>
+            </li>
             <!-- Lista de Género -->
             <li>
-                <span></span>
+                <span class="fa-solid fa-masks-theater"></span>
                 <span>Género</span>
                 <ul>
                     <li>Aventura</li>
@@ -95,7 +112,7 @@
             </li>
             <!-- Duración en minutos -->
             <li>
-                <span></span>
+                <span class="fa-solid fa-hourglass-half"></span>
                 <span>Minutos</span>
                 <ul>
                     <li>1 - 5 Minutos</li>
@@ -106,7 +123,7 @@
             </li>
             <!-- Duración en Capitulos -->
             <li>
-                <span></span>
+                <span class="fa-solid fa-tv"></span>
                 <span>Capitulos</span>
                 <ul>
                     <li>1 - 15 Episodios</li>
@@ -118,7 +135,7 @@
             </li>
             <!-- Demografía -->
             <li>
-                <span></span>
+                <span class="fa-solid fa-dragon"></span>
                 <span>Demografía</span>
                 <ul>
                     <li>Ecchi</li>
@@ -130,23 +147,31 @@
             </li>
             <!-- Sagas -->
             <li>
-                <span></span>
-                <span>Sagas</span>
+                <a href="#">
+                    <span class="fa-solid fa-star-and-crescent"></span>
+                    <span>Sagas</span>
+                </a>
             </li>
             <!-- Pendientes -->
             <li>
-                <span></span>
-                <span>Pendientes</span>
+                <a href="#">
+                    <span class="fa-solid fa-mug-hot"></span>
+                    <span>Pendientes</span>
+                </a>
             </li>
             <hr>
             <!-- Favoritos -->
             <li>
-                <span></span>
-                <span>Favoritos</span>
+                <a href="#">
+                    <span class="fa-solid fa-star"></span>
+                    <span>Favoritos</span>
+                </a>
             </li>
             <li>
-                <span></span>
-                <span>Mi lista Anime</span>
+                <a href="#">
+                    <span class="fa-regular fa-bookmark"></span>
+                    <span>Mi lista Anime</span>
+                </a>
             </li>
         </nav>
     </aside>

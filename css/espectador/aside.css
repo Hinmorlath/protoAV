@@ -1,0 +1,71 @@
+/* Estilos del menú aside */
+aside {
+    position: absolute;
+    background: var(--nav);
+    height: calc(100% - 5.8rem);
+    color: var(--texto1);
+}
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    overflow-y: auto;
+    height: 100%;
+    overflow-x: visible;
+}
+
+/* Estilos de cada botón del submenú */
+aside nav li {
+    list-style: none;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+aside nav li:hover {
+    background: var(--color2);
+}
+aside nav > li {
+    display: flex;
+    flex-direction: column;
+    padding: .2rem;
+    position: relative;
+    anchor-name: --item-menu;
+    font-size: .6rem;
+    text-align: center;
+}
+aside nav > li > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--texto1);
+
+}
+/* Estilos de los íconos que están en el aside */
+nav > li > span:first-child, nav > li> a > span:first-child {
+    font-size: 1.8rem;
+}
+
+    /* Estilos de los submenús */
+    li > ul {
+        position: fixed;
+        position-anchor: --item-menu;
+        background: var(--subMenu);
+        left: anchor(right);
+        top: anchor(top);
+        display: none;
+        flex-direction: column;
+        opacity: none;
+        font-size: .8rem;
+    }
+    li:hover > ul {
+        display: flex;
+        opacity: 1;
+    }
+    li ul li {
+        border-bottom: 0.1rem solid;
+        padding: .6rem 1rem;
+        text-align: left;
+        min-width: 10rem;
+    }
+    nav hr {
+        width: 100%;
+    }

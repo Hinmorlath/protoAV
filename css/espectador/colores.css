@@ -1,6 +1,6 @@
 :root {
     /* Colores primarios */
-    --color1: #063804;
+    --color1: #138500;
     --color2: #001a5f;
 
     /* Colores de texto 1 y 2 */
@@ -8,23 +8,27 @@
     --texto2: rgba(0, 0, 0, 0.8);
 
     /* Fondos del texto */
-    --fondoT: rgba(0, 0, 0, 0.8);
+    --fondoT1: rgba(0, 0, 0, 0.8);
+    --fondoT2: rgba(255, 255, 255, 0.8);
 
     /* Fondo de letras del Header */
     --headerABC: #471E01;
-
+    
     /* Fondo buscador */
     --buscador: #165E0C;
-
+    
     /* Colores de las notificaciones */
     --notifi1: #0b4e75;
     --notifi2: #00113c;
-
+    
     /* Color de letras del header #ABCD */
     --ABCDE: #41c9b9;
 
+    /* Fondo aside */
+    --nav: #063804;
+
     /* Color del submenú */
-    --subMenu: #011500;
+    --subMenu: rgba(1, 21, 0, .8);
 
     /* Color del fondo del submenú */
     --fondoSub: #165e0c;
