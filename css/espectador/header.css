@@ -51,8 +51,15 @@
     }
         /* Icono de campana */
         .herrSup > span {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             cursor: pointer;
+            padding: .6rem;
+            border-radius: 50%;
+            transition: background .3s ease, color .3s ease .1s;
+        }
+        .herrSup > span:hover {
+            background: var(--fondoT2);
+            color: var(--texto2);
         }
         /* Nombre e imagen de usuario */
         .opcUsua {
@@ -61,8 +68,9 @@
             gap: .6rem;
         }
         .imgUsuario {
-            height: 3.6rem;
-            background: var(--fondoT);
+            height: 3.2rem;
+            aspect-ratio: 1 / 1;
+            background: var(--fondoT1);
             border-radius: 50%;
             overflow: hidden;
             cursor: pointer;

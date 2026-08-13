@@ -1,0 +1,19 @@
+/* Icono de la sagas */
+.tituloSaga > span::before {
+    font: var(--fa-font-solid);
+    content: "\f699";
+    color: var(--ABCDE);
+    margin-right: .8rem;
+}
+
+/* Icono de link "ver más" */
+.tituloSaga > a::after {
+    font: var(--fa-font-solid);
+    content: "\f101";
+    color: var(--ABCDE);
+    margin-left: .8rem;
+    transition: margin-left .3s ease-in-out;
+}
+.tituloSaga > a:hover::after {
+    margin-left: 1.6rem;
+}

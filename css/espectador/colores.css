@@ -34,7 +34,7 @@
     --fondoSub: #165e0c;
 
     /* Fondo de información Extra */
-    --infoExt: #830000;
+    --infoExt: rgba(123,0,0,.8);
 
     /* Fondo de la información del anime */
     --fondoA1: rgba(1,21,0,.2);
@@ -61,4 +61,10 @@
     font-family: 'Trebuchet MS';
     font-size: 100%;
     font-weight: bold;
+}
+main {
+    background: linear-gradient(90deg, var(--color1), var(--color2));
+    height: calc(100vh - 5.8rem);
+    overflow-y: auto;
+    padding-left: 5.2rem;
 }

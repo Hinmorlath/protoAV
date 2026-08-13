@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./../css/espectador/colores.css">
     <link rel="stylesheet" href="./../css/espectador/header.css">
     <link rel="stylesheet" href="./../css/espectador/aside.css">
+    <link rel="stylesheet" href="./../css/espectador/home.css">
+    <link rel="stylesheet" href="./../css/espectador/iconos.css">
     <title>AnimaVivo | Home</title>
 </head>
 <body>
@@ -82,16 +84,19 @@
     <!-- Navegador -->
     <aside>
         <nav>
+            <!-- Menú -->
             <li>
                 <span class="fa-solid fa-bars"></span>
                 <span>Menú</span>
             </li>
+            <!-- Inicio -->
             <li>
                 <a href="./home.html">
                     <span class="fa-solid fa-torii-gate"></span>
                     <span>Inicio</span>
                 </a>
             </li>
+            <!-- Animes en Emisión -->
             <li>
                 <a href="#">
                     <span class="fa-solid fa-jet-fighter"></span>
@@ -99,7 +104,7 @@
                 </a>
             </li>
             <!-- Lista de Género -->
-            <li>
+            <li class="listD">
                 <span class="fa-solid fa-masks-theater"></span>
                 <span>Género</span>
                 <ul>
@@ -111,7 +116,7 @@
                 </ul>
             </li>
             <!-- Duración en minutos -->
-            <li>
+            <li class="listD">
                 <span class="fa-solid fa-hourglass-half"></span>
                 <span>Minutos</span>
                 <ul>
@@ -122,7 +127,7 @@
                 </ul>
             </li>
             <!-- Duración en Capitulos -->
-            <li>
+            <li class="listD">
                 <span class="fa-solid fa-tv"></span>
                 <span>Capitulos</span>
                 <ul>
@@ -134,7 +139,7 @@
                 </ul>
             </li>
             <!-- Demografía -->
-            <li>
+            <li class="listD">
                 <span class="fa-solid fa-dragon"></span>
                 <span>Demografía</span>
                 <ul>
@@ -180,236 +185,497 @@
         <!-- Slider de los animes más populares -->
         <div id="sliderPopular">
             <!-- Bóton del slider a la izquierda -->
-            <button id="btn-left-aniPop"><span></span></button>
+            <button class="btn-leftSlide" id="btn-left-aniPop">
+                <span class="fa-solid fa-chevron-left"></span>
+            </button>
 
             <!-- cada anime con su enlace -->
             <section>
-                <a href="./anime.html">
+                <a class="portadaAniSlide" href="./anime.html">
                     <span id="tituloA">Anime 1</span>
-                    <img src="" alt="Anime 1" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 1" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 2</span>
-                    <img src="" alt="Anime 2" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 2" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 3</span>
-                    <img src="" alt="Anime 3" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 4</span>
-                    <img src="" alt="Anime 4" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 4" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 5</span>
-                    <img src="" alt="Anime 5" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 5" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 6</span>
-                    <img src="" alt="Anime 6" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 6" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 7</span>
-                    <img src="" alt="Anime 7" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 7" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 8</span>
-                    <img src="" alt="Anime 8" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 8" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a class="portadaAniSlide" href="#">
                     <span id="tituloA">Anime 9</span>
-                    <img src="" alt="Anime 9" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 9" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a  class="portadaAniSlide"href="#">
                     <span id="tituloA">Anime 10</span>
-                    <img src="" alt="Anime 10" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 10" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a  class="portadaAniSlide"href="#">
                     <span id="tituloA">Anime 11</span>
-                    <img src="" alt="Anime 11" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 11" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a  class="portadaAniSlide"href="#">
                     <span id="tituloA">Anime 12</span>
-                    <img src="" alt="Anime 12" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 12" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a  class="portadaAniSlide"href="#">
                     <span id="tituloA">Anime 13</span>
-                    <img src="" alt="Anime 13" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 13" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a  class="portadaAniSlide"href="#">
                     <span id="tituloA">Anime 14</span>
-                    <img src="" alt="Anime 14" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 14" height="128px" width="128px">
                 </a>
-                <a href="#">
+                <a  class="portadaAniSlide"href="#">
                     <span id="tituloA">Anime 15</span>
-                    <img src="" alt="Anime 15" height="128px" width="128px">
+                    <img src="./../img/pAnime/Anime1.jpg" alt="Anime 15" height="128px" width="128px">
                 </a>
             </section>
             
             <!-- Bóton del slider a la derecha -->
-            <button id="btn-right-aniPop"><span></span></button>
+            <button class="btn-rigthSlide" id="btn-right-aniPop">
+                <span class="fa-solid fa-chevron-right"></span>
+            </button>
         </div>
 
         <!-- Slider de las sagas agregadas recientemente -->
-        <section>
-            <div id="tituloSaga">
+        <section class="sliderSaga">
+            <div class="tituloSaga">
                 <span>Sagas</span>
-                <a href="#">ver más>></a>
+                <a href="./busqueda.html">ver más</a>
             </div>
 
             <!-- cada saga con su enlace -->
             <div id="sliderSaga">
-                <button id="btn-left-saga"><span></span></button>
+                <button id="btn-left-saga">
+                    <span class="fa-solid fa-chevron-left"></span>
+                </button>
                 <section>
                     <a href="./saga.html">
-                        <span id="tituloS">Saga 1</span>
-                        <img src="" alt="Saga 1" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 1</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 1" height="128px" width="128px">
                     </a>
                     <a href="#">
-                        <span id="tituloS">Saga 2</span>
-                        <img src="" alt="Saga 2" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 2</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 2" height="128px" width="128px">
                     </a>
                     <a href="#">
-                        <span id="tituloS">Saga 3</span>
-                        <img src="" alt="Saga 3" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 3</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 3" height="128px" width="128px">
                     </a>
                     <a href="#">
-                        <span id="tituloS">Saga 4</span>
-                        <img src="" alt="Saga 4" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 4</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 4" height="128px" width="128px">
                     </a>
                     <a href="#">
-                        <span id="tituloS">Saga 5</span>
-                        <img src="" alt="Saga 5" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 5</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 5" height="128px" width="128px">
                     </a>
                     <a href="#">
-                        <span id="tituloS">Saga 6</span>
-                        <img src="" alt="Saga 6" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 6</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 6" height="128px" width="128px">
                     </a>
                     <a href="#">
-                        <span id="tituloS">Saga 7</span>
-                        <img src="" alt="Saga 7" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 7</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 7" height="128px" width="128px">
                     </a>
                     <a href="#">
-                        <span id="tituloS">Saga 8</span>
-                        <img src="" alt="Saga 8" height="128px" width="128px">
+                        <div>
+                            <span id="tituloS">Saga 8</span>
+                        </div>
+                        <img src="./../img/pSaga/Saga1.jpg" alt="Saga 8" height="128px" width="128px">
                     </a>
                 </section>
-                <button id="btn-right-saga"><span></span></button>
+                <button id="btn-right-saga">
+                    <span class="fa-solid fa-chevron-right"></span>
+                </button>
             </div>
         </section>
 
         <!-- Sección para los animes -->
-        <div id="animesAgregados">
+        <div class="animesAgregados">
             <span>Últimos Animes Agregados</span>
 
             <!-- Animes con sus enlaces -->
             <section>
-                <a href="./anime.html" class="anime">
-                    <!-- Portada -->
-                    <img src="" alt="Anime 1" height="128px" width="128px">
-                    <!-- Nombre del Anime -->
-                    <span>Anime 1</span>
-                    <!-- Botón para favoritos -->
-                    <button>
-                        <span></span>
-                    </button>
-                    <!-- Botón para "Agregar a mi lista Anime" -->
-                    <button>
-                        <span></span>
-                    </button>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 2" height="128px" width="128px">
-                    <span>Anime 2</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 3" height="128px" width="128px">
-                    <span>Anime 3</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 4" height="128px" width="128px">
-                    <span>Anime 4</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 5" height="128px" width="128px">
-                    <span>Anime 5</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 6" height="128px" width="128px">
-                    <span>Anime 6</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 7" height="128px" width="128px">
-                    <span>Anime 7</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 8" height="128px" width="128px">
-                    <span>Anime 8</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 9" height="128px" width="128px">
-                    <span>Anime 9</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 10" height="128px" width="128px">
-                    <span>Anime 10</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 11" height="128px" width="128px">
-                    <span>Anime 11</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 12" height="128px" width="128px">
-                    <span>Anime 12</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 13" height="128px" width="128px">
-                    <span>Anime 13</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 14" height="128px" width="128px">
-                    <span>Anime 14</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 15" height="128px" width="128px">
-                    <span>Anime 15</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 16" height="128px" width="128px">
-                    <span>Anime 16</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 17" height="128px" width="128px">
-                    <span>Anime 17</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 18" height="128px" width="128px">
-                    <span>Anime 18</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 19" height="128px" width="128px">
-                    <span>Anime 19</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 20" height="128px" width="128px">
-                    <span>Anime 20</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 21" height="128px" width="128px">
-                    <span>Anime 21</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 22" height="128px" width="128px">
-                    <span>Anime 22</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 23" height="128px" width="128px">
-                    <span>Anime 23</span>
-                </a>
-                <a href="#" class="anime">
-                    <img src="" alt="Anime 24" height="128px" width="128px">
-                    <span>Anime 24</span>
-                </a>
+                <!-- Plantilla de cómo deben mostrarse cada anime agregado -->
+                <div class="animeYBtn">
+                    <!-- Link del anime a enlazarse -->
+                    <a href="#" class="anime">
+                        <!-- Imagen de la portada -->
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <!-- Nombre del anime -->
+                        <span>Anime 1</span>
+                    </a>
+                    <!-- Caja contenedora de los botones extra de cada anime -->
+                    <div>
+                        <!-- Botón de agregar a la lista de animes vistos -->
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <!-- Botón de agregar a la sección de animes favoritos -->
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 2</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 3</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 4</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 5</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 6</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 7</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 8</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 9</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 10</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 11</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 12</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 13</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 14</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 15</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 16</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 17</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 18</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 19</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 20</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 21</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 22</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 23</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animeYBtn">
+                    <a href="#" class="anime">
+                        <img src="./../img/pAnime/Anime1.jpg" alt="Anime 3" height="128px" width="128px">
+                        <span>Anime 24</span>
+                    </a>
+                    <div>
+                        <button>
+                            <span class="fa-regular fa-bookmark"></span>
+                        </button>
+                        <button>
+                            <span class="fa-regular fa-star"></span>
+                        </button>
+                    </div>
+                </div>
             </section>
 
             <!-- Páginación de los animes -->
